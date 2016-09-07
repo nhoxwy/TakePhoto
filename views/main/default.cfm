@@ -92,112 +92,161 @@ html,body {
 
 <!--- Section 3 / Cho bạn? --->
 <section class="container-fluid" id="section3">
-  <div class="container v-center">
-    <div class="row">
-      <div class="col-sm-2 col-sm-offset-2 col-xs-6">
-        <div class="text-center">
-          <a href="/index.cfm/freelancer_detail">
-            <img style="width:100px;" class="img-circle img-responsive img-thumbnail" src="/assets/image/cuoi.jpg">
-          </a>
-          <h3 class="text-center"></h3>
+<div class="container v-center">
+  <div class="row">
+    <div class="col-sm-2 col-xs-12">
+        <div class="flip-container text-center" ontouchstart="this.classList.toggle('hover');">
+          <div class="flipper">
+            <div class="front">
+               <img style="width:150px;" class="img-circle img-responsive img-thumbnail" src="/assets/image/phong_canh.jpg">
+            </div>
+            <div class="back">
+              <img style="width:150px;" class="img-circle img-responsive img-thumbnail" src="/assets/image/cuoi.jpg">
+            </div>
+          </div>
         </div>
       </div>
-      <div class="col-sm-2 col-xs-6">
-        <div class="text-center">
-          <a href="">
-            <img style="width:100px;" class="img-circle img-responsive img-thumbnail" src="/assets/image/nghe_thuat.jpg">
-          </a>
-          <h3 class="text-center"></h3>
+      <div class="col-sm-2 col-xs-12">
+        <div class="flip-container text-center" ontouchstart="this.classList.toggle('hover');">
+          <div class="flipper">
+            <div class="front">
+               <img style="width:150px;" class="img-circle img-responsive img-thumbnail" src="/assets/image/phong_canh.jpg">
+            </div>
+            <div class="back">
+              <img style="width:150px;" class="img-circle img-responsive img-thumbnail" src="/assets/image/cuoi.jpg">
+            </div>
+          </div>
         </div>
       </div>
-      <div class="col-sm-2 col-xs-6">
-        <div class="text-center">
-          <a href="">
-            <img style="width:100px;" class="img-circle img-responsive img-thumbnail" src="/assets/image/ky_yeu.jpg">
-          </a>
-          <h3 class="text-center"></h3>
+      <div class="col-sm-2 col-xs-12">
+        <div class="flip-container text-center" ontouchstart="this.classList.toggle('hover');">
+          <div class="flipper">
+            <div class="front">
+               <img style="width:150px;" class="img-circle img-responsive img-thumbnail" src="/assets/image/phong_canh.jpg">
+            </div>
+            <div class="back">
+              <img style="width:150px;" class="img-circle img-responsive img-thumbnail" src="/assets/image/cuoi.jpg">
+            </div>
+          </div>
         </div>
       </div>
-      <div class="col-sm-2 col-xs-6">
-        <div class="text-center">
-          <a href="">
-            <img style="width:100px;" class="img-circle img-responsive img-thumbnail" src="/assets/image/ngoai_canh.jpg">
-          </a>
-          <h3 class="text-center"></h3>
-        </div>
-        </div>
-    </div>
-    <div class="row">
-      <div class="col-sm-2 col-sm-offset-2 col-xs-6">
-        <div class="text-center">
-          <a href="">
-            <img style="width:100px;" class="img-circle img-responsive img-thumbnail" src="/assets/image/su_kien.jpg">
-          </a>
-          <h3 class="text-center"></h3>
+      <div class="col-sm-2 col-xs-12">
+        <div class="flip-container text-center" ontouchstart="this.classList.toggle('hover');">
+          <div class="flipper">
+            <div class="front">
+               <img style="width:150px;" class="img-circle img-responsive img-thumbnail" src="/assets/image/phong_canh.jpg">
+            </div>
+            <div class="back">
+              <img style="width:150px;" class="img-circle img-responsive img-thumbnail" src="/assets/image/cuoi.jpg">
+            </div>
+          </div>
         </div>
       </div>
-      <div class="col-sm-2 col-xs-6">
-        <div class="text-center">
-          <a href="">
-            <img style="width:100px;" class="img-circle img-responsive img-thumbnail" src="/assets/image/streetlife.jpg">
-          </a>
-          <h3 class="text-center"></h3>
+      <div class="col-sm-2 col-xs-12">
+        <div class="flip-container text-center" ontouchstart="this.classList.toggle('hover');">
+          <div class="flipper">
+            <div class="front">
+               <img style="width:150px;" class="img-circle img-responsive img-thumbnail" src="/assets/image/phong_canh.jpg">
+            </div>
+            <div class="back">
+              <img style="width:150px;" class="img-circle img-responsive img-thumbnail" src="/assets/image/cuoi.jpg">
+            </div>
+          </div>
         </div>
       </div>
-      <div class="col-sm-2 col-xs-6">
-        <div class="text-center">
-          <a href="">
-            <img style="width:100px;" class="img-circle img-responsive img-thumbnail" src="/assets/image/phong_canh.jpg">
-          </a>
-          <h3 class="text-center"></h3>
+      <div class="col-sm-2 col-xs-12">
+        <div class="flip-container text-center" ontouchstart="this.classList.toggle('hover');">
+          <div class="flipper">
+            <div class="front">
+               <img style="width:150px;" class="img-circle img-responsive img-thumbnail" src="/assets/image/phong_canh.jpg">
+            </div>
+            <div class="back">
+              <img style="width:150px;" class="img-circle img-responsive img-thumbnail" src="/assets/image/cuoi.jpg">
+            </div>
+          </div>
         </div>
       </div>
-      <div class="col-sm-2 col-xs-6">
-        <div class="text-center">
-          <a href="">
-            <img style="width:100px;" class="img-circle img-responsive img-thumbnail" src="/assets/image/the_thao.jpg">
-          </a>
-          <h3 class="text-center"></h3>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-sm-2 col-sm-offset-2 col-xs-6">
-        <div class="text-center">
-          <a href="">
-            <img style="width:100px;" class="img-circle img-responsive img-thumbnail" src="/assets/image/thoi_trang.jpg">
-          </a>
-          <h3 class="text-center"></h3>
-        </div>
-      </div>
-      <div class="col-sm-2 col-xs-6">
-        <div class="text-center">
-          <a href="">
-            <img style="width:100px;" class="img-circle img-responsive img-thumbnail" src="/assets/image/nhom.jpg">
-          </a>
-          <h3 class="text-center"></h3>
-        </div>
-      </div>
-      <div class="col-sm-2 col-xs-6">
-        <div class="text-center">
-          <a href="">
-            <img style="width:100px;" class="img-circle img-responsive img-thumbnail" src="/assets/image/flycam.jpg">
-          </a>
-          <h3 class="text-center"></h3>
-        </div>
-      </div>
-      <div class="col-sm-2 col-xs-6">
-        <div class="text-center">
-          <a href="">
-            <img style="width:100px;" class="img-circle img-responsive img-thumbnail" src="/assets/image/macro.jpg">
-          </a>
-          <h3 class="text-center"></h3>
-        </div>
-      </div>
-    </div>
-    <!--/row-->
   </div>
+  <div class="row divspace">
+        <br>
+  </div>
+  <div class="row">
+    <div class="col-sm-2 col-xs-12">
+        <div class="flip-container text-center" ontouchstart="this.classList.toggle('hover');">
+          <div class="flipper">
+            <div class="front">
+               <img style="width:150px;" class="img-circle img-responsive img-thumbnail" src="/assets/image/phong_canh.jpg">
+            </div>
+            <div class="back">
+              <img style="width:150px;" class="img-circle img-responsive img-thumbnail" src="/assets/image/cuoi.jpg">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-2 col-xs-12">
+        <div class="flip-container text-center" ontouchstart="this.classList.toggle('hover');">
+          <div class="flipper">
+            <div class="front">
+               <img style="width:150px;" class="img-circle img-responsive img-thumbnail" src="/assets/image/phong_canh.jpg">
+            </div>
+            <div class="back">
+              <img style="width:150px;" class="img-circle img-responsive img-thumbnail" src="/assets/image/cuoi.jpg">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-2 col-xs-12">
+        <div class="flip-container text-center" ontouchstart="this.classList.toggle('hover');">
+          <div class="flipper">
+            <div class="front">
+               <img style="width:150px;" class="img-circle img-responsive img-thumbnail" src="/assets/image/phong_canh.jpg">
+            </div>
+            <div class="back">
+              <img style="width:150px;" class="img-circle img-responsive img-thumbnail" src="/assets/image/cuoi.jpg">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-2 col-xs-12">
+        <div class="flip-container text-center" ontouchstart="this.classList.toggle('hover');">
+          <div class="flipper">
+            <div class="front">
+               <img style="width:150px;" class="img-circle img-responsive img-thumbnail" src="/assets/image/phong_canh.jpg">
+            </div>
+            <div class="back">
+              <img style="width:150px;" class="img-circle img-responsive img-thumbnail" src="/assets/image/cuoi.jpg">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-2 col-xs-12">
+        <div class="flip-container text-center" ontouchstart="this.classList.toggle('hover');">
+          <div class="flipper">
+            <div class="front">
+               <img style="width:150px;" class="img-circle img-responsive img-thumbnail" src="/assets/image/phong_canh.jpg">
+            </div>
+            <div class="back">
+              <img style="width:150px;" class="img-circle img-responsive img-thumbnail" src="/assets/image/cuoi.jpg">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-2 col-xs-12">
+        <div class="flip-container text-center" ontouchstart="this.classList.toggle('hover');">
+          <div class="flipper">
+            <div class="front">
+               <img style="width:150px;" class="img-circle img-responsive img-thumbnail" src="/assets/image/phong_canh.jpg">
+            </div>
+            <div class="back">
+              <img style="width:150px;" class="img-circle img-responsive img-thumbnail" src="/assets/image/cuoi.jpg">
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
 </section>
+
 
 <!--- Section 6 / Bạn nói? --->
 <section class="container-fluid" id="section6">
