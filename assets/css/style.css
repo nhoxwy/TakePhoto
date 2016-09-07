@@ -430,7 +430,6 @@ input:focus {
   margin: 0;
 }
 #Frl-filter .img-grid {
-  width: 20%;
   height: 300px;
   margin: 0px;
   padding:0px;
@@ -449,7 +448,7 @@ input:focus {
 #Frl-order .form {
   padding: 40px;
   max-width:600px;
-  margin:40px auto;
+  margin: auto;
   border-radius:4px;
   box-shadow:0 4px 10px 4px rgba(19,35,47,.3);
 }
