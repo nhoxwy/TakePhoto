@@ -206,9 +206,9 @@ html,body {
       <h2 class="text-center lato">Khách hàng nói gì về <b class="text-danger">Take Photo</b>?</h2>
       <hr>
       <div class="media">
-        <h3>Boom</h3>
+        <h3>Ái Vy</h3>
         <div class="media-left">
-          <img src="//placehold.it/100">
+          <img src="http://1.bp.blogspot.com/-U3WxUTM-GFw/VpO6hGLGdpI/AAAAAAAAPt0/K5kikgmlrJg/w100-h100-c/Anh-girl-xinh-facebook-cute-%252812%2529.jpg">
         </div>
         <div class="media-body media-middle">
           <p>Some brand-tacular designs even have home page content that is taller that 12,000 xels. That's a lotta content Lorem ipsum dolor sit amet, adipiscing elit.</p>
@@ -216,19 +216,19 @@ html,body {
       </div>
       <hr>
       <div class="media">
-        <h3>Boom</h3>
+        <h3>Mỹ Na</h3>
         <div class="media-body media-middle">
           <p>Offset right home page content that is taller that 12,000 pixels. That's a lotta content Lorem ipsum dolor sit amet, adipiscing elit.</p>
         </div>
         <div class="media-right">
-          <img src="//placehold.it/100">
+          <img src="http://2.bp.blogspot.com/-jiaHLJYOqrs/VqyDzZ-kyHI/AAAAAAAATJk/wi1Xf2TOlts/w100-h100-c/Girl-xinh-da-trang-ohaylam.com-%25281%2529.jpg">
         </div>
       </div>
       <hr>
       <div class="media">
-        <h3>Boom</h3>
+        <h3>Trân</h3>
         <div class="media-left">
-          <img src="//placehold.it/100">
+          <img src="https://1.bp.blogspot.com/-8pPMOLNA7G0/VwUe-vN22CI/AAAAAAAATQ0/o9448n9rZMUpknXkhqur-FCv0UMgI_LmQ/w100-h100-c/Girl-xinh-ohaylam.com-%25281%2529.jpg">
         </div>
         <div class="media-body media-middle">
           <p>Some brand-tacular designs even have home page content that is taller that 12,000 xels. That's a lotta content Lorem ipsum dolor sit amet, adipiscing elit.</p>
