@@ -1,0 +1,643 @@
+@media (min-width:768px) {
+  h1 {
+      font-size:68px;
+  }
+}
+
+a {
+    color:#999;
+}
+
+a:hover {
+    color:#111;
+}
+
+.btn,.well,.panel {
+    border-radius:0;
+}
+
+.btn-danger {
+    background-color:#f44d3c;
+}
+
+.text-danger, a.text-danger {
+    color:#f44d3c;
+}
+
+.btn-huge {
+    padding:17px 22px;
+    font-size:22px;
+}
+
+.lato {
+    font-family: 'Lato', sans-serif;
+}
+
+.bitter {
+    font-family: 'Bitter', serif;
+}
+
+.icon-bar {
+  background-color:#fff;
+}
+
+.navbar-trans {
+  background-color:#2b2b2b;
+    color:#cdcdcd;
+    border-width:0;
+}
+
+.navbar-trans .navbar-brand, .navbar-trans >.container-fluid .navbar-brand {
+    padding: 14px;
+    color:#f44d3c;
+}
+
+.navbar-trans li>a:focus,.navbar-trans li.active {
+  background-color:#f44d3c;
+  color:#333;
+}
+
+.navbar-trans li>a:hover {
+  background-color:#f44d3c;
+  color:#fff;
+  opacity:0.5;
+}
+
+.navbar-trans a{
+    color:#cdcdcd;
+    letter-spacing:1px;
+}
+
+.navbar-trans .form-control:focus {
+  border-color: #eee;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(100,100,100,0.6);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(100,100,100,0.6);
+}
+
+#section1 .scroll-down {
+  position: absolute;
+  left: 50%;
+  bottom: 40px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  margin-left: -15px;
+  display: block;
+  padding: 7px;
+  text-align: center;
+  z-index:-1
+}
+
+.scroll-up {
+  position: fixed;
+  display: none;
+  z-index: 999;
+  bottom: 2em;
+  right: 2em;
+}
+
+.scroll-up a {
+  background-color: rgba(135, 135, 135, 0.5);
+  display: block;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  color: #fff;
+  font-size: 15px;
+  line-height: 30px;
+}
+
+section {
+  padding-top:70px;  
+    padding-bottom:50px;
+    min-height:100%;
+    min-height:calc(100% - 0);
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+@media (min-width:768px) {
+  .v-center {
+      height: 50%;
+      overflow: visible;
+      margin: auto;
+      position: absolute;
+      top: 0; left: 0; bottom: 0; right: 0;
+  }
+}
+  
+
+#section1, #section4 {
+  background-color: rgba(0,0,0,0.7);
+  color:#fff;
+  font-family: 'Bitter', serif;
+}
+
+#section5 {
+  background-color: #f6f6f6;
+  color:#444;
+}
+
+#section2 {
+  background-color: #fff;
+}
+
+#section4 {
+  background-color: rgba(0,0,0,0.9);
+}
+
+#section6 {
+  background-color: #fff;
+}
+
+#section7 {
+  background-color: #eee;
+  min-height:130px;
+  padding-top:40px;
+  padding-bottom:40px;
+}
+
+#section8 {
+  background-color: #f44d3c;
+  color: #f6f6f6;
+  min-height:130px;
+  padding-top:40px;
+  padding-bottom:40px;
+}
+
+footer {
+  background-color:#2b2b2b;
+    color:#ddd;
+    min-height:100px;
+    padding-top:20px;
+    padding-bottom:40px;
+}
+
+footer .nav>li>a {
+    padding: 3px;
+    color: #f44d3c;
+}
+
+footer .nav>li>a:hover {
+    background-color:transparent;
+  color:#fff;
+}
+
+/*========================================
+=            REGISTER PAGE               =
+========================================*/
+/* dinh dang form register */
+#register {
+  background: #D95142;
+  font-family: 'Lato', sans-serif;
+  color: #FDFCFB;
+  text-align: center;
+}
+
+form {
+  margin: 100px auto;
+}
+
+.header {
+  font-size: 35px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.description {
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 1.3em;
+  margin: -2px 0 45px;
+}
+
+#input-group-addon{
+  height:44px; 
+  background: #E86C8D; 
+  border:none; 
+  color:#FFF;
+  border-radius: 0px;
+}
+
+#input {
+  border-radius: 0px;
+  height: 44px;
+  background: #FDFCFB;
+  font-family: inherit;
+  color: #737373;
+  letter-spacing: 1px;
+  text-indent: 5%;
+}
+
+#submit {
+  width: 25%;
+  height: 44px;
+  background: #E86C8D;
+  font-family: inherit;
+  font-weight: bold;
+  color: inherit;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background .3s ease-in-out;
+  margin: auto;
+  border: none;
+}
+  
+#submit:hover {
+  background: #d45d7d;
+}
+  
+input:focus {
+  outline: none;
+  outline: 2px solid #E86C8D;
+  box-shadow: 0 0 2px #E86C8D;
+}
+
+#input-group-addon .fa-user{
+  font-size:32px;
+}
+
+#input-group-addon .fa-home{
+  font-size:30px;
+}
+
+@media (min-width:768px ) and (max-width:1200px){
+  form{
+    width: 357px;
+  }
+
+  #register .header{
+    font-size: 30px;
+  }
+
+  #register .description{
+    font-size: 12px;
+  }
+
+  #register #input{
+    height: 40px;
+    font-size: 12px;
+  }
+
+  #register #input-group-addon{
+    height: 40px;
+  }
+
+  #register #input-group-addon .fa{
+    font-size: 28px;
+  }
+
+  #register #submit{
+    font-size: 12px;
+    width: 75px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 768px){
+  form{
+    max-width: 357px;
+  }
+
+  #register .header{
+    font-size: 25px;
+  }
+
+  #register .description{
+    font-size: 10px;
+  }
+  
+  #register #input-group-addon{
+    height: 35px;
+  }
+
+  #register #input-group-addon .fa {
+    font-size: 15px;
+  }
+
+  #register #input{
+    height: 35px;
+    font-size: 10px;
+  }
+
+  #register #submit{
+    font-size: 10px;
+    width: 60px;
+    height: 35px;
+  }
+}
+/* het form register */
+
+
+/*========================================
+=        FREELANCER DETAIL PAGE          =
+========================================*/
+/*Freelancer Information*/
+#Frl-info {
+  background-image: url('../image/pagetitle3.jpg');
+  margin-top: 75px;
+  color: #fff;
+  font-size: 15px;
+}
+#Frl-info .container {
+  padding: 30px 0px;
+}
+#Frl-info .container a {
+  border-radius: 0px;
+}
+
+/*Freelancer Skill + Info*/
+#Frl-skill {
+  padding-bottom: 10px;
+  padding-top: 10px;
+  background: #333333;
+  color: #CCCCCC;
+}
+#Frl-skill h3 {
+  text-transform: uppercase;
+  padding-bottom: 5px;
+  font-weight: bold;
+  line-height: 18px;
+}
+/*Freelancer Skill*/
+#Frl-skill .progress {
+  border-radius: 0px;
+  background: #4C4C4C;
+  animation-name: progress;
+  -webkit-animation-name: progress;
+}
+#Frl-skill .progress #photo-skill
+,#Frl-skill .progress #film-skill
+,#Frl-skill .progress #pts-skill
+,#Frl-skill .progress #video-skill {
+  height: 20px;
+  min-width: 0%;
+  max-width: 100%;
+  text-align: center;
+  background: #667F6D;
+  -webkit-animation: progress 2s 1 forwards;
+  -moz-animation: progress 2s 1 forwards;
+  -ms-animation: progress 2s 1 forwards;
+  animation: progress 2s 1 forwards;
+}
+@-webkit-keyframes progress { 
+  from {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+@keyframes progress { 
+  from {
+    -webkit-transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+/*Freelancer Other Info*/
+#Frl-skill .nav-tabs a {
+  border-radius: 0px;
+}
+
+
+/*Feelancer Filter Image*/
+/* ---- isotope ---- */
+/* ui group */
+#Frl-filter .isotope-filter {
+  background: #ffffff;
+  text-align: center;
+  margin-top: 10px;
+  z-index: 7999;
+  font-size: 18px;
+  padding: 17px 0px;
+  margin: 0px;
+  width: 100%;
+}
+/* img-grid */
+#Frl-filter .row {
+  overflow: hidden; 
+  margin: 0;
+}
+#Frl-filter .img-grid {
+  width: 20%;
+  height: 300px;
+  margin: 0px;
+  padding:0px;
+  float: left;
+}
+
+
+/*Freelancer Order Show*/
+
+#Frl-order *, #Frl-order *:before, #Frl-order *:after {
+  box-sizing: border-box;
+}
+#Frl-order {
+  background: rgba(19,35,47,.9);
+}
+#Frl-order .form {
+  padding: 40px;
+  max-width:600px;
+  margin:40px auto;
+  border-radius:4px;
+  box-shadow:0 4px 10px 4px rgba(19,35,47,.3);
+}
+#Frl-order h1 {
+  text-align: center;
+  text-transform: uppercase;
+  color:#FFF;
+  margin:0 0 40px;
+}
+#Frl-order .field-wrap {
+  position:relative;
+  margin-bottom:40px;
+}
+#Frl-order .top-row {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  > div {
+    float:left;
+    width:48%;
+    margin-right:4%;
+    &:last-child { 
+      margin:0;
+    }
+  }
+}
+#Frl-order label {
+  position:absolute;
+  transform:translateY(6px);
+  left:13px;
+  color: rgba(255,255,255,.5);
+  transition:all 0.25s ease;
+  -webkit-backface-visibility: hidden;
+  pointer-events: none;
+  font-size:20px;
+  font-weight: 100;
+  .req {
+    margin:2px;
+    color:;
+  }
+}
+#Frl-order label.active {
+  transform:translateY(-25px);
+  left:2px;
+  font-size:14px;
+  .req {
+    opacity:0;
+  }
+}
+#Frl-order label.highlight {
+  color: white;
+}
+#Frl-order input {
+  font-size:22px;
+  display:block;
+  width:100%;
+  height:100%;
+  padding:5px 10px;
+  background:none;
+  background-image:none;
+  border:1px solid #a0b3b0;
+  color: #FFF;
+  border-radius:0;
+  transition:border-color .25s ease, box-shadow .25s ease;
+}
+#Frl-order textarea {
+  border:2px solid #1ab188;
+  resize: vertical;
+}
+#Frl-order input:focus, #Frl-order textarea:focus {
+  outline:0;
+  border-color: #1ab188;
+}
+#Frl-order select {
+  background: rgba(19,35,47,.9);
+  color: rgba(255,255,255,.5);
+  left:2px;
+  font-size: 20px;
+  font-weight: 100;
+  width: 100%;
+  height: 100%;
+  padding: 5px 10px;
+}
+#Frl-order .button {
+  border:0;
+  outline:none;
+  border-radius:0;
+  padding:15px 0;
+  font-size:2rem;
+  font-weight:300;
+  text-transform:uppercase;
+  letter-spacing:.1em;
+  color:#FFF;
+  transition:all.5s ease;
+  -webkit-appearance: none;
+  &:hover, &:focus {
+    background:darken(26,177,136,5%);
+  }
+}
+#Frl-order .button-block {
+  display:block;
+  width:100%;
+}
+
+
+/*========================================
+=       FREELANCER CATEGORY PAGE         =
+========================================*/
+#Frl-category {
+  margin-top: 75px;
+  background-color: #fff;
+}
+/*
+* Uses Font Awesome and Bootstrap 3
+* Both aren't required for this demo
+*/
+#site-wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  
+  height: 5000px; /* Temp: Simulates a tall page. */
+}
+#site-canvas {
+  width: 100%;
+  height: 100%;
+  position: relative;
+
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  
+  -webkit-transition: 300ms ease all;
+  transition: 300ms ease all;
+ 
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.show-nav #site-canvas {
+  -webkit-transform: translateX(250px);
+  transform: translateX(250px);
+  
+  -webkit-transform: translate3d(250px, 0, 0);
+  transform: translate3d(250px, 0, 0);
+}
+#site-menu {
+  width: 250px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: -250px;
+  background: #5E5A59;
+  color: #F2CA80;
+}
+#site-menu .toggle-nav {
+  text-align: right;
+}
+#site-menu i {
+  padding: 5px 10px;
+  color: white;
+  width: 100px;
+  background-color: black;
+  font-size: 35px;
+  text-align: left;
+  border-radius: 25px 0px 0px 25px;
+}
+#big-sexy {
+  top: 0;
+  display: left;
+  font-size: 15px;
+  border-radius: 0px;
+}
+#Frl-category .grid {
+  margin: 10px;
+}
+#Frl-category .img-grid {
+  background: black;
+  padding: 0px;
+  width: 200px;
+  margin: 10px;
+}
+#Frl-category .img-grid a{
+  text-decoration: none;
+}
+#Frl-category .img-grid img {
+}
