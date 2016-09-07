@@ -186,6 +186,12 @@ footer .nav>li>a:hover {
   color:#fff;
 }
 
+footer h3 {
+  margin-top: 0px;
+  margin-bottom: 20px;
+  color: white;
+}
+
 /*========================================
 =            REGISTER PAGE               =
 ========================================*/
