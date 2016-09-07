@@ -72,7 +72,7 @@
     <cfoutput>#body#</cfoutput>
 
     <footer id="footer">
-      <div class="container">
+      <!--- <div class="container">
         <div class="row">
           <div class="col-xs-6 col-sm-6 col-md-3 column">
             <h4>Information</h4>
@@ -113,7 +113,7 @@
         </div>
         <!--/row-->
         <p class="text-right">TakePhoto.Rasia ©2016</p>
-      </div>
+      </div> --->
     </footer>
 
     <div class="scroll-up">
