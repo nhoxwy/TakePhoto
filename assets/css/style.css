@@ -384,7 +384,7 @@ input:focus {
   min-width: 0%;
   max-width: 100%;
   text-align: center;
-  background: #667F6D;
+  background: #f44d3c;
   -webkit-animation: progress 2s 1 forwards;
   -moz-animation: progress 2s 1 forwards;
   -ms-animation: progress 2s 1 forwards;
@@ -436,7 +436,6 @@ input:focus {
   margin: 0;
 }
 #Frl-filter .img-grid {
-  width: 20%;
   height: 300px;
   margin: 0px;
   padding:0px;
@@ -453,17 +452,20 @@ input:focus {
   background: rgba(19,35,47,.9);
 }
 #Frl-order .form {
-  padding: 40px;
+  padding: 20px;
   max-width:600px;
-  margin:auto;
+  margin: auto;
   border-radius:4px;
   box-shadow:0 4px 10px 4px rgba(19,35,47,.3);
 }
 #Frl-order h1 {
   text-align: center;
   text-transform: uppercase;
-  color:#FFF;
+  color: #f44d3c;
   margin:0 0 40px;
+}
+#Frl-order form {
+  margin: auto;
 }
 #Frl-order .field-wrap {
   position:relative;
