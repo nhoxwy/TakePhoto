@@ -51,8 +51,7 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <img src="/assets/image/logo.png">
-            <!--- <a href="/index.cfm/main" class="navbar-brand text-danger" href="#">TakePhoto</a> --->
+            <a href="/index.cfm/main" class="navbar-brand text-danger" href="#">TakePhoto</a>
           </div>
           <div class="navbar-collapse collapse" id="navbar-collapsible">
             <ul class="nav navbar-nav navbar-left">
@@ -81,7 +80,7 @@
           <a href=""></a>
           <!--- <i class="fa fa-camera fa-2x" style="color: white;"></i>
           <h3>TAKEPHOTO</h3> --->
-          <img src="/assets/image/logo2.png" style="width:180px; height:108px;">
+          <img src="/assets/image/logo_main.png" style="width: 126px; height:72px;">
           <p>© 2016 TakePhoto Team. All rights reserved.</p>
         </div>
         <!--/row-->
