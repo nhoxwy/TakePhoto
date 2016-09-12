@@ -10,7 +10,7 @@ html,body {
 <!--- Section 1 / Slogan --->
 <section class="container-fluid" id="section1">
   <div class="v-center">
-    <h1 class="text-center">Take <span class="fa fa-camera"></span> Photo</h1>
+    <h1 class="text-center"><img src="/assets/image/logo2.png"></h1>
     <h2 class="text-center lato animate slideInDown">Kết nối cuộc sống <b><i style="color: #FFB210;">tươi đẹp</i></b></h2>
     <p class="text-center">
       <br>
