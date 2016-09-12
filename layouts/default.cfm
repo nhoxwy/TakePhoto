@@ -33,6 +33,9 @@
 
     <!--- DateTimePicker --->
     <link href="/assets/css/bootstrap-datetimepicker.min.css" rel="stylesheet" media="screen">
+
+    <!--- Favicon --->
+    <link rel="shortcut icon" href="/assets/image/favicon.png">
   </head>
 
 
@@ -48,7 +51,8 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a href="/index.cfm/main" class="navbar-brand text-danger" href="#">TakePhoto</a>
+            <img src="/assets/image/logo.png">
+            <!--- <a href="/index.cfm/main" class="navbar-brand text-danger" href="#">TakePhoto</a> --->
           </div>
           <div class="navbar-collapse collapse" id="navbar-collapsible">
             <ul class="nav navbar-nav navbar-left">
@@ -62,7 +66,7 @@
               <!--- <li>&nbsp;</li> --->
             </ul>
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-heart-o fa-lg"></i></a></li>
+              <li><a href="/index.cfm/user/register"><i class="fa fa-heart-o fa-lg"></i></a></li>
             </ul>
           </div>
         </div>
@@ -75,8 +79,9 @@
       <div class="container">
         <div class="row text-center">
           <a href=""></a>
-          <i class="fa fa-camera fa-2x" style="color: white;"></i>
-          <h3>TAKEPHOTO</h3>
+          <!--- <i class="fa fa-camera fa-2x" style="color: white;"></i>
+          <h3>TAKEPHOTO</h3> --->
+          <img src="/assets/image/logo2.png" style="width:180px; height:108px;">
           <p>© 2016 TakePhoto Team. All rights reserved.</p>
         </div>
         <!--/row-->
