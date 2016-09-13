@@ -51,7 +51,7 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a href="/index.cfm/main" class="navbar-brand text-danger" href="#">TakePhoto</a>
+            <a href="/index.cfm/main" class="navbar-brand text-danger" href="#"><b style="color: #00ff48">Take</b><b style="color: #f44d3c">Photo</b></a>
           </div>
           <div class="navbar-collapse collapse" id="navbar-collapsible">
             <ul class="nav navbar-nav navbar-left">
