@@ -1,7 +1,7 @@
 ﻿<style type="text/css">
 html,body {
   height:100%;
-    background:center no-repeat fixed url('https://hd.unsplash.com/photo-1422050478545-9f9383263965');
+    background:center no-repeat fixed url('/assets/image/background1.jpg');
     background-size: cover;
     color:#444;
     font-family: 'Lato', sans-serif;
@@ -10,7 +10,8 @@ html,body {
 <!--- Section 1 / Slogan --->
 <section class="container-fluid" id="section1">
   <div class="v-center">
-    <img src="/assets/image/logo_main.png" class="img-responsive" style="margin: auto">
+    <h1 class="text-center">TakePhoto</h1>
+    <!--- <img src="/assets/image/logo_main.png" class="img-responsive" style="margin: auto"> --->
     <h2 class="text-center lato animate slideInDown">Kết nối cuộc sống <b><i style="color: #FFB210;">tươi đẹp</i></b></h2>
     <p class="text-center">
       <br>
@@ -366,7 +367,7 @@ html,body {
       <h3 class="text-center">Hãy đăng ký ngay để tận hưởng lợi ích TakePhoto đem lại</h3>
     </li>
     <li class="col-md-3 col-md-offset-0 col-xs-10 col-xs-offset-1 text-center">
-      <a href="" class="center-block btn btn-default btn-lg btn-huge lato animate slideInRight">Đăng ký</a>
+      <a href="/index.cfm/user/register" class="center-block btn btn-default btn-lg btn-huge lato animate slideInRight">Đăng ký</a>
     </li>
   </ul>
 </section>
