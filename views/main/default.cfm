@@ -39,10 +39,10 @@ html,body {
           <div class="col-sm-12 text-center">
             <div class="panel panel-default slideInLeft animate">
               <div class="panel-heading">
-                <h3>Robust</h3>
+                <h3>Thỏa mãn</h3>
               </div>
               <div class="panel-body">
-                <p>There is other content and snippets of details or features that can be placed here..</p>
+                <p>Thõa mãn nhu cầu chụp hình của khách hàng và phát huy khả năng nhiếp ảnh của Freelancer/p>
                 <hr>GO
                 <hr>
               </div>
@@ -55,10 +55,10 @@ html,body {
           <div class="col-sm-12 text-center">
             <div class="panel panel-default slideInUp animate">
               <div class="panel-heading">
-                <h3>Simple</h3>
+                <h3>Tiết kiệm</h3>
               </div>
               <div class="panel-body">
-                <p>There is other content and snippets of details or features that can be placed here..</p>
+                <p>Tiết kiệm chi phí PR cho Freelancer, chi phí thuê thợ chụp cho khách hàng.../p>
                 <hr>GO
                 <hr>
               </div>
@@ -71,9 +71,9 @@ html,body {
           <div class="col-sm-12 text-center">
             <div class="panel panel-default slideInRight animate">
               <div class="panel-heading">
-                <h3>Clean</h3></div>
+                <h3>Kết nối</h3></div>
               <div class="panel-body">
-                <p>There is other content and snippets of details or features that can be placed here..</p>
+                <p>Giúp các khách hàng và Freelancer từ mọi nơi trên đất nước Việt Nam có thể kết nối, giao lưu với nhau.</p>
                 <hr>GO
                 <hr>
               </div>
@@ -363,10 +363,10 @@ html,body {
 <section class="container-fluid" id="section7">
   <ul class="row list-unstyled">
     <li class="col-md-6 col-md-offset-1 col-xs-10 col-xs-offset-1">
-      <h3 class="text-center">This will scale down proportionately.</h3>
+      <h3 class="text-center">Hãy đăng ký ngay để tận hưởng lợi ích TakePhoto đem lại</h3>
     </li>
     <li class="col-md-3 col-md-offset-0 col-xs-10 col-xs-offset-1 text-center">
-      <a href="" class="center-block btn btn-default btn-lg btn-huge lato animate slideInRight">Responsive Design</a>
+      <a href="" class="center-block btn btn-default btn-lg btn-huge lato animate slideInRight">Đăng ký</a>
     </li>
   </ul>
 </section>
