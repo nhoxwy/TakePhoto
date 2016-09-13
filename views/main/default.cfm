@@ -1,7 +1,7 @@
 ﻿<style type="text/css">
 html,body {
   height:100%;
-    background:center no-repeat fixed url('/assets/image/background1.jpg');
+    background:center repeat fixed url('/assets/image/background1.jpg');
     background-size: cover;
     color:#444;
     font-family: 'Lato', sans-serif;
@@ -9,7 +9,7 @@ html,body {
 </style>
 <!--- Section 1 / Slogan --->
 <section class="container-fluid" id="section1">
-  <div class="v-center">
+  <div class="v-center_2">
     <!--- <h1 class="text-center">TakePhoto</h1> --->
     <img src="/assets/image/logo_main.png" class="img-responsive" style="margin: auto">
     <h2 class="text-center lato animate slideInDown">Kết nối cuộc sống <b><i style="color: #FFB210;">tươi đẹp</i></b></h2>
