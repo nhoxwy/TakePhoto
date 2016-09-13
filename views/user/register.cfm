@@ -1,7 +1,8 @@
 ﻿<div id="register">
   <div class="container">
     <div class="col-md-7 col-xs-12">
-     <h2>Take Photo giúp bạn tìm kiếm freelancer và làm đẹp cuộc sống của mình.</h2>
+     <h4 style="color: #7F4B46;"><b>Take Photo giúp bạn tìm kiếm Freelancer và làm đẹp cuộc sống của mình.</b></h4>
+     <img src="/assets/image/map_login.jpg" class="img-responsive" style="width: 90%; height:90%; ">
    </div>
    <div class="col-md-5 col-xs-12">
      <div id="login">
@@ -15,7 +16,7 @@
             <input type="password" class="form-control" id="password-login">
          </div>
         <div class="col-xs-12">
-          <div class="button btn btn-success" style="margin-right: 15px;">Đăng nhập</div>
+          <div class="button btn btn-success col-xs-12 col-sm-6" style="margin-right: 15px;">Đăng nhập</div>
           <a href="">Quên mật khẩu?</a>
         </div>
        </form>
