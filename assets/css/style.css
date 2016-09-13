@@ -154,7 +154,7 @@ section {
   
 
 #section1, #section4 {
-  /*background-color: rgba(0,0,0,0.7);*/
+  background-color: rgba(0,0,0,0.1);
   color:#fff;
   font-family: 'Bitter', serif;
 }
