@@ -35,7 +35,7 @@
     <link href="/assets/css/bootstrap-datetimepicker.min.css" rel="stylesheet" media="screen">
 
     <!--- Favicon --->
-    <link rel="shortcut icon" href="/assets/image/favicon.png">
+    <link rel="shortcut icon" href="/assets/ico/favicon.png">
   </head>
 
 
@@ -80,7 +80,7 @@
           <a href=""></a>
           <!--- <i class="fa fa-camera fa-2x" style="color: white;"></i>
           <h3>TAKEPHOTO</h3> --->
-          <img src="/assets/image/logo_main2.png" style="width: 126px; height:72px;">
+          <img src="/assets/ico/logo_main.png" style="width: 126px; height:72px;">
           <p>© 2016 TakePhoto Team. All rights reserved.</p>
         </div>
         <!--/row-->

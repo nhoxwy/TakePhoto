@@ -2,7 +2,7 @@
 <section class="container-fluid" id="section1">
   <div class="v-center_2">
     <!--- <h1 class="text-center">TakePhoto</h1> --->
-    <img src="/assets/image/logo_main2.png" class="img-responsive" style="margin: auto">
+    <img src="/assets/ico/logo_main.png" class="img-responsive" style="margin: auto">
     <h2 class="text-center animate slideInDown">Kết nối cuộc sống tươi đẹp</h2>
     <p class="text-center">
       <br>
