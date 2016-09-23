@@ -14,11 +14,11 @@
     <link rel="stylesheet" href="/assets/css/font-awesome.min.css">
     
     <!--- font --->
-    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Andika&subset=latin,vietnamese' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Bitter:400' rel='stylesheet' type='text/css'>
-
+<!--     <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Andika&subset=latin,vietnamese' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Bitter:400' rel='stylesheet' type='text/css'> -->
+    <link href="https://fonts.googleapis.com/css?family=Arimo:400" rel="stylesheet">
     
     <!--- animate --->
     <link rel="stylesheet" href="/assets/css/animate.css">
@@ -51,17 +51,17 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a href="/index.cfm/main" class="navbar-brand text-danger" href="#"><b style="color: #00ff48">Take</b><b style="color: #f44d3c">Photo</b></a>
+            <a href="/index.cfm/main" class="navbar-brand text-danger" href="#"><b style="color: white">Take</b><b style="color: #e74c3c">Photo</b></a>
           </div>
           <div class="navbar-collapse collapse" id="navbar-collapsible">
             <ul class="nav navbar-nav navbar-left">
-              <li><a href="#section1">Slogan</a></li>
-              <li><a href="#section2">Giúp bạn?</a></li>
-              <li><a href="#section3">Cho bạn?</a></li>
-              <li><a href="#section6">Bạn nói?</a></li>
+              <!--- <li><a href="#section1">Slogan</a></li> --->
+              <li><a href="#section2">Giúp bạn</a></li>
+              <li><a href="#section3">Cho bạn</a></li>
+              <li><a href="#section6">Bạn nói</a></li>
               <li><a href="#section4">Thành viên</a></li>
               <li><a href="#section5">Góp ý</a></li>
-              <li><a href="#section7">Liên hệ</a></li>
+              <li><a href="#section8">Liên hệ</a></li>
               <!--- <li>&nbsp;</li> --->
             </ul>
             <ul class="nav navbar-nav navbar-right">
@@ -80,7 +80,7 @@
           <a href=""></a>
           <!--- <i class="fa fa-camera fa-2x" style="color: white;"></i>
           <h3>TAKEPHOTO</h3> --->
-          <img src="/assets/image/logo_main.png" style="width: 126px; height:72px;">
+          <img src="/assets/image/logo_main2.png" style="width: 126px; height:72px;">
           <p>© 2016 TakePhoto Team. All rights reserved.</p>
         </div>
         <!--/row-->
@@ -127,6 +127,11 @@
     <script src="/assets/js/isotope.pkgd.min.js"></script>
     <script src="/assets/js/moment-with-locales.min.js"></script>
     <script src="/assets/js/bootstrap-datetimepicker.js"></script>
+    <script src="/assets/js/wow.js"></script>
+    <script src="/assets/js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
 
     <!--- DateTimePicker --->
     <script type="text/javascript">

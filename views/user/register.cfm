@@ -1,7 +1,7 @@
 ﻿<div id="register">
   <div class="container">
     <div class="col-md-7 col-xs-12">
-     <h4 style="color: #7F4B46;"><b>Take Photo giúp bạn tìm kiếm Freelancer và làm đẹp cuộc sống của mình.</b></h4>
+     <h4><b>Take Photo giúp bạn tìm kiếm Freelancer và làm đẹp cuộc sống của mình.</b></h4>
      <img src="/assets/image/map_login.png" class="img-responsive" style="width: 90%; height:90%; ">
    </div>
    <div class="col-md-5 col-xs-12">
