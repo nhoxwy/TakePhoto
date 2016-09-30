@@ -1,0 +1,18 @@
+#edit-customer {
+	margin: 65px 0 0 0;
+	color: black;
+	height: 100%;
+	width: 100%;
+}
+.btn-orange{
+  background-color: #f44d3c;
+  color: #fff;
+}
+
+.glyphicon{
+  margin-right: 5px;
+}
+
+#divsuccess{
+  display: none;
+}
