@@ -469,5 +469,7 @@
         <a href="https://plus.google.com/u/0/115612784843442016810" target="_blank"><i class="fa fa-google-plus"></i></a>
       </div>
     </div>
+    <div class="col-lg-12" id="bubble">TakePhoto.Com</div>
   </div>
 </section>
+<script type="text/javascript" src="../assets/js/jquery-bubble-text.js"></script>

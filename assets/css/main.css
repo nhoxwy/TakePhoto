@@ -207,13 +207,13 @@ section {
 #section8 #we-love h1, #section8 #we-love .fa  {
   font-size: 70px;
   font-weight: 700;
-  padding: 3%;
+  
 }
 #section8 #fa-contact .fa {
-  font-size: 70px;
+  font-size: 100px;
   font-weight: 100;
-  padding: 4%;
-  color: #50230B;
+  padding: 3%;
+  color: #e74c3c;
 }
 #section8 .diagonal {
   content: '';
@@ -226,3 +226,10 @@ section {
   -webkit-backface-visibility: hidden;
   -webkit-transform: rotate(-3deg);
 }
+#bubble {
+        font-size: 50px;
+        font-family: Comic Sans MS, Verdana, monospace;
+        color: #e74c3c;
+        font-weight: bold;
+        padding:3%;
+    }

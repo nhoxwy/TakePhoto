@@ -208,3 +208,33 @@ $(document).scroll(function(){
        $('.navbar-inverse').css({"background":"rgba(28, 28, 28, 0.3)"});
     }
 });
+
+//bubble
+$(document).ready(function() {
+    var $element = $('#bubble');
+    var phrases = [
+        'KẾT NỐI MỌI NGƯỜI',
+        'MIỄN PHÍ CHO NGƯỜI DÙNG',
+        'NHANH CHÓNG VÀ TIỆN ÍCH :)',
+        'Lần đầu xuất hiện tại Việt Nam...',
+        'Sự lựa chọn tin cậy,',
+        'CẢM ƠN ĐÃ SỬ DỤNG',
+    ];
+    var index = -1;
+
+    (function loopAnimation() {
+        index = (index + 1) % phrases.length;
+
+        bubbleText({
+            element: $element,
+            newText: phrases[index],
+            letterSpeed: 100,
+            callback: function() {
+                setTimeout(loopAnimation, 1000)
+            },
+            proportional: true,
+        });
+
+    })();
+
+});
