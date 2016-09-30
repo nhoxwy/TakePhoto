@@ -67,7 +67,7 @@
             <ul class="nav navbar-nav navbar-left">
               <!--- <li><a href="#section1">Slogan</a></li> --->
               <li><a href="#section2">Giúp bạn</a></li>
-              <li><a href="#section3">Cho bạn</a></li>
+              <li><a href="#section3">Bạn muốn</a></li>
               <li><a href="#section6">Bạn nói</a></li>
               <li><a href="#section4">Thành viên</a></li>
               <li><a href="#section5">Liên hệ</a></li>
