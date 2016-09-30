@@ -1,4 +1,6 @@
-﻿<!--- Section 1 / Slogan --->
+﻿<link rel="stylesheet" type="text/css" href="/assets/css/main.css">
+
+<!--- Section 1 / Slogan --->
 <section class="container-fluid" id="section1">
   <div class="v-center_2">
     <!--- <h1 class="text-center">TakePhoto</h1> --->

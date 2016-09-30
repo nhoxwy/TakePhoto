@@ -1,6 +1,7 @@
-﻿<style type="text/css">
-	body{
-		background-color: black;
+﻿<link rel="stylesheet" type="text/css" href="/assets/css/freelancer-detail.css">
+<style type="text/css">
+	body {
+		background: black;
 	}
 </style>
 
