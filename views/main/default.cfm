@@ -1,4 +1,5 @@
 ﻿<link rel="stylesheet" type="text/css" href="/assets/css/main.css">
+<link rel="stylesheet" type="text/css" href="/assets/css/normalize.css">
 
 <!--- Section 1 / Slogan --->
 <section class="container-fluid" id="section1">
@@ -23,70 +24,143 @@
 
 <!--- Section 2 / Giúp bạn? --->
 <section class="container-fluid" id="section2">
-  <div class="container">
-    <h1 class="text-center"><b class="text-danger">Take Photo</b> giúp bạn...</h1>
-    <br>
-    <br>
-    <div class="row">
-      <div class="col-sm-4">
-        <div class="row">
-          <div class="col-sm-12 text-center">
-            <div class="panel panel-default slideInLeft animate">
-              <div class="panel-heading">
-                <h3>Thỏa mãn</h3>
-              </div>
-              <div class="panel-body">
-                <p>Thõa mãn nhu cầu chụp hình của khách hàng và phát huy khả năng nhiếp ảnh của Freelancer/p>
-                <hr>GO
-                <hr>
-              </div>
+<div class="container">
+  <h1 class="text-center"><b class="text-danger">Take Photo</b> giúp bạn...</h1>
+  <br>
+  <br>
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="row">
+        <div class="col-sm-12 text-center">
+          <div class="panel panel-default slideInLeft animate">
+            <div class="panel-heading">
+              <h3>Thỏa mãn</h3>
             </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-4 text-center">
-        <div class="row">
-          <div class="col-sm-12 text-center">
-            <div class="panel panel-default slideInUp animate">
-              <div class="panel-heading">
-                <h3>Tiết kiệm</h3>
-              </div>
-              <div class="panel-body">
-                <p>Tiết kiệm chi phí PR cho Freelancer, chi phí thuê thợ chụp cho khách hàng.../p>
-                <hr>GO
-                <hr>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-4 text-center">
-        <div class="row">
-          <div class="col-sm-12 text-center">
-            <div class="panel panel-default slideInRight animate">
-              <div class="panel-heading">
-                <h3>Kết nối</h3></div>
-              <div class="panel-body">
-                <p>Giúp các khách hàng và Freelancer từ mọi nơi trên đất nước Việt Nam có thể kết nối, giao lưu với nhau.</p>
-                <hr>GO
-                <hr>
-              </div>
+            <div class="panel-body">
+              <p>Thõa mãn nhu cầu chụp hình của khách hàng và phát huy khả năng nhiếp ảnh của Freelancer/p>
+              <hr>GO
+              <hr>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!--/row-->
-    <div class="row">
-        <br>
+    <div class="col-sm-4 text-center">
+      <div class="row">
+        <div class="col-sm-12 text-center">
+          <div class="panel panel-default slideInUp animate">
+            <div class="panel-heading">
+              <h3>Tiết kiệm</h3>
+            </div>
+            <div class="panel-body">
+              <p>Tiết kiệm chi phí PR cho Freelancer, chi phí thuê thợ chụp cho khách hàng.../p>
+              <hr>GO
+              <hr>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4 text-center">
+      <div class="row">
+        <div class="col-sm-12 text-center">
+          <div class="panel panel-default slideInRight animate">
+            <div class="panel-heading">
+              <h3>Kết nối</h3></div>
+            <div class="panel-body">
+              <p>Giúp các khách hàng và Freelancer từ mọi nơi trên đất nước Việt Nam có thể kết nối, giao lưu với nhau.</p>
+              <hr>GO
+              <hr>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
+  /row
+  <div class="row">
+      <br>
+  </div>
+</div>
 <!--/container-->
 </section>
 
 <!--- Section 3 / Cho bạn? --->
 <section class="container-fluid" id="section3">
-  <div class="container v-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6 col-sm-offset-6 col-xs-12">
+        <h1>Bạn muốn...</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-5 col-sm-offset-7 col-xs-12">
+        <div class="cardWrapper">
+          <div class="card">
+            <div class="cardFace front card1">
+              <h3><i class="fa fa-search"></i> Tìm</h3>
+              <div class="moreInfo">
+                <i class="fa fa-camera fa-3x"></i>
+                <h4>Photographer</h4>
+              </div>
+            </div>
+            <div class="cardFace back card1"><img class="img-responsive" src="https://hd.unsplash.com/photo-1457446783150-34ee89337533"></div>
+          </div>
+        </div>
+        
+        <div class="cardWrapper">
+          <div class="card">
+            <div class="cardFace front card2">
+              <h3><i class="fa fa-search"></i> Tìm</h3>
+              <div class="moreInfo">
+                <i class="fa fa-female fa-3x"></i>
+                <h4>Người mẫu</h4>
+              </div>
+            </div>
+            <div class="cardFace back card2"><img class="img-responsive" src="/assets/image/team04.jpg"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-sm-6 col-sm-offset-7 col-xs-12">
+        <div class="cardWrapper">
+          <div class="card">
+            <div class="cardFace front card3">
+              <h3><i class="fa fa-share-alt"></i> Chia sẻ</h3>
+              <div class="moreInfo">
+                <i class="fa fa-briefcase fa-3x"></i>
+                <h4>Công việc</h4>
+              </div>
+            </div>
+            <div class="cardFace back card3"><img  class="img-responsive" src="http://www.capitaeducation.co.uk/File.ashx?path=ROOT/Images/shutterstock_123873739-LARGE.jpg"></div>
+          </div>
+        </div>
+        
+        <div class="cardWrapper">
+          <div class="card">
+            <div class="cardFace front card4">
+              <h3><i class="fa fa-share-alt"></i> Chia sẻ</h3>
+              <div class="moreInfo">
+                <i class="fa fa-thumbs-o-up fa-3x"></i>
+                <h4>Tác phẩm</h4>
+              </div>
+            </div>
+            <div class="cardFace back card4"><img class="img-responsive" src="https://hd.unsplash.com/photo-1454123253751-1fe2b9e0c10d"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <!--- <div class="cardWrapper">
+    <div class="card">
+      <div class="cardFace front"><h3>front</h3></div>
+      <div class="cardFace back"><div class="moreInfo">This is just an example of how you can customize the content of any card face.</div></div>
+    </div>
+  </div> --->
+  </div>
+  <!-- <div class="container v-center">
     <div class="row">
       <div class="col-sm-2 col-sm-offset-2 col-xs-6">
         <div class="text-center">
@@ -189,8 +263,8 @@
         </div>
       </div>
     </div>
-    <!--/row-->
-  </div>
+    /row
+  </div> -->
 </section>
 
 <!--- Section 6 / Bạn nói? --->
@@ -472,4 +546,7 @@
     <div class="col-lg-12" id="bubble">TakePhoto.Com</div>
   </div>
 </section>
-<script type="text/javascript" src="../assets/js/jquery-bubble-text.js"></script>
+
+
+<script type="text/javascript" src="/assets/js/jquery-bubble-text.js"></script>
+<script type="text/javascript" src="/assets/js/TweenMax.min.js"></script>

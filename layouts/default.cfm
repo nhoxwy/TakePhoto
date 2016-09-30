@@ -132,6 +132,7 @@
     </div>
 
     <script src="/assets/js/jquery-1.9.1.min.js"></script>
+    <script src="/assets/js/jquery.min.js"></script>
     <script src="/assets/js/bootstrap.min.js"></script>
     <script src="/assets/js/custom.js"></script>
     <script src="/assets/js/isotope.pkgd.min.js"></script>
