@@ -1,0 +1,150 @@
+.edit{
+	margin-top: 65px;
+}
+.tabs-left{
+	  border-right: 1px solid #ddd;
+
+}
+.nav-tabs>li>a{
+	border-radius: 0px;
+	margin-right: 0;
+		display:block;
+		color:#ccc;
+}
+.tabs-left>li{
+		float: none;
+		margin-bottom: 2px;
+}
+.tabs-left>li {
+		margin-right: -1px;
+}
+.tabs-left>li.active>a,
+.tabs-left>li.active>a:hover,
+.tabs-left>li.active>a:focus {
+		border-bottom-color: #ddd;
+		border-right-color: transparent;
+		font-weight: bold;
+		color:#2c3e50;
+}
+.nav>li>a:focus,
+.nav>li>a:hover{
+	text-decoration: none;
+	background-color: #fff;
+	color: #e74c3c;
+}
+.about>a{
+	text-decoration: none;
+	color: #e74c3c;
+}
+.about>a:hover{
+	color: #2c3e50;
+}
+.glyphicon{  
+	margin-bottom: 10px;
+	margin-right: 10px;
+	margin-left: 10px;
+	color: #e74c3c;
+}
+small {
+	display: block;
+	line-height: 1.428571429;
+	color: #999;
+}
+#divinfo{
+	margin-top: 0px;
+	padding-right: 15px;
+	padding-left: 15px;
+	display: none;
+}
+.show>a{
+	text-decoration: none;
+	color:#080808;
+}
+.show>a:hover{
+	color:#ccc;
+}
+.show>a:focus{
+	color:#e74c3c;
+}
+.progress .progress-bar{
+	background-color: #2c3e50;
+}
+.skill h5{
+	color: #e74c3c;
+}
+[contenteditable="true"]:focus{
+	padding: 5px 5px 5px 5px;
+	outline: none;
+	position:relative;
+	text-decoration: underline;
+}
+.album>a{
+	text-decoration: none;
+	color: #e74c3c;
+}
+.album>a:hover{
+	color: #2c3e50;
+}
+.caption a h4{
+	text-align: center;
+}
+.caption a{
+	color: #080808;
+}
+.caption a:hover{
+	color: #ccc;
+	text-decoration: none;
+}
+.thumbnail{
+	height: 300px;
+}
+.thumbnail .cycler{
+	position: relative;
+}
+.thumbnail .cycler>img{
+	position: absolute;
+	z-index: 1;
+	height: 250px;
+}
+.thumbnail .cycler>img.active{
+	z-index: 3;
+}
+.image-preview
+{
+	width: 200px;
+	height: 200px;
+	position: relative;
+	overflow: hidden;
+	background-color: #ffffff;
+	color: #ecf0f1;
+	border: dashed 1px #ccc;
+	margin: 5px;
+}
+.image-preview input {
+    line-height: 100px;
+    font-size: 50px;
+    position: absolute;
+    opacity: 0;
+    z-index: 10;
+}
+.image-preview label {
+    position: absolute;
+    z-index: 5;
+    opacity: 0.8;
+    cursor: pointer;
+    background-color: #e74c3c;
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    line-height: 50px;
+    text-transform: uppercase;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    text-align: center;
+  }
+.action{
+	margin-bottom: 10px;
+}

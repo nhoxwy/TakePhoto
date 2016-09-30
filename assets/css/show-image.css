@@ -1,0 +1,120 @@
+/* Main carousel style */
+#show-image{
+	margin-top: 50px;
+  color: black;
+  /*height: 100%;*/
+}
+#show-image h3 a{
+	text-decoration: none;
+	color: #e74c3c;
+}
+#show-image h3 a:hover{
+	color: #2c3e50;
+}
+.carousel {
+	
+}
+
+/* Indicators list style */
+.article-slide .carousel-indicators {
+    bottom: 0;
+    left: 0;
+    margin-left: 5px;
+    width: 100%;
+}
+/* Indicators list style */
+.article-slide .carousel-indicators li {
+    border: medium none;
+    border-radius: 0;
+    float: left;
+    height: 54px;
+    margin-bottom: 5px;
+    margin-left: 0;
+    margin-right: 5px !important;
+    margin-top: 0;
+    width: 100px;
+}
+/* Indicators images style */
+.article-slide .carousel-indicators img {
+    border: 2px solid #FFFFFF;
+    float: left;
+    height: 54px;
+    left: 0;
+    width: 100px;
+}
+/* Indicators active image style */
+.article-slide .carousel-indicators .active img {
+    border: 2px solid #e74c3c;
+    opacity: 0.3;
+}
+.back{
+	font-weight: bold;
+	text-decoration: none;
+	color: #e74c3c;
+}
+.glyphicon{  
+	margin-right: 10px;
+	margin-left: 10px;
+}
+.comments-list {
+  padding: 0;
+  margin-top: 20px;
+  list-style-type: none;
+}
+.comments-list .comment {
+  display: block;
+  width: 100%;
+  margin: 20px 0;
+}
+.comments-list .comment .avatar {
+  width: 35px;
+  height: 35px;
+}
+ .comments-list .comment .comment-heading {
+  display: block;
+  width: 100%;
+}
+.comments-list .comment .comment-heading .user {
+  font-size: 14px;
+  font-weight: bold;
+  display: inline;
+  margin-top: 0;
+  margin-right: 10px;
+}
+.comments-list .comment .comment-heading .time {
+  font-size: 12px;
+  color: #aaa;
+  margin-top: 0;
+  display: inline;
+}
+.comments-list .comment .comment-body {
+  margin-left: 50px;
+}
+.comments-list .comment > .comments-list {
+  margin-left: 50px;
+}
+.form-control{
+	width: 100%;
+	border-radius: 0px;
+	-webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    -o-box-shadow: none;
+    box-shadow: none;
+}
+.input-group-addon{
+	border-radius: 0px;
+}
+.col-sm-3{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.col-sm-9{
+	margin-bottom: 10px;
+	padding-left: 0px;
+}
+.input-group a{
+	color:#e74c3c;
+}
+.input-group a:hover{
+	color:#2c3e50;
+}
