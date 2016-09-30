@@ -9,7 +9,7 @@
 	<hr/>
 		<div class="row">
 			<div class="col-sm-2">
- 			<ul class="nav nav-tabs tabs-left">
+ 			<ul class="nav nav-tabs tabs-left" id="mytab" data-tabs="tabs">
     			<li class="active"><a href="#overview" data-toggle="tab">Tổng quan</a></li>
     			<li><a href="#date" data-toggle="tab">Lịch hẹn</a></li>
 	            <li><a href="#detail" data-toggle="tab">Chi tiết về bạn</a></li>
@@ -275,6 +275,7 @@
 	</div>
 </div>
 
+<script src="http://code.jquery.com/jquery-1.11.1.js"></script>
 <script type="text/javascript" src="/assets/js/jquery.uploadPreview.js"></script>
 
 <script>
@@ -288,6 +289,10 @@
   		});
 	}
 	$(document).ready(function(){
+		 $('#mytab a').click(function (e) {
+            e.preventDefault()
+            $(this).tab('show');
+        });
 		$(".show>a:gt(0)").hover(function(){
 			$("#divinfo").fadeToggle();
 		});
@@ -297,12 +302,12 @@
 			return false;
 		});
 		$.uploadPreview({
-	    input_field: ".image-upload",   // Default: .image-upload
-	    preview_box: ".image-preview",  // Default: .image-preview
-	    label_field: ".image-label",    // Default: .image-label
-	    label_default: "Chọn Ảnh",   // Default: Choose File
-	    label_selected: "Thay Đổi",  // Default: Change File
-	    no_label: false                 // Default: false
-	});
+		    input_field: ".image-upload",   // Default: .image-upload
+		    preview_box: ".image-preview",  // Default: .image-preview
+		    label_field: ".image-label",    // Default: .image-label
+		    label_default: "Chọn Ảnh",   // Default: Choose File
+		    label_selected: "Thay Đổi",  // Default: Change File
+		    no_label: false                 // Default: false
+		});
 	});
 </script>
