@@ -31,6 +31,15 @@ html, body {
 /*@media (min-width: 1200px) {  lg  }*/
 
 
+.fa-facebook-f:hover {
+  color: #3b5998;
+}
+.fa-twitter:hover {
+  color: #1da1f2;
+}
+.fa-google-plus:hover {
+  color: #db4437;
+}
 /*=================*/
 a {
     color:#ecf0f1;
@@ -183,8 +192,29 @@ section {
   font-weight: 600;
 }
 #section5 {
-  background-color: #f6f6f6;
-  color:#444;
+  background-color: #2b2b2b; 
+  color: white;
+}
+#section5 h1 {
+  font-size: 70px;
+  font-weight: 700;
+  margin: 0;
+  padding-bottom: 3%;
+}
+#section5 input, #section5 textarea, #section5 button {
+  color: white;
+  border-radius: 0px;
+  background: #2b2b2b;
+  border: none;
+  border-bottom: 1px solid #e74c3c;
+}
+#section5 button {
+  border-top: 1px solid #e74c3c;
+  width: 100%;
+}
+#section5 address a{
+  color: #e74c3c;
+  text-decoration: none;
 }
 #section2 {
   background-color: #fff;
@@ -194,14 +224,13 @@ section {
   background-size: cover;
   min-height: 1000px;
 }
-#section4 {
-  background-color: rgba(0,0,0,0.9);
-} 
+
 #counter-number {
   padding: 0;
   color: white;
   text-transform: uppercase;
   text-align: center;
+  overflow: hidden;
 } 
 #counter-number .section-heading {
   font-size: 40px;
@@ -310,15 +339,6 @@ section {
   font-weight: 100;
   padding: 4%;
   color: #50230B;
-}
-#section8 #fa-contact .fa-facebook-f:hover {
-  color: #3b5998;
-}
-#section8 #fa-contact .fa-twitter:hover {
-  color: #1da1f2;
-}
-#section8 #fa-contact .fa-google-plus:hover {
-  color: #db4437;
 }
 #section8 .diagonal {
   content: '';

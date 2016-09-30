@@ -261,36 +261,89 @@
 </section>
 
 <!--- Section 4 / Thành viên --->
-<section class="container-fluid" id="section4">
-  <h1 class="text-center">TakePhoto Team</h1>
-  <div class="row">
-    <div class="col-sm-10 col-sm-offset-1">
-      <h3 class="text-center slideInUp animate"><strong>Đam Mê</strong> cùng <strong style="color: #f44d3c;">Sáng Tạo</strong></h3>
-      <br>
-      <div class="row">
-        <div class="col-xs-3 text-right">
-          <h5>Nguyễn Chí Linh - UIT</h5><br>
-          <h5>Phạm Minh An - UIT</h5><br>
-          <h5>Nguyễn Hoàng Phúc - UIT</h5><br>
-          <h5>Nhật Lâm - UIT</h5><br>
-          <h5>Võ Quốc Việt - UIT</h5><br>
+<section id="section4">
+  <div class="container demo-1">
+    <div id="slider" class="sl-slider-wrapper">
+      <div class="sl-slider">
+        <div class="sl-slide bg-1" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
+          <div class="sl-slide-inner">
+            <div class="deco img-responsive" style="background-image: url('/assets/image/ncl.jpg');"></div>
+            <div>
+            </div>
+            <h2>Nguyễn Chí Linh</h2>
+            <blockquote>
+              <p>Chỉ có đam mê mới phát huy hết sức mạnh tiềm ẩn</p>
+              <cite>Hãy làm những điều mình thích</cite><br><br>
+              <a href="https://www.facebook.com/ncl251" target="_blank"><i class="fa fa-facebook-f fa-2x"></i></a>
+              <a href="https://twitter.com/chilinhnguyen13" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>
+              <a href="https://www.instagram.com/ncl251" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
+              <a href="https://plus.google.com/u/0/115612784843442016810" target="_blank"><i class="fa fa-google-plus fa-2x"></i></a>
+            </blockquote>
+          </div>
         </div>
-        <div class="col-xs-6">
-          <p class="text-center">
-            <img src="/assets/image/TakePhotoTeam.jpg" class="img-responsive thumbnail center-block ">
-            <!--- img-size: 444 x 222 --->
-          </p>
+
+        <div class="sl-slide bg-2" data-orientation="vertical" data-slice1-rotation="10" data-slice2-rotation="-15" data-slice1-scale="1.5" data-slice2-scale="1.5">
+          <div class="sl-slide-inner">
+            <div class="deco img-responsive" style="background-image: url('/assets/image/nhd.jpg');"></div>
+            <h2>Nguyễn Hoàng Duy</h2>
+            <blockquote>
+              <p>Tuổi trẻ là tuổi không ngại ngùng và nghi ngờ gì cả</p>
+              <cite>Cố gắng đổi thay để mạnh mẽ hơn</cite><br><br>
+              <a href="https://www.facebook.com/nhd.cua" target="_blank"><i class="fa fa-facebook-f fa-2x"></i></a>
+              <a href="https://www.instagram.com/d.nguyenhoang/" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
+              <!--- <a href="https://plus.google.com/u/0/115612784843442016810" target="_blank"><i class="fa fa-google-plus fa-2x"></i></a> --->
+            </blockquote>
+          </div>
         </div>
-        <div class="col-xs-3">
-          <h5>UIT - Phạm Thanh Hùng</h5><br>
-          <h5>UIT - Nguyễn Hoàng Duy</h5><br>
-          <h5>IU - Lê Hoàng Niên</h5><br>
-          <h5>UEL - Bùi Lục Kim Chi</h5><br>
-          <h5>IU - Dương Phương Quyên</h5><br>
+
+        <div class="sl-slide bg-3" data-orientation="horizontal" data-slice1-rotation="3" data-slice2-rotation="3" data-slice1-scale="2" data-slice2-scale="1">
+          <div class="sl-slide-inner">
+            <div class="deco img-responsive" style="background-image: url('/assets/image/nnmt.jpg');"></div>
+            <h2>Nguyễn Ngọc Minh Thư</h2>
+            <blockquote>
+              <p>Chỉ có đam mê mới phát huy hết sức mạnh tiềm ẩn</p>
+              <cite>Hãy làm những điều mình thích</cite><br><br>
+              <a href="https://www.facebook.com/ncl251" target="_blank"><i class="fa fa-facebook-f fa-2x"></i></a>
+              <a href="https://www.instagram.com/sandy.nguyen.7121" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
+              <a href="https://plus.google.com/u/0/115612784843442016810" target="_blank"><i class="fa fa-google-plus fa-2x"></i></a>
+            </blockquote>
+          </div>
         </div>
-      </div>
-      <br>
-    </div>
+
+        <div class="sl-slide bg-4" data-orientation="vertical" data-slice1-rotation="-5" data-slice2-rotation="25" data-slice1-scale="2" data-slice2-scale="1">
+          <div class="sl-slide-inner">
+            <div class="deco img-responsive" style="background-image: url('/assets/image/lqv.jpg');"></div>
+            <h2>Lương Quốc Vĩ</h2>
+            <blockquote>
+              <p>Tuổi trẻ là tuổi không ngại ngùng và nghi ngờ gì cả</p>
+              <cite>Cố gắng đổi thay để mạnh mẽ hơn</cite><br><br>
+              <a href="https://www.facebook.com/ncl251" target="_blank"><i class="fa fa-facebook-f fa-2x"></i></a>
+              <a href="https://twitter.com/chilinhnguyen13" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
+              <a href="https://plus.google.com/u/0/115612784843442016810" target="_blank"><i class="fa fa-google-plus fa-2x"></i></a>
+            </blockquote>
+          </div>
+        </div>
+
+        <!--- <div class="sl-slide bg-5" data-orientation="horizontal" data-slice1-rotation="-5" data-slice2-rotation="10" data-slice1-scale="2" data-slice2-scale="1">
+          <div class="sl-slide-inner">
+            <div class="deco" data-icon="t"></div>
+            <h2>Acta Non Verba</h2>
+            <blockquote><p>I think if you want to eat more meat you should kill it yourself and eat it raw so that you are not blinded by the hypocrisy of having it processed for you.</p><cite>Margi Clarke</cite></blockquote>
+          </div>
+        </div> --->
+      </div><!-- /sl-slider -->
+      <nav id="nav-arrows" class="nav-arrows">
+        <span class="nav-arrow-prev">Previous</span>
+        <span class="nav-arrow-next">Next</span>
+      </nav>
+      <nav id="nav-dots" class="nav-dots">
+        <span class="nav-dot-current"></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <!--- <span></span> --->
+      </nav>
+    </div><!-- /slider-wrapper -->
   </div>
 </section>
 
@@ -345,22 +398,20 @@
 <section id="section5">
   <div class="container v-center">
     <div class="row">
-      <div class="col-md-12">
-        <h1 class="text-center">Góp Ý</h1>
-        <hr>
+      <div class="col-md-12 text-center">
+        <h1 class="text-center">Liên hệ</h1>
+        <p><b><i>Bạn muốn hỏi?</i></b></p>
+        <p class="col-sm-6 col-sm-offset-3">Hãy gửi cho chúng tôi những suy nghĩ của bạn. Chúng tôi sẽ rất biết ơn nếu bạn làm thế và chúng tôi sẽ nhanh chóng liên hệ với bạn trong vòng 24h</p>
+        <br>
+        <br>
+        <br>
       </div>
     </div>
     <div class="row">
-      <div class="col-md-8 col-md-offset-1">
+      <div class="col-md-8">
         <div class="row form-group">
-          <div class="col-sm-3">
-            <input type="text" class="form-control" id="firstName" name="firstName" placeholder="Họ" required="">
-          </div>
-          <div class="col-sm-3">
-            <input type="text" class="form-control" id="middleName" name="firstName" placeholder="Tên đệm" required="">
-          </div>
-          <div class="col-sm-4">
-            <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Tên" required="">
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="firstName" name="firstName" placeholder="Tên" required="">
           </div>
         </div>
         <div class="row form-group">
@@ -373,43 +424,31 @@
         </div>
         <div class="row form-group">
           <div class="col-sm-10">
-            <input type="homepage" class="form-control" placeholder="Nội dung góp ý..." required="">
+            <textarea type="textarea" class="form-control" placeholder="Nội dung..." required=""></textarea>
           </div>
         </div>
         <div class="row form-group">
-          <div class="col-sm-10">
-            <button class="btn btn-default btn-lg pull-right">Gửi!</button>
+          <div class="col-sm-3 col-xs-12">
+            <button class="btn btn-lg">Gửi</button>
           </div>
         </div>
       </div>
-      <div class="col-md-3 pull-right">
+      <div class="col-md-4 pull-right">
         <address>
-          <strong><i class="fa fa-map-marker"></i> Rasia Ltd</strong><br>
-          Tòa nhà Anna, Công Viên Phần Mềm Quang Trung, P.Tân Chánh Hiệp, Q.12, TP HCM, Việt Nam<br>
-          P:  +84 8.371 57911
+          <br>Chúng tôi ở đây là để giúp bạn giải quyết công việc của mình cũng như giúp khách hàng tìm được freelancer như mong muốn. Hãy cho chúng tôi biết nếu bạn cần giúp đỡ!<br>
+        </address>
+        <address>
+          (+84) 1674444116
         </address>
         <address>
           <!--- <strong> Email Us</strong><br> --->
-          <a href="mailto:#" style="color: #444;"><i class="fa fa-envelope"></i> takephoto@gmail.com</a>
+          <a href="mailto:#">chilinhnguyen101@gmail.com</a>
         </address>
       </div>
     </div>
   </div>
 </section>
 
-
-<!--- Section 7 / Liên hệ --->
-<!-- <section class="container-fluid" id="section7">
-  <ul class="row list-unstyled">
-    <li class="col-md-6 col-md-offset-1 col-xs-10 col-xs-offset-1">
-      <h3 class="text-center">Hãy đăng ký ngay để tận hưởng lợi ích TakePhoto đem lại</h3>
-    </li>
-    <li class="col-md-3 col-md-offset-0 col-xs-10 col-xs-offset-1 text-center">
-      <a href="/index.cfm/user/register" class="center-block btn btn-default btn-lg btn-huge animate slideInRight">Đăng ký</a>
-    </li>
-  </ul>
-</section>
- -->
 <!--- Section 8 / Liên hệ--->
 <section id="section8">
   <div class="diagonal row white-bg"></div>
