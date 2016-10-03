@@ -1,27 +1,18 @@
-﻿<style type="text/css">
-html,body {
-  height:100%;
-    background:center repeat fixed url('/assets/image/background1.jpg');
-    background-size: cover;
-    color:#444;
-    font-family: 'Lato', sans-serif;
-}
-</style>
-<!--- Section 1 / Slogan --->
+﻿<!--- Section 1 / Slogan --->
 <section class="container-fluid" id="section1">
   <div class="v-center_2">
     <!--- <h1 class="text-center">TakePhoto</h1> --->
-    <img src="/assets/image/logo_main.png" class="img-responsive" style="margin: auto">
-    <h2 class="text-center lato animate slideInDown">Kết nối cuộc sống <b><i style="color: #FFB210;">tươi đẹp</i></b></h2>
+    <img src="/assets/ico/logo_main.png" class="img-responsive" style="margin: auto">
+    <h2 class="text-center animate slideInDown">Kết nối cuộc sống tươi đẹp</h2>
     <p class="text-center">
       <br>
-      <a href="/index.cfm/user/register" class="btn btn-danger btn-lg btn-huge lato">Đăng Ký Thành Viên</a>
+      <a href="/index.cfm/user/register" class="btn btn-danger btn-lg btn-huge">Đăng Ký Thành Viên</a>
     </p>
   </div>
   <a href="#section2">
     <div class="scroll-down bounceInDown animated">
       <span>
-        <i class="fa fa-angle-down fa-2x"></i>
+        <i class="fa fa-angle-down fa-2x wow bounceIn" data-wow-iteration="50"></i>
       </span>
     </div>
   </a>
@@ -204,7 +195,7 @@ html,body {
 <section class="container-fluid" id="section6">
   <div class="row">
     <div class="col-sm-6 col-sm-offset-3 col-md-10 col-md-offset-1">
-      <h2 class="text-center lato">Khách hàng nói gì về <b class="text-danger">Take Photo</b>?</h2>
+      <h2 class="text-center">Khách hàng nói gì về <b class="text-danger">Take Photo</b>?</h2>
       <hr>
       <div class="media">
         <h3>Ái Vy</h3>
@@ -274,34 +265,81 @@ html,body {
   <h1 class="text-center">TakePhoto Team</h1>
   <div class="row">
     <div class="col-sm-10 col-sm-offset-1">
-        <h3 class="text-center lato slideInUp animate"><strong style="color: #FFCE2D;">Đam Mê</strong> cùng <strong style="color: #FFCE2D;">Sáng Tạo</strong></h3>
-        <br>
-        <div class="row">
-          <div class="col-xs-3 text-right">
-            <h5>Nguyễn Chí Linh - UIT</h5><br>
-            <h5>Phạm Minh An - UIT</h5><br>
-            <h5>Nguyễn Hoàng Phúc - UIT</h5><br>
-            <h5>Nhật Lâm - UIT</h5><br>
-            <h5>Võ Quốc Việt - UIT</h5><br>
-          </div>
-          <div class="col-xs-6">
-            <p class="text-center">
-              <img src="/assets/image/TakePhotoTeam.jpg" class="img-responsive thumbnail center-block ">
-              <!--- img-size: 444 x 222 --->
-            </p>
-          </div>
-          <div class="col-xs-3">
-            <h5>UIT - Phạm Thanh Hùng</h5><br>
-            <h5>UIT - Nguyễn Hoàng Duy</h5><br>
-            <h5>IU - Lê Hoàng Niên</h5><br>
-            <h5>UEL - Bùi Lục Kim Chi</h5><br>
-            <h5>IU - Dương Phương Quyên</h5><br>
-          </div>
+      <h3 class="text-center slideInUp animate"><strong>Đam Mê</strong> cùng <strong style="color: #f44d3c;">Sáng Tạo</strong></h3>
+      <br>
+      <div class="row">
+        <div class="col-xs-3 text-right">
+          <h5>Nguyễn Chí Linh - UIT</h5><br>
+          <h5>Phạm Minh An - UIT</h5><br>
+          <h5>Nguyễn Hoàng Phúc - UIT</h5><br>
+          <h5>Nhật Lâm - UIT</h5><br>
+          <h5>Võ Quốc Việt - UIT</h5><br>
         </div>
-        <br>
+        <div class="col-xs-6">
+          <p class="text-center">
+            <img src="/assets/image/TakePhotoTeam.jpg" class="img-responsive thumbnail center-block ">
+            <!--- img-size: 444 x 222 --->
+          </p>
+        </div>
+        <div class="col-xs-3">
+          <h5>UIT - Phạm Thanh Hùng</h5><br>
+          <h5>UIT - Nguyễn Hoàng Duy</h5><br>
+          <h5>IU - Lê Hoàng Niên</h5><br>
+          <h5>UEL - Bùi Lục Kim Chi</h5><br>
+          <h5>IU - Dương Phương Quyên</h5><br>
+        </div>
+      </div>
+      <br>
     </div>
   </div>
 </section>
+
+<div id="counter-number"> 
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 section-heading">
+        <h1>Quy mô tổ chức</h1>
+        <p class="line">&nbsp;</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-3 col-xs-12 count">
+        <div class="items wow bounceInUp" data-wow-offset="150">
+          <h1>692</h1>
+          <span class="fa fa-user"></span>
+          <div class="heading-1">Khách hàng</div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-xs-12 count">
+        <div class="items wow bounceInUp" data-wow-delay="0.3s" data-wow-offset="150">
+          <h1>936</h1>
+          <span class="fa fa-camera"></span>
+          <div class="heading-1">Freelancer</div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-xs-12 count">
+        <div class="items wow bounceInUp" data-wow-delay="0.2s" data-wow-offset="150">
+          <h1>10K</h1>
+          <span class="fa fa-facebook"></span>
+          <div class="heading-1">Facebook</div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-xs-12 count">
+        <div class="items wow bounceInUp" data-wow-delay="0.4s" data-wow-offset="150">
+          <h1>4</h1>
+          <span class="fa fa-users"></span>
+          <div class="heading-1">Team Size</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="video">
+    <video autoplay="" loop="">
+      <source src="/assets/video/back.mp4" type="video/mp4">
+      <source src="/assets/video/back.webm" type="video/webm">
+    </video>
+  </div>
+</div>
   
 <!--- Section 5 / Góp Ý --->
 <section id="section5">
@@ -361,43 +399,34 @@ html,body {
 
 
 <!--- Section 7 / Liên hệ --->
-<section class="container-fluid" id="section7">
+<!-- <section class="container-fluid" id="section7">
   <ul class="row list-unstyled">
     <li class="col-md-6 col-md-offset-1 col-xs-10 col-xs-offset-1">
       <h3 class="text-center">Hãy đăng ký ngay để tận hưởng lợi ích TakePhoto đem lại</h3>
     </li>
     <li class="col-md-3 col-md-offset-0 col-xs-10 col-xs-offset-1 text-center">
-      <a href="/index.cfm/user/register" class="center-block btn btn-default btn-lg btn-huge lato animate slideInRight">Đăng ký</a>
+      <a href="/index.cfm/user/register" class="center-block btn btn-default btn-lg btn-huge animate slideInRight">Đăng ký</a>
     </li>
   </ul>
 </section>
-
+ -->
 <!--- Section 8 / Liên hệ--->
-<section class="container-fluid" id="section8">
-  <div class="row">
-    <!--fontawesome icons-->
-    <div class="col-sm-1 col-sm-offset-4 col-xs-3 text-center">
-      <a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook-f fa-3x"></i></a>
+<section id="section8">
+  <div class="diagonal row white-bg"></div>
+  <div class="row"  id="we-love">
+    <div class="col-lg-12">
+      <h1>Chúng tôi <i class="fa fa-heart" style="color: #e74c3c;"></i> bạn</h1>
     </div>
-    <div class="col-sm-1 col-xs-3 text-center">
-      <a href="https://www.youtube.com/" target="_blank"><i class="fa fa-youtube-play fa-3x"></i>
-    </div>
-    <div class="col-sm-1 col-xs-3 text-center">
-      <a href="https://plus.google.com/" target="_blank"><i class="fa fa-google-plus fa-3x"></i>
-    </div>
-    <div class="col-sm-1 col-xs-3 text-center">
-      <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter fa-3x"></i>
+    <div class="row" id="fa-contact">
+      <div class="col-lg-4 col-xs-3 text-center">
+        <a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook-f"></i></a>
+      </div>
+      <div class="col-lg-4 col-xs-3 text-center">
+        <a href="https://www.twitter.com" target="_blank"><i class="fa fa-twitter"></i></a>
+      </div>
+      <div class="col-lg-4 col-xs-3 text-center">
+        <a href="https://plus.google.com/u/0/115612784843442016810" target="_blank"><i class="fa fa-google-plus"></i></a>
+      </div>
     </div>
   </div>
-  <style type="text/css">
-    a {
-      color: white;
-    }
-    a:focus {
-      color: white;
-    }
-    a:hover {
-      color: #ccc;
-    }
-  </style>
 </section>
