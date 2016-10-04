@@ -148,3 +148,18 @@ small {
 .action{
 	margin-bottom: 10px;
 }
+.user-i-image{
+  	position: absolute;
+  	top: 30%;
+  	left: 0px;
+  	display: none;
+  	height: 100%;
+  	width: 100%;
+  	z-index: 500;
+  	text-align:center;
+}
+.user-i-image i{
+	color: #fff;
+  	display:block;
+  	line-height: inherit;
+}

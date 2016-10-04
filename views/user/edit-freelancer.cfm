@@ -19,8 +19,13 @@
 			<div class="col-sm-10">
 				<div class="tab-content">
 			    <div class="tab-pane active" id="overview">
-					<div class="col-sm-6 col-md-4">
-						<img src="http://3.bp.blogspot.com/-IbEOTNtCMyU/TfCAdHaAxEI/AAAAAAAAA8U/EATib38SSAM/s320/joe-mcelderry.jpg" class="img-responsive img-rounded"/>
+					<div class="col-sm-6 col-md-4 no-pad">
+						<div class="user-image">
+							<img src="http://3.bp.blogspot.com/-IbEOTNtCMyU/TfCAdHaAxEI/AAAAAAAAA8U/EATib38SSAM/s320/joe-mcelderry.jpg" class="img-responsive img-rounded"/>
+						</div>
+						<div class="user-i-image">
+               				<i class="fa fa-camera fa-5x"></i>
+               			</div>
 					</div>
 					<div class="col-sm-6 col-md-8">
 						<div class="row">
@@ -309,5 +314,14 @@
 		    label_selected: "Thay Đổi",  // Default: Change File
 		    no_label: false                 // Default: false
 		});
+		$("[rel='tooltip']").tooltip();    
+	    $(".no-pad").mouseover(function(){
+	    	$(".user-i-image").fadeIn(250);
+	    	$(".user-image").css("opacity","0.5");
+	    });
+	    $(".no-pad").mouseleave(function(){
+	    	$(".user-i-image").fadeOut(250);
+	    	$(".user-image").css("opacity","1");
+	    });
 	});
 </script>
