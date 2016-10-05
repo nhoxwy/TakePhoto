@@ -1,6 +1,10 @@
 /*========================================
 =            REGISTER PAGE               =
 ========================================*/
+#navbar-collapsible{
+  display: none !important;
+}
+
 /* dinh dang form register */
 #register {
   margin-top: 60px;
