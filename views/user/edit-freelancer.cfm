@@ -149,6 +149,9 @@
 			    </div>
 			    <div class="tab-pane" id="activity">
 			     	<div class="row">
+			     		<div class="col-sm-3">
+					     	<input type="text" name="" class="form-control" placeholder="Tên Album">
+					    </div>
 			     		<div class="col-sm-3 action">
 						    <select class="form-control">
 						    	<option>Ảnh cưới</option>
