@@ -96,29 +96,33 @@
     <div class="row">
       <div class="col-sm-5 col-sm-offset-7 col-xs-12">
         <div class="cardWrapper">
-          <div class="card">
-            <div class="cardFace front card1">
-              <h3><i class="fa fa-search"></i> Tìm</h3>
-              <div class="moreInfo">
-                <i class="fa fa-camera fa-3x"></i>
-                <h4>Photographer</h4>
+          <a href="/index.cfm/photographer">
+            <div class="card">
+              <div class="cardFace front card1">
+                <h3><i class="fa fa-search"></i> Tìm</h3>
+                <div class="moreInfo">
+                  <i class="fa fa-camera fa-3x"></i>
+                  <h4>Photographer</h4>
+                </div>
               </div>
+              <div class="cardFace back card1"><img class="img-responsive" src="https://hd.unsplash.com/photo-1457446783150-34ee89337533"></div>
             </div>
-            <div class="cardFace back card1"><img class="img-responsive" src="https://hd.unsplash.com/photo-1457446783150-34ee89337533"></div>
-          </div>
+          </a>
         </div>
         
         <div class="cardWrapper">
-          <div class="card">
-            <div class="cardFace front card2">
-              <h3><i class="fa fa-search"></i> Tìm</h3>
-              <div class="moreInfo">
-                <i class="fa fa-female fa-3x"></i>
-                <h4>Người mẫu</h4>
+          <a href="/index.cfm/model">
+            <div class="card">
+              <div class="cardFace front card2">
+                <h3><i class="fa fa-search"></i> Tìm</h3>
+                <div class="moreInfo">
+                  <i class="fa fa-female fa-3x"></i>
+                  <h4>Người mẫu</h4>
+                </div>
               </div>
+              <div class="cardFace back card2"><img class="img-responsive" src="/assets/image/team04.jpg"></div>
             </div>
-            <div class="cardFace back card2"><img class="img-responsive" src="/assets/image/team04.jpg"></div>
-          </div>
+          </a>
         </div>
       </div>
     </div>
@@ -126,29 +130,33 @@
     <div class="row">
       <div class="col-sm-6 col-sm-offset-7 col-xs-12">
         <div class="cardWrapper">
-          <div class="card">
-            <div class="cardFace front card3">
-              <h3><i class="fa fa-share-alt"></i> Chia sẻ</h3>
-              <div class="moreInfo">
-                <i class="fa fa-briefcase fa-3x"></i>
-                <h4>Công việc</h4>
+          <a href="/index.cfm/work">
+            <div class="card">
+              <div class="cardFace front card3">
+                <h3><i class="fa fa-share-alt"></i> Chia sẻ</h3>
+                <div class="moreInfo">
+                  <i class="fa fa-briefcase fa-3x"></i>
+                  <h4>Công việc</h4>
+                </div>
               </div>
+              <div class="cardFace back card3"><img  class="img-responsive" src="http://www.capitaeducation.co.uk/File.ashx?path=ROOT/Images/shutterstock_123873739-LARGE.jpg"></div>
             </div>
-            <div class="cardFace back card3"><img  class="img-responsive" src="http://www.capitaeducation.co.uk/File.ashx?path=ROOT/Images/shutterstock_123873739-LARGE.jpg"></div>
-          </div>
+          </a>
         </div>
         
         <div class="cardWrapper">
-          <div class="card">
-            <div class="cardFace front card4">
-              <h3><i class="fa fa-share-alt"></i> Chia sẻ</h3>
-              <div class="moreInfo">
-                <i class="fa fa-thumbs-o-up fa-3x"></i>
-                <h4>Tác phẩm</h4>
+          <a href="/index.cfm/product">
+            <div class="card">
+              <div class="cardFace front card4">
+                <h3><i class="fa fa-share-alt"></i> Chia sẻ</h3>
+                <div class="moreInfo">
+                  <i class="fa fa-thumbs-o-up fa-3x"></i>
+                  <h4>Tác phẩm</h4>
+                </div>
               </div>
+              <div class="cardFace back card4"><img class="img-responsive" src="https://hd.unsplash.com/photo-1454123253751-1fe2b9e0c10d"></div>
             </div>
-            <div class="cardFace back card4"><img class="img-responsive" src="https://hd.unsplash.com/photo-1454123253751-1fe2b9e0c10d"></div>
-          </div>
+          </a>
         </div>
       </div>
     </div>

@@ -1,6 +1,12 @@
 /*========================================
 =               MAIN PAGE                =
 ========================================*/
+#category-navbar {
+  display: none;
+}
+#main-navbar {
+  display: inline;
+}
 section {
   padding-top:70px;  
   padding-bottom:50px;
@@ -24,23 +30,7 @@ section {
   text-align: center;
   z-index:-1
 }
-.scroll-up {
-  position: fixed;
-  display: none;
-  z-index: ecf0f1;
-  bottom: 2em;
-  right: 2em;
-}
-.scroll-up a {
-  background-color: rgba(135, 135, 135, 0.5);
-  display: block;
-  width: 35px;
-  height: 35px;
-  text-align: center;
-  color: #fff;
-  font-size: 15px;
-  line-height: 30px;
-}
+
 @media (min-width:768px) {
   .v-center {
       height: 50%;

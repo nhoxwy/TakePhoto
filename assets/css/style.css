@@ -1,9 +1,30 @@
-html, body {
+﻿html, body {
   font-family: 'Arimo', sans-serif;
   height:100%;
   color: white;
 }
 
+#main-navbar {
+  display: none;
+}
+
+.scroll-up {
+  position: fixed;
+  display: none;
+  z-index: ecf0f1;
+  bottom: 2em;
+  right: 2em;
+}
+.scroll-up a {
+  background-color: rgba(135, 135, 135, 0.5);
+  display: block;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  color: #fff;
+  font-size: 15px;
+  line-height: 30px;
+}
 
 /*========================================
 =            HEADER - FOOTER             =

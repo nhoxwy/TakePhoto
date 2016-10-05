@@ -37,6 +37,10 @@
     <!--- Favicon --->
     <link rel="shortcut icon" href="/assets/ico/favicon.png">
 
+    <!--- mojs --->
+    <link rel="stylesheet" type="text/css" href="/assets/js/mo.min.js">
+    <link rel="stylesheet" type="text/css" href="/assets/js/mojs-player.min.js">
+
     <!--- Slide team's member --->
     <link rel="stylesheet" href="/assets/css/custom-slide-team.css">
     <link rel="stylesheet" href="/assets/css/style-slide-team.css">
@@ -45,7 +49,6 @@
     <noscript>
       <link rel="stylesheet" href="/assets/css/styleNoJS.css">
     </noscript>
-
   </head>
 
 
@@ -64,7 +67,7 @@
             <a href="/index.cfm/main" class="navbar-brand text-danger" href="#"><b style="color: white">Take</b><b style="color: #e74c3c">Photo</b></a>
           </div>
           <div class="navbar-collapse collapse" id="navbar-collapsible">
-            <ul class="nav navbar-nav navbar-left">
+            <ul class="nav navbar-nav navbar-left" id="main-navbar">
               <!--- <li><a href="#section1">Slogan</a></li> --->
               <li><a href="#section2">Giúp bạn</a></li>
               <li><a href="#section3">Bạn muốn</a></li>
@@ -73,6 +76,13 @@
               <li><a href="#section5">Liên hệ</a></li>
               <!--- <li><a href="#section8">Liên hệ</a></li> --->
               <!--- <li>&nbsp;</li> --->
+            </ul>
+            <ul class="nav navbar-nav navbar-left" id="category-navbar">
+              <!--- <li><a href="#section1">Slogan</a></li> --->
+              <li><a href="/index.cfm/photographer">Photographer</a></li>
+              <li><a href="/index.cfm/model">Người mẫu</a></li>
+              <li><a href="/index.cfm/work">Công việc</a></li>
+              <li><a href="/index.cfm/product">Tác phẩm</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
               <li><a href="/index.cfm/user/register"><i class="fa fa-heart-o fa-lg"></i></a></li>
@@ -100,7 +110,6 @@
     <div class="scroll-up">
       <a href="#"><i class="fa fa-angle-up"></i></a>
     </div>
-
 
     <div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
       <div class="modal-dialog">
