@@ -1,5 +1,5 @@
 ﻿<link rel="stylesheet" type="text/css" href="/assets/css/edit-freelancer.css">
-
+<link href="http://fontawesome.io/assets/font-awesome/css/font-awesome.css" rel="stylesheet" media="screen">
 
 <div class="container edit">
 	<h3 class="about">
@@ -154,12 +154,23 @@
 			    </div>
 			    <div class="tab-pane" id="activity">
 			     	<div class="row">
+			     		<div class="col-sm-3">
+			     			<input type="text" name="" class="form-control" placeholder="Tên Album">
+			     		</div>
 			     		<div class="col-sm-3 action">
 						    <select class="form-control">
 						    	<option>Ảnh cưới</option>
 						        <option>Flycam</option>
 						        <option>Gia đình</option>
 						        <option>Kỷ yếu</option>
+						        <option>Macro</option>
+						        <option>Ngoại cảnh</option>
+						        <option>Phong cảnh</option>
+						        <option>Street Life</option>
+						        <option>Sự kiện</option>
+						        <option>Thể thao</option>
+						        <option>Thời trang</option>
+						        <option>Nghệ thuật</option>
 						    </select>
 					   	</div>
 					   	<div class="col-sm-3">
@@ -305,14 +316,6 @@
 			setTimeout('cycleImages()', 2000);
 		},function(){
 			return false;
-		});
-		$.uploadPreview({
-		    input_field: ".image-upload",   // Default: .image-upload
-		    preview_box: ".image-preview",  // Default: .image-preview
-		    label_field: ".image-label",    // Default: .image-label
-		    label_default: "Chọn Ảnh",   // Default: Choose File
-		    label_selected: "Thay Đổi",  // Default: Change File
-		    no_label: false                 // Default: false
 		});
 		$("[rel='tooltip']").tooltip();    
 	    $(".no-pad").mouseover(function(){

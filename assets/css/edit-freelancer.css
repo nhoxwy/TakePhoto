@@ -5,6 +5,9 @@
 	  border-right: 1px solid #ddd;
 
 }
+.nav-tabs{
+	border-bottom: none;
+}
 .nav-tabs>li>a{
 	border-radius: 0px;
 	margin-right: 0;
@@ -162,4 +165,18 @@ small {
 	color: #fff;
   	display:block;
   	line-height: inherit;
+  	cursor: pointer;
+}
+.btn, .btn-default{
+	background-color: #e74c3c;
+	color: #fff;
+	opacity: 0.8;
+}
+.btn:hover, 
+.btn-default:hover{
+	background-color: #fff;
+	color: #e74c3c;
+}
+select option{
+	color: #e74c3c;
 }
