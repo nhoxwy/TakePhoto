@@ -151,15 +151,6 @@ small {
 .action{
 	margin-bottom: 10px;
 }
-.btn, .btn-default{
-	background-color: #e74c3c;
-	color: #fff;
-}
-.btn:hover, 
-.btn-default:hover{
-	background-color: #fff;
-	color: #e74c3c;
-}
 .user-i-image{
   	position: absolute;
   	top: 30%;
