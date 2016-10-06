@@ -155,8 +155,13 @@
 			    <div class="tab-pane" id="activity">
 			     	<div class="row">
 			     		<div class="col-sm-3">
+<<<<<<< HEAD
 			     			<input type="text" name="" class="form-control" placeholder="Tên Album">
 			     		</div>
+=======
+					     	<input type="text" name="" class="form-control" placeholder="Tên Album">
+					    </div>
+>>>>>>> refs/remotes/origin/master
 			     		<div class="col-sm-3 action">
 						    <select class="form-control">
 						    	<option>Ảnh cưới</option>
@@ -317,7 +322,11 @@
 		},function(){
 			return false;
 		});
+<<<<<<< HEAD
 		$("[rel='tooltip']").tooltip();    
+=======
+		
+>>>>>>> refs/remotes/origin/master
 	    $(".no-pad").mouseover(function(){
 	    	$(".user-i-image").fadeIn(250);
 	    	$(".user-image").css("opacity","0.5");

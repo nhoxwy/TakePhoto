@@ -151,6 +151,18 @@ small {
 .action{
 	margin-bottom: 10px;
 }
+<<<<<<< HEAD
+=======
+.btn, .btn-default{
+	background-color: #e74c3c;
+	color: #fff;
+}
+.btn:hover, 
+.btn-default:hover{
+	background-color: #fff;
+	color: #e74c3c;
+}
+>>>>>>> refs/remotes/origin/master
 .user-i-image{
   	position: absolute;
   	top: 30%;
@@ -162,6 +174,7 @@ small {
   	text-align:center;
 }
 .user-i-image i{
+<<<<<<< HEAD
 	color: #fff;
   	display:block;
   	line-height: inherit;
@@ -180,3 +193,10 @@ small {
 select option{
 	color: #e74c3c;
 }
+=======
+	color: #e74c3c;
+  	display:block;
+  	line-height: inherit;
+  	cursor: pointer;
+}
+>>>>>>> refs/remotes/origin/master
