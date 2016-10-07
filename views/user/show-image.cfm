@@ -1,4 +1,6 @@
 ﻿<link rel="stylesheet" type="text/css" href="/assets/css/show-image.css">
+<script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+<script src="/assets/js/show-image.js" type="text/javascript"></script>
 
 
 <div id="show-image">
@@ -9,46 +11,71 @@
 		</h3>
 		<hr/>
 		<div class="col-sm-9">
-			<div class="carousel slide article-slide" id="article-photo-carousel">
-			  <!-- Wrapper for slides -->
-				<div class="carousel-inner cont-slider">
-				    <div class="item active">
-				      	<img alt="" title="" src="/assets/image/catelory_gallery_cuoi_hoi.jpg">
-				    </div>
-				    <div class="item">
-				      	<img alt="" title="" src="/assets/image/catelory_gallery_ky_yeu.jpg">
-				    </div>
-				    <div class="item">
-				      	<img alt="" title="" src="/assets/image/catelory_gallery_cuoi_hoi.jpg">
-				    </div>
-				    <div class="item">
-				      	<img alt="" title="" src="/assets/image/catelory_gallery_macro.jpg">
-				    </div>
-				    <div class="item">
-				      	<img alt="" title="" src="/assets/image/catelory_gallery_gia_dinh.jpg">
-				    </div>
-				 </div>
-			  <!-- Indicators -->
-				<ol class="carousel-indicators">
-				   	<li class="active" data-slide-to="0" data-target="#article-photo-carousel">
-				     	<img class="img-responsive" alt="" src="/assets/image/catelory_gallery_cuoi_hoi.jpg">
-				    </li>
-				    <li class="" data-slide-to="1" data-target="#article-photo-carousel">
-				     	<img class="img-responsive" alt="" src="/assets/image/catelory_gallery_ky_yeu.jpg">
-				    </li>
-				    <li class="" data-slide-to="2" data-target="#article-photo-carousel">
-				      	<img class="img-responsive" alt="" src="/assets/image/catelory_gallery_cuoi_hoi.jpg">
-				    </li>
-				    <li class="" data-slide-to="3" data-target="#article-photo-carousel">
-				     	<img class="img-responsive" alt="" src="/assets/image/catelory_gallery_macro.jpg">
-				    </li>
-				    <li class="" data-slide-to="4" data-target="#article-photo-carousel">
-				      	<img class="img-responsive" alt="" src="/assets/image/catelory_gallery_gia_dinh.jpg">
-				    </li>
-				</ol>
+				<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+	                <a class="thumbnail preview" href="http://placehold.it/400x300">
+	                    <img class="img-responsive" src="http://placehold.it/400x300" alt="">
+	                </a>
+	            </div>
+	            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+	                <a class="thumbnail preview" href="http://placehold.it/400x300">
+	                    <img class="img-responsive" src="http://placehold.it/400x300" alt="">
+	                </a>
+	            </div>
+	            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+	                <a class="thumbnail preview" href="http://placehold.it/400x300">
+	                    <img class="img-responsive" src="http://placehold.it/400x300" alt="">
+	                </a>
+	            </div>
+	            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+	                <a class="thumbnail preview" href="http://placehold.it/400x300">
+	                    <img class="img-responsive" src="http://placehold.it/400x300" alt="">
+	                </a>
+	            </div>
+	            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+	                <a class="thumbnail preview" href="http://placehold.it/400x300">
+	                    <img class="img-responsive" src="http://placehold.it/400x300" alt="">
+	                </a>
+	            </div>
+	            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+	                <a class="thumbnail preview" href="http://placehold.it/400x300">
+	                    <img class="img-responsive" src="http://placehold.it/400x300" alt="">
+	                </a>
+	            </div>
+	            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+	                <a class="thumbnail preview" href="http://placehold.it/400x300">
+	                    <img class="img-responsive" src="http://placehold.it/400x300" alt="">
+	                </a>
+	            </div>
+	            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+	                <a class="thumbnail preview" href="http://placehold.it/400x300">
+	                    <img class="img-responsive" src="http://placehold.it/400x300" alt="">
+	                </a>
+	            </div>
+	            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+	                <a class="thumbnail preview" href="http://placehold.it/400x300">
+	                    <img class="img-responsive" src="http://placehold.it/400x300" alt="">
+	                </a>
+	            </div>
+	            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+	                <a class="thumbnail preview" href="http://placehold.it/400x300">
+	                    <img class="img-responsive" src="http://placehold.it/400x300" alt="">
+	                </a>
+	            </div>
+	            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+	                <a class="thumbnail preview" href="http://placehold.it/400x300">
+	                    <img class="img-responsive" src="http://placehold.it/400x300" alt="">
+	                </a>
+	            </div>
+	            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+	                <a class="thumbnail preview" href="http://placehold.it/400x300">
+	                    <img class="img-responsive" src="http://placehold.it/400x300" alt="">
+	                </a>
+	            </div>
 			</div>
-		</div>
 		<div class="col-sm-3">
+			<div class="back_link">
+				<a href="/index.cfm/user/edit-freelancer" class="back"><i class="glyphicon glyphicon-arrow-left"></i>Quay lại trang trước</a>
+			</div>
 			<div class="input-group"> 
 	            <input class="form-control" placeholder="Thêm bình luận" type="text">
 	            <span class="input-group-addon">
@@ -95,16 +122,10 @@
 	                </div>
 	            </li> 
 	        </ul>
-			<a href="/index.cfm/user/edit-freelancer" class="back"><i class="glyphicon glyphicon-arrow-left"></i>Quay lại trang trước</a>
 		</div>
 	</div>
 </div>
 
-
 <script>
-	$(document).ready(function(){
-		$('.carousel').carousel({
-			interval: 2s;
-		});
-	});
+
 </script>
