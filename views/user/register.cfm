@@ -1,4 +1,6 @@
-﻿<div id="register">
+﻿<link rel="stylesheet" type="text/css" href="/assets/css/register.css">
+
+<div id="register">
   <div class="container">
     <div class="col-md-7 col-xs-12">
      <h4><b>Take Photo giúp bạn tìm kiếm Freelancer và làm đẹp cuộc sống của mình.</b></h4>

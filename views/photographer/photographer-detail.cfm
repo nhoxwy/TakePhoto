@@ -1,6 +1,7 @@
-﻿<style type="text/css">
-	body{
-		background-color: black;
+﻿<link rel="stylesheet" type="text/css" href="/assets/css/freelancer-detail.css">
+<style type="text/css">
+	body {
+		background: black;
 	}
 </style>
 
@@ -8,7 +9,7 @@
 <div id="Frl-info">
 	<div class="container">
 		<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-			<img src="/assets/image/catelory_gallery_ngoai_canh.jpg" class="img-responsive" alt="Cinque Terre">
+			<img src="/assets/image/team02.jpg" class="img-responsive" alt="Cinque Terre">
 		</div>
 		<div class="col-lg-9 col-md-8 col-sm-6 col-xs-12">
 			<h2>UIT Internship</h2>
