@@ -25,61 +25,17 @@
 <!--- Section 2 / Giúp bạn? --->
 <section class="container-fluid" id="section2">
 <div class="container">
-  <h1 class="text-center"><b class="text-danger">Take Photo</b> giúp bạn...</h1>
-  <br>
-  <br>
-  <div class="row">
-    <div class="col-sm-4">
-      <div class="row">
-        <div class="col-sm-12 text-center">
-          <div class="panel panel-default slideInLeft animate">
-            <div class="panel-heading">
-              <h3>Thỏa mãn</h3>
-            </div>
-            <div class="panel-body">
-              <p>Thõa mãn nhu cầu chụp hình của khách hàng và phát huy khả năng nhiếp ảnh của Freelancer/p>
-              <hr>GO
-              <hr>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-4 text-center">
-      <div class="row">
-        <div class="col-sm-12 text-center">
-          <div class="panel panel-default slideInUp animate">
-            <div class="panel-heading">
-              <h3>Tiết kiệm</h3>
-            </div>
-            <div class="panel-body">
-              <p>Tiết kiệm chi phí PR cho Freelancer, chi phí thuê thợ chụp cho khách hàng.../p>
-              <hr>GO
-              <hr>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-4 text-center">
-      <div class="row">
-        <div class="col-sm-12 text-center">
-          <div class="panel panel-default slideInRight animate">
-            <div class="panel-heading">
-              <h3>Kết nối</h3></div>
-            <div class="panel-body">
-              <p>Giúp các khách hàng và Freelancer từ mọi nơi trên đất nước Việt Nam có thể kết nối, giao lưu với nhau.</p>
-              <hr>GO
-              <hr>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+  <div class="hwd-title">
+    <h1>
+      <span class="we">Chúng tôi</span>
+      <span class="do">Giúp Bạn</span>
+    </h1>
   </div>
-  /row
-  <div class="row">
-      <br>
+  <div class="content">
+    <img class="hwd-1 img-responsive" src="/assets/image/card.png" width="661" height="483">
+    <img class="hwd-3 img-responsive" src="/assets/image/clipboard.png" width="578" height="628">
+    <img class="hwd-5 img-responsive" src="/assets/image/ipad.png" width="594" height="639">
+    <img class="hwd-7 img-responsive" src="/assets/image/picture.png" width="505" height="493">
   </div>
 </div>
 <!--/container-->
@@ -555,6 +511,7 @@
   </div>
 </section>
 
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script type="text/javascript" src="/assets/js/jquery-bubble-text.js"></script>
 <script type="text/javascript" src="/assets/js/TweenMax.min.js"></script>
+<script type="text/javascript" src="/assets/js/scrollimage.js"></script>

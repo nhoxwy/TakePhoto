@@ -91,6 +91,8 @@ section {
   background-size: cover;
   min-height: 1000px;
   overflow: hidden;
+  z-index: 203;
+  position: relative;
 }
 
 #section3 .cardWrapper{
@@ -103,6 +105,7 @@ section {
   -webkit-font-smoothing:antialiased;
   outline:1px dashed;
   outline-offset:10px;    
+  z-index: 205;
 }
 
 #section3 .cardFace{
@@ -296,4 +299,62 @@ section {
   color: #e74c3c;
   font-weight: bold;
   padding:3%;
+}
+.content{
+  position: fixed;
+  height: 276px;
+  z-index: 203;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.content .hwd-1{
+  top: 10%;
+  left: 5%;
+}
+.content img{
+  position: absolute;
+  z-index: 250;
+  display: none;
+  transition: 0.5s;
+}
+img{
+  background: transparent;
+}
+.content .hwd-3{
+  top: 40%;
+  left: 20%;
+}
+.content .hwd-5{
+  top: 38%;
+  left: 47%;
+}
+.content .hwd-7{
+  top: 8%;
+  left: 72%;
+}
+.hwd-title{
+  margin-top: -5%;
+  margin-left: 35%;
+  color: #fff;
+  position: relative;
+  z-index: 204;
+}
+.hwd-title h1{
+  text-align: center;
+  line-height: 48px;
+  font-size: 60px;
+}
+.hwd-title h1 .do{
+  display: block;
+  color: #e74c3c;
+  font-weight: bold;
+}
+.hwd-title h1 .we{
+  display: block;
+  color: #e74c3c;
+  font-size: 40px;
+  line-height: 20px;
+  margin-bottom: 10px;
 }
