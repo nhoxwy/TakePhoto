@@ -299,7 +299,45 @@
             </div>
           </div>
         </li>
+        <li>
+          <div class="comment-main-level">
+            <!-- Avatar -->
+            <div class="comment-avatar"><img src="http://i9.photobucket.com/albums/a88/creaticode/avatar_2_zps7de12f8b.jpg" alt=""></div>
+            <!-- Contenedor del Comentario -->
+            <div class="comment-box">
+              <div class="comment-head">
+                <h6 class="comment-name"><a href="http://creaticode.com/blog">Nguyễn Chí Linh</a></h6>
+                <span>04 tháng 10 2016</span>
+                <i class="fa fa-heart"></i>
+              </div>
+              <div class="comment-content">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit omnis animi et iure laudantium vitae, praesentium optio, sapiente distinctio illo?
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="comment-main-level">
+            <!-- Avatar -->
+            <div class="comment-avatar"><img src="http://i9.photobucket.com/albums/a88/creaticode/avatar_2_zps7de12f8b.jpg" alt=""></div>
+            <!-- Contenedor del Comentario -->
+            <div class="comment-box">
+              <div class="comment-head">
+                <h6 class="comment-name"><a href="http://creaticode.com/blog">Nguyễn Chí Linh</a></h6>
+                <span>04 tháng 10 2016</span>
+                <i class="fa fa-heart"></i>
+              </div>
+              <div class="comment-content">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit omnis animi et iure laudantium vitae, praesentium optio, sapiente distinctio illo?
+              </div>
+            </div>
+          </div>
+        </li>
       </ul>
+      <div style="text-align: center;">
+        <button class="btn btn-default loadMore" id="loadMore">Xem thêm</button>
+        <button class="btn btn-default showLess" id="showLess">Rút gọn</button>
+      </div>
     </div>
   </div>
 </section>
@@ -519,3 +557,4 @@
 <script type="text/javascript" src="/assets/js/jquery-bubble-text.js"></script>
 <script type="text/javascript" src="/assets/js/TweenMax.min.js"></script>
 <script type="text/javascript" src="/assets/js/scrollimage.js"></script>
+<script type="text/javascript" src="/assets/js/loadmore.js"></script>
