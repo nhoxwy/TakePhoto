@@ -19,15 +19,15 @@
       <div class="col-sm-10">
          <div class="tab-content">
             <div class="tab-pane active" id="overview">
-               <div class="col-sm-6 col-md-4 no-pad">
+               <div class="col-sm-12 col-md-4 no-pad">
                   <div class="user-image">
                      <img src="http://3.bp.blogspot.com/-IbEOTNtCMyU/TfCAdHaAxEI/AAAAAAAAA8U/EATib38SSAM/s320/joe-mcelderry.jpg" class="img-responsive img-rounded"/>
                   </div>
                   <div class="user-i-image">
-                     <i class="fa fa-camera fa-5x"></i>
+                     <i class="fa fa-camera fa-3x"></i>
                   </div>
                </div>
-               <div class="col-sm-6 col-md-8">
+               <div class="col-sm-12 col-md-8">
                   <div class="row">
                      <h4 style="color:#e74c3c;">Nguyễn Hoàng Duy</h4>
                      <small><cite>Ho Chi Minh City, Vietnam<i class="glyphicon glyphicon-map-marker"></i></cite></small>
@@ -336,13 +336,13 @@
 		},function(){
 			return false;
 		});
-	    $(".no-pad").mouseover(function(){
-	    	$(".user-i-image").fadeIn(250);
+	    $(".user-i-image i").mouseover(function(){
 	    	$(".user-image").css("opacity","0.5");
+         $(".user-i-image i").css("color","#e74c3c");
 	    });
-	    $(".no-pad").mouseleave(function(){
-	    	$(".user-i-image").fadeOut(250);
+	    $(".user-i-image i").mouseleave(function(){
 	    	$(".user-image").css("opacity","1");
+         $(".user-i-image i").css("color","#fff");
 	    });
 	});
 </script>

@@ -153,9 +153,8 @@ small {
 }
 .user-i-image{
   	position: absolute;
-  	top: 30%;
-  	left: 0px;
-  	display: none;
+  	top: 80%;
+  	left: 30%;
   	height: 100%;
   	width: 100%;
   	z-index: 500;
