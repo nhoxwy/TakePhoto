@@ -76,7 +76,7 @@
          <div class="form-group col-sm-12 col-xs-12">
           <label>Tôi muốn làm:</label>
           <label class="radio-inline"><input type="radio" name="optradio">Khách hàng</label>
-          <label class="radio-inline"><input type="radio" name="optradio">Freelancer</label>
+          <label class="radio-inline"><input type="radio" name="optradio">Nhiếp ảnh gia</label>
           </div>
          <div class="col-xs-12">
           <div class="button btn col-xs-12 col-sm-4" style="background: #f44d3c; color: white; text-align: center;">Đăng Ký</div>

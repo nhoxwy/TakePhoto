@@ -79,7 +79,7 @@
             </ul>
             <ul class="nav navbar-nav navbar-left" id="category-navbar">
               <!--- <li><a href="#section1">Slogan</a></li> --->
-              <li><a href="/index.cfm/photographer">Photographer</a></li>
+              <li><a href="/index.cfm/photographer">Nhiếp ảnh</a></li>
               <li><a href="/index.cfm/model">Người mẫu</a></li>
               <li><a href="/index.cfm/work">Công việc</a></li>
               <li><a href="/index.cfm/product">Tác phẩm</a></li>

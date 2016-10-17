@@ -102,22 +102,10 @@
 						<br>
 							<span class="fa fa-heart"> 68</span>&nbsp;&nbsp;&nbsp;<span class="fa fa-pencil-square-o"> 17 đánh giá</span>
 							<hr>
-						<button id="busy-btn" class="btn btn-danger" type="button">Rất tiếc, tôi bận</button>
 					</a>
+						<button id="busy-btn" class="btn btn-danger" type="button" title="Không thể hẹn" data-toggle="popover" data-trigger="focus" data-content="Rất tiếc, bạn không thể đặt lịch hẹn với photographer vào hôm nay">Xin lỗi, tôi bận</button>
 				</li>
-				<li class="col-md-3">
-					<a href="/index.cfm/photographer/photographer-detail">
-						<img src="/assets/image/team01.jpg" class="img-responsive img-circle">
-						<h4>Nguyễn Chí Linh</h4>
-						<p class="fa fa-map-marker text-left"> Tp.Hồ Chí Minh</p>
-						&nbsp;&nbsp;
-						<br>
-							<span class="fa fa-heart text-right"> 68</span>&nbsp;&nbsp;&nbsp;<span class="fa fa-pencil-square-o"> 17 đánh giá</span>
-							<hr>
-						<button id="mayBe-btn" class="btn" type="button">Tôi sẽ sắp xếp</button>
-					</a>
-				</li>
-				<cfloop from="1" to="17" index="i">
+				<cfloop from="1" to="6" index="i">
 					<li class="col-md-3">
 						<a href="/index.cfm/photographer/photographer-detail">
 							<img src="/assets/image/team01.jpg" class="img-responsive img-circle">
@@ -127,7 +115,7 @@
 							<br>
 							<span class="fa fa-heart text-right"> 68</span>&nbsp;&nbsp;&nbsp;<span class="fa fa-pencil-square-o"> 17 đánh giá</span>
 							<hr>
-							<button id="book-btn" class="btn btn-success" type="button">Hãy hẹn tôi</button></a>
+							<button id="book-btn" class="btn btn-success" type="button">Vâng, tôi rãnh</button></a>
 					</li>
 				</cfloop>
 				<li class="col-md-3">
@@ -150,28 +138,7 @@
 
 
 <script>
-$(document).on('ready', function(){
-    $('.kv-ltr-theme-fa-alt').rating({
-        hoverOnClear: false,
-        theme: 'krajee-fa',       
-        defaultCaption: '{rating} hearts',
-        starCaptions: function (rating) {
-            return rating == 1 ? 'One heart' : rating + ' hearts';
-        },
-        filledStar: '<i class="fa fa-heart"></i>',
-        emptyStar: '<i class="fa fa-heart-o"></i>'
-    });
+$(document).ready(function(){
+    $('[data-toggle="popover"]').popover();
 });
-
-
-
-const shape = new mojs.Shape({
-  scale: { 1 : 0 },
-  duration: 2000,
-  onComplete () {
-    console.log( 'completed' );
-  }
-}).then({
-  scale: 1
-}).play();
 </script>

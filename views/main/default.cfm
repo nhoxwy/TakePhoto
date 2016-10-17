@@ -102,7 +102,7 @@
                 <h3><i class="fa fa-search"></i> Tìm</h3>
                 <div class="moreInfo">
                   <i class="fa fa-camera fa-3x"></i>
-                  <h4>Photographer</h4>
+                  <h4>Nhiếp ảnh gia</h4>
                 </div>
               </div>
               <div class="cardFace back card1"><img class="img-responsive" src="https://hd.unsplash.com/photo-1457446783150-34ee89337533"></div>
