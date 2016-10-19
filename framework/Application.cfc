@@ -55,4 +55,8 @@ component {
     function onSessionStart() {
         return _get_framework_one().onSessionStart();
     }
+    function setupApplication() {
+        var bf = new framework.ioc( "model" );
+        setBeanFactory( bf );
+    }
 }
