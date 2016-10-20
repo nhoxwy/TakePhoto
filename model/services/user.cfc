@@ -12,7 +12,7 @@ component  {
 	{
 		
 		queryExecute("INSERT INTO user(lastname,firstname,email,password) 
-			VALUES (?,?,?,?)",[lastname,firstname,email,password],{datasource="takephoto"});
+			VALUES (?,?,?,?)",[lastname,firstname,email,encrypt(password,"taKepHoTO","CFMX_COMPAT","Base64")],{datasource="takephoto"});
 	}
 	function load_change_password()
 	{
