@@ -9,8 +9,8 @@ component output="false" displayname="" extends="framework.one" {
 
 
 	public void function onSessionStart(){
-		SESSION.is_logged_in = false ;
-		SESSION.logged_in_user_id = 0 ;
+		SESSION.is_logged_in= false ;
+		SESSION.logged_in_user_id= 0 ;
 		SESSION.lastname="";
 		SESSION.firstname="";
 		SESSION.email="";
