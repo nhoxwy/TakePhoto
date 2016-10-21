@@ -53,18 +53,18 @@
             <div class="col-xs-4"><input type="text" class="form-control" id="dayOfBirth" name="dayOfBirth" placeholder="Ngày sinh"></div>
             <div class="col-xs-4">
               <select class="form-control" id="monthOfBirth" name="monthOfBirth">
-                <option>Tháng 1</option>
-                <option>Tháng 2</option>
-                <option>Tháng 3</option>
-                <option>Tháng 4</option>
-                <option>Tháng 5</option>
-                <option>Tháng 6</option>
-                <option>Tháng 7</option>
-                <option>Tháng 8</option>
-                <option>Tháng 9</option>
-                <option>Tháng 10</option>
-                <option>Tháng 11</option>
-                <option>Tháng 12</option>
+                <option value="1">Tháng 1</option>
+                <option value="2">Tháng 2</option>
+                <option value="3">Tháng 3</option>
+                <option value="4">Tháng 4</option>
+                <option value="5">Tháng 5</option>
+                <option value="6">Tháng 6</option>
+                <option value="7">Tháng 7</option>
+                <option value="8">Tháng 8</option>
+                <option value="9">Tháng 9</option>
+                <option value="10">Tháng 10</option>
+                <option value="11">Tháng 11</option>
+                <option value="12">Tháng 12</option>
               </select>
             </div>
             <div class="col-xs-4">
@@ -74,13 +74,13 @@
          <div class="form-group col-sm-12 col-xs-12">
           <br>
           <label>Tôi là:</label>
-          <label class="radio-inline"><input type="radio" name="sex" value="0">Nữ</label>
-          <label class="radio-inline"><input type="radio" name="sex" value="1">Nam</label>
+            <input type="radio" name="sex" value="0" checked="checked"> Nữ &emsp;
+            <input type="radio" name="sex" value="1"> Nam
          </div>
          <div class="form-group col-sm-12 col-xs-12">
           <label>Tôi muốn làm:</label>
-          <label class="radio-inline"><input type="radio" id="" name="classify" value="0">Khách hàng</label>
-          <label class="radio-inline"><input type="radio" name="classify" value="1">Freelancer</label>
+            <input type="radio" name="classify" value="0" checked="checked"> Khách hàng &emsp;
+            <input type="radio" name="classify" value="1"> Nhiếp ảnh gia
           </div>
          <div class="col-xs-12">
           <input class="btn col-xs-12 col-sm-4" type="submit" value="Đăng Ký" style="background: #f44d3c; color: white; text-align: center;" />

@@ -8,7 +8,7 @@ component  {
 		return qr;
 	}
 
-	function register(string lastname,string firstname,string email,string password,string dateOfBirth,string sex,string classify)
+	function register(string lastname,string firstname,string email,string password,Date dateOfBirth,string sex,string classify)
 	{
 		
 		queryExecute("INSERT INTO user(lastname,firstname,email,password,dateOfBirth,sex,classify) 
