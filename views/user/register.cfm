@@ -1,7 +1,7 @@
 ﻿<link rel="stylesheet" type="text/css" href="/assets/css/register.css">
 
 
-<div id="register">
+<div id="reg-log">
   <div class="container">
     <div class="col-md-7 col-xs-12">
      <h4><b>Take Photo giúp bạn tìm kiếm Freelancer và làm đẹp cuộc sống của mình.</b></h4>
@@ -28,7 +28,7 @@
      </div>
 
 
-     <div id="reg">
+     <div id="reigister">
        <form method="post" onsubmit="return checkRegister()" enctype="application/x-www-form-urlencoded">
          <div class="col-xs-12">
            <h2><b>Đăng Ký</b></h2>

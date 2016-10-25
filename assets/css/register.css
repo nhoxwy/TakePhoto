@@ -6,27 +6,27 @@
 }
 
 /* dinh dang form register */
-#register {
+#reg-log {
   margin-top: 60px;
   color: black;
   height: 100%;
 }
-#register input {
+#reg-log input {
   border-radius: 0px;
 }
-#register label {
+#reg-log label {
   font-weight: normal;
 }
-#register a {
+#reg-log a {
   color: #e74c3c;
 }
-#register a:hover {
+#reg-log a:hover {
   color: #666;
   text-decoration: none;
 }
-#register #reg {
+#reg-log #reg {
   padding-top: 50px;
 }
-#register #reg select{
+#reg-log #register select{
   border-radius: 0px;
 }

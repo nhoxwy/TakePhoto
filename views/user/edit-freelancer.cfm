@@ -1,6 +1,70 @@
 ﻿<link rel="stylesheet" type="text/css" href="/assets/css/edit-freelancer.css">
 <link href="http://fontawesome.io/assets/font-awesome/css/font-awesome.css" rel="stylesheet" media="screen">
 
+<!--edit-form Form -->
+<div id="editdiv">
+   <form class="form" action="#" id="edit-form" method="post">
+      <h3>CHỈNH SỬA THÔNG TIN</h3>
+      <hr/>
+      <div class="form-group col-sm-6 col-xs-12">
+         <input type="text" class="form-control" id="ho" name="lastname" placeholder="Họ">
+      </div>
+      <div class="form-group col-sm-6 col-xs-12">
+         <input type="text" class="form-control" id="ten" name="firstname" placeholder="Tên">
+      </div>
+      <div class="form-group col-sm-12 col-xs-12">
+         <input type="text" class="form-control" id="email-reg" name="phone" placeholder="Số điện thoại">
+      </div>
+      <div class="form-group">
+         <div class="col-xs-4"><input type="text" class="form-control" id="dayOfBirth" name="dayOfBirth" placeholder="Ngày sinh"></div>
+         <div class="col-xs-4">
+           <select class="form-control" id="monthOfBirth" name="monthOfBirth">
+             <option value="1">Tháng 1</option>
+             <option value="2">Tháng 2</option>
+             <option value="3">Tháng 3</option>
+             <option value="4">Tháng 4</option>
+             <option value="5">Tháng 5</option>
+             <option value="6">Tháng 6</option>
+             <option value="7">Tháng 7</option>
+             <option value="8">Tháng 8</option>
+             <option value="9">Tháng 9</option>
+             <option value="10">Tháng 10</option>
+             <option value="11">Tháng 11</option>
+             <option value="12">Tháng 12</option>
+           </select>
+         </div>
+         <div class="col-xs-4">
+           <input type="text" class="form-control" id="yearOfBirth" name="yearOfBirth" placeholder="Năm sinh">
+         </div>
+      </div>
+      <div class="form-group col-sm-12 col-xs-12">
+         <hr/>
+         <input type="button" id="edit-formbtn" value="Cập nhật"/>
+         <input type="button" id="cancel" value="Hủy bỏ"/>
+      </div>
+   </form>
+</div>
+<div id="edit-password-div">
+   <form class="form" action="#" id="edit-password-form" method="post">
+      <h3>THAY ĐỔI MẬT KHẨU</h3>
+      <hr/>
+      <div class="form-group col-sm-12 col-xs-12">
+         <input type="password" class="form-control" id="password" name="password" placeholder="Nhập lại mật khẩu">
+      </div>
+      <div class="form-group col-sm-12 col-xs-12">
+         <input type="password" class="form-control" id="new-password" name="new-password" placeholder="Nhập mật khẩu mới">
+      </div>
+      <div class="form-group col-sm-12 col-xs-12">
+         <input type="password" class="form-control" id="re-new-password" name="re-new-password" placeholder="Nhập lại mật khẩu mới">
+      </div>
+      <div class="form-group col-sm-12 col-xs-12">
+         <hr/>
+         <input type="button" id="edit-password-formbtn" value="Cập nhật"/>
+         <input type="button" id="password-cancel" value="Hủy bỏ"/>
+      </div>
+   </form>
+</div>
+
 <div class="container edit">
    <h3 class="about">
       <img class="img-user" src="https://www.facebook.com/images/profile/timeline/app_icons/info_24.png"/>
@@ -44,13 +108,11 @@
                         </p>
                      </div>
                      <div class="col-sm-6 col-md-6 show">
-                        <i class="glyphicon glyphicon-question-sign"></i><a href="#">Đổi mật khẩu?</a>
+                        <i class="glyphicon glyphicon-question-sign"></i><a id="edit-password-form-div" href="#">Đổi mật khẩu?</a>
                         <hr/>
                         <i class="glyphicon glyphicon-info-sign"></i><a href="#">Chuyển tài khoản/Xóa</a>
                         <hr/>
-                        <div class="alert alert-info alert-dismissable" id="divinfo">
-                           Bạn muốn <a href="#"><strong>Chỉnh sửa thông tin</strong></a> này?
-                        </div>
+                        <i class="glyphicon glyphicon-pencil"></i><a id="edit-form-div" href="#">Chỉnh sửa thông tin</a>
                      </div>
                   </div>
                </div>
@@ -328,9 +390,6 @@
             e.preventDefault()
             $(this).tab('show');
         });
-		$(".show>a:gt(0)").hover(function(){
-			$("#divinfo").fadeToggle();
-		});
 		$(".cycler>img").hover(function(){
 			setTimeout('cycleImages()', 2000);
 		},function(){
@@ -344,5 +403,17 @@
 	    	$(".user-image").css("opacity","1");
          $(".user-i-image i").css("color","#fff");
 	    });
+       $("#edit-form-div").click(function(){
+         $("#editdiv").css("display", "block");
+       });
+       $("#edit-form #cancel").click(function() {
+         $("#editdiv").hide();
+      });
+       $("#edit-password-form-div").click(function(){
+         $("#edit-password-div").css("display", "block");
+       });
+       $("#edit-password-form #password-cancel").click(function() {
+         $("#edit-password-div").hide();
+      })
 	});
 </script>

@@ -53,12 +53,6 @@ small {
 	line-height: 1.428571429;
 	color: #999;
 }
-#divinfo{
-	margin-top: 0px;
-	padding-right: 15px;
-	padding-left: 15px;
-	display: none;
-}
 .show>a{
 	text-decoration: none;
 	color:#080808;
@@ -178,4 +172,111 @@ small {
 }
 select option{
 	color: #e74c3c;
+}
+.form{
+	border-radius:2px;
+	padding:20px 30px;
+	box-shadow:0 0 10px;
+	font-size:14px;
+	width:350px;
+	margin:20px 250px 0 35px;
+	float:left;
+}
+#editdiv{
+	opacity: 1;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 100%;
+	width: 100%;
+	background: #000;
+	display: none;
+	z-index: 501;
+}
+#editdiv .col-xs-4, .col-xs-6, .col-xs-12{
+	padding-left: 5px;
+	padding-right: 5px;
+}
+#editdiv select{
+	border-radius: 0px;
+	margin-top: 5px;
+}
+#editdiv h3{
+	text-align:center;
+	color: #e74c3c;
+}
+#editdiv input{
+	width:100%;
+	height:35px;
+	margin-top:5px;
+	border:1px solid #999;
+	border-radius:0px;
+	padding:5px;
+}
+#editdiv input[type=button]{
+	background-color:#e74c3c;
+	border:1px solid white;
+	font-size:14px;
+	color:white;
+	width:49%;
+}
+#edit-form{
+	position: relative;
+	background: #000;
+	width:350px;
+	margin:0px;
+	background-color:white;
+	position: relative;
+	border: 5px solid #e74c3c;
+	left: 50%;
+	top: 50%;
+	margin-left:-210px;
+	margin-top:-158px;
+}
+#edit-password-div{
+	opacity: 1;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 100%;
+	width: 100%;
+	background: #000;
+	display: none;
+	z-index: 501;
+}
+#edit-password-div .col-xs-6, .col-xs-12{
+	padding-left: 5px;
+	padding-right: 5px;
+}
+#edit-password-div h3{
+	text-align:center;
+	color: #e74c3c;
+}
+#edit-password-div input{
+	width:100%;
+	height:35px;
+	margin-top:5px;
+	border:1px solid #999;
+	border-radius:0px;
+	padding:5px;
+}
+#edit-password-div input[type=button]{
+	background-color:#e74c3c;
+	border:1px solid white;
+	font-size:14px;
+	color:white;
+	width:49%;
+}
+#edit-password-form{
+	position: relative;
+	background: #000;
+	width:350px;
+	margin:0px;
+	background-color:white;
+	position: relative;
+	border: 5px solid #e74c3c;
+	left: 50%;
+	top: 50%;
+	margin-left:-210px;
+	margin-top:-158px;
 }
