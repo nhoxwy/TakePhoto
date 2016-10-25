@@ -28,7 +28,7 @@
      </div>
 
 
-     <div id="reigister">
+     <div id="register">
        <form method="post" onsubmit="return checkRegister()" enctype="application/x-www-form-urlencoded">
          <div class="col-xs-12">
            <h2><b>Đăng Ký</b></h2>

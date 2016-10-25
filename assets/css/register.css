@@ -28,5 +28,6 @@
   padding-top: 50px;
 }
 #reg-log #register select{
+  color: #e74c3c;
   border-radius: 0px;
 }

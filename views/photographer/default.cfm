@@ -40,43 +40,36 @@
               	</select>
 			</div>
 			<div class="col-md-2 col-xs-5">
-		      <div class="input-group date form_datetime" data-date="" data-date-format="dd MM yyyy" data-link-field="dtp_input1">
-		        <input class="form-control" size="16" type="text" value="Ngày chụp" readonly>
-					<span class="input-group-addon"><span class="glyphicon glyphicon-th"></span></span>
-		      </div>
+		        <div class="input-group date form_datetime" data-date="" data-date-format="dd MM yyyy" data-link-field="dtp_input1">
+			    	<input class="form-control" size="16" type="text" value="Ngày chụp" readonly>
+					<span class="input-group-addon">
+						<span class="glyphicon glyphicon-th"></span>
+					</span>
+		      	</div>
 				<input type="hidden" id="dtp_input1" value="" /><br/>
 			</div>
 			<div class="col-md-2 col-xs-7">
-				<div class="dropdown">
-				  <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">Địa điểm
-				  <span class="glyphicon glyphicon-menu-down"></span></button>
-				  <ul class="dropdown-menu">
-				    <li><a href="#">Tự nhiên</a></li>
-				    <li><a href="#">Hàn Quốc</a></li>
-				    <li><a href="#">Streetlife (đời thường)</a></li>
-				    <li><a href="#">Cá tính, tự do</a></li>
-				    <li><a href="#">Cốt truyện</a></li>
-				    <li><a href="#">Ngẫu nhiên, sáng tạo</a></li>
-				    <li><a href="#">Cổ điển (vintage)</a></li>
-				    <li><a href="#">Hiện đại</a></li>
-				    <li><a href="#">Cổ điển và hiện đại</a></li>
-				    <li><a href="#">Phóng sự</a></li>
-				    <li><a href="#">Bụi</a></li>
-				    <li><a href="#">Panoramic</a></li>
-				    <li><a href="#">High Dynamic Range</a></li>
-				    <li><a href="#">Phơi sáng</a></li>
-				    <li><a href="#">Light painting</a></li>
-				    <li><a href="#">Hồng ngoại</a></li>
-				  </ul>
-				</div>
+				<select class="form-control" id="place" name="place">
+					<option disabled selected>Địa điểm</option>
+	                <option value="1">TP.Hồ Chí Minh</option>
+	                <option value="2">Hà Nội</option>
+	                <option value="3">Nha Trang - Khánh Hòa</option>
+	                <option value="4">Đà Nẵng</option>
+	                <option value="5">Huế</option>
+	                <option value="6">Cần Thơ</option>
+	                <option value="7">Lạng Sơn</option>
+	                <option value="8">Quảng Nam</option>
+	                <option value="9">Phú Yên</option>
+	                <option value="10">Bình Thuận</option>
+	                <option value="11">Ninh Thuận</option>
+	                <option value="12">Phú Quốc - Kiên Giang</option>
+	                <option value="13">Bến Tre</option>
+	                <option value="14">Hà Giang</option>
+	                <option value="15">Hải Phòng</option>
+              	</select>
 			</div>
 			<div class="col-md-2 col-xs-12">
-				<div class="dropdown">
-				  <button id="review-button" class="btn dropdown-toggle" type="button" data-toggle="dropdown">Yêu thích
-					  <span id="review-down" class="glyphicon glyphicon-arrow-down"></span>
-					  <span id="review-up" class="glyphicon glyphicon-arrow-up"></span>
-					</button>
-				</div>
+				<button id="review-button" class="btn btn-success" type="submit" data-toggle="dropdown">Tìm kiếm</button>
 			</div>
 		</div>
 	</div> <!--- End photographer-menu --->

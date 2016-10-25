@@ -11,31 +11,28 @@ a {
 a:hover {
 	text-decoration: none;
 }
+#photographer-menu select{
+	border-radius: 0px;
+}
+#photographer-menu select option{
+	color: #e74c3c;
+}
+#photographer-menu select option:hover
+{
+	box-shadow: inset 20px 20px #e74c3c;
+}
 #photographer-menu .btn {
 	display: block;
-	background: none;
-	margin: 10px auto;
 	border-radius: 0;
-	border-color: #000000; 
-}
-
-#photographer-menu .btn .glyphicon {
-	color: #e74c3c;
 }
 
 #photographer-menu .form_datetime {
-	margin: 10px auto;
 }
 
 #photographer-menu .form_datetime .form-control,
 #photographer-menu .form_datetime .input-group-addon {
 	background-color: #ffffff;
-	border-color: #000000; 
-	border-radius: 0;
-}
-
-#photographer-menu #review-button #review-up {
-	display: none;
+	border-radius: 0px;
 }
 
 #list-photographer li {
