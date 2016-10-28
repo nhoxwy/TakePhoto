@@ -1,4 +1,4 @@
-﻿<link rel="stylesheet" type="text/css" href="/assets/css/register.css">
+﻿<link rel="stylesheet" type="text/css" href="/assets/css/reg.css">
 
 
 <div id="reg-log">
@@ -7,27 +7,14 @@
      <h4><b>Take Photo giúp bạn tìm kiếm Freelancer và làm đẹp cuộc sống của mình.</b></h4>
      <img src="/assets/ico/map_login.png" class="img-responsive" style="width: 90%; height:90%; ">
    </div>
+<form class="form-signin" method="post" onsubmit="return" enctype="application/x-www-form-urlencoded">
+          <input type="text" class="form-control" placeholder="Nhập email của bạn" name="emaillogin" required autofocus>
+          <input type="password" class="form-control" placeholder="Mật khẩu" name="passwordlogin" required>
+          <button class="btn btn-lg btn-primary btn-block" type="submit">Đăng nhập</button>
+          <a href="/index.cfm?action=user.login" class="pull-right inline">Quên mật khẩu?</a>
+        </form>
+
    <div class="col-md-5 col-xs-12">
-
-
-     <div id="login">
-       <form method="post" enctype="application/x-www-form-urlencoded" onsubmit="return (login() || register())"> 
-         <div class="form-group col-sm-6 col-xs-12">
-            <label for="email">Email hoặc tên đăng nhập</label>
-            <input type="email" class="form-control" id="email-login" name="email-login">
-         </div>
-         <div class="form-group col-sm-6 col-xs-12">
-            <label for="password">Mật khẩu</label>
-            <input type="password" class="form-control" id="password-login" name="password-login">
-         </div>
-        <div class="col-xs-12">
-          <input type="submit" class="btn btn-success col-xs-12 col-sm-6" style="margin-right: 15px;" value="Đăng nhập" />
-          <a href="">Quên mật khẩu?</a>
-        </div>
-       </form>
-     </div>
-
-
      <div id="register">
        <form method="post" onsubmit="return checkRegister()" enctype="application/x-www-form-urlencoded">
          <div class="col-xs-12">
@@ -83,7 +70,7 @@
             <input type="radio" name="classify" value="1"> Nhiếp ảnh gia
           </div>
          <div class="col-xs-12">
-          <input class="btn col-xs-12 col-sm-4" type="submit" value="Đăng Ký" style="background: #f44d3c; color: white; text-align: center;" />
+          <input class="btn btn-success col-xs-12 col-sm-4" type="submit" value="Đăng Ký" style="color: white; text-align: center;" />
           <p class="col-xs-12 col-sm-8" style="font-size: 13px;">Bằng cách nhấp vào Đăng ký, bạn đồng ý với <a href="">Các điều khoản</a> của chúng tôi.</p>
         </div>
        </form>
