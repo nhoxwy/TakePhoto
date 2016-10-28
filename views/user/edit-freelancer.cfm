@@ -1,10 +1,9 @@
 ﻿<link rel="stylesheet" type="text/css" href="/assets/css/edit-freelancer.css">
-<link rel="stylesheet" type="text/css" href="/assets/css/style.css">
 <link href="http://fontawesome.io/assets/font-awesome/css/font-awesome.css" rel="stylesheet" media="screen">
 
 <!--edit-form Form -->
 <div id="editdiv">
-   <form class="form" action="user.updateInfo" id="edit-form" method="post">
+   <form class="form" action="#" id="edit-form" method="post">
       <h3>CHỈNH SỬA THÔNG TIN</h3>
       <hr/>
       <div class="form-group col-sm-6 col-xs-12">
@@ -14,7 +13,7 @@
          <input type="text" class="form-control" id="ten" name="firstname" placeholder="Tên">
       </div>
       <div class="form-group col-sm-12 col-xs-12">
-         <input type="text" class="form-control" name="phone" placeholder="Số điện thoại">
+         <input type="text" class="form-control" id="email-reg" name="phone" placeholder="Số điện thoại">
       </div>
       <div class="form-group">
          <div class="col-xs-4"><input type="text" class="form-control" id="dayOfBirth" name="dayOfBirth" placeholder="Ngày sinh"></div>
@@ -92,33 +91,31 @@
                      <i class="fa fa-camera fa-3x"></i>
                   </div>
                </div>
-               <cfoutput>
-                  <div class="col-sm-12 col-md-8">
-                     <div class="row">
-                        <h4 style="color: rgb(228,124,60);">#SESSION.lastname# #SESSION.firstname#</h4>
-                        <small><cite><i class="glyphicon glyphicon-map-marker"></i></cite></small>
+               <div class="col-sm-12 col-md-8">
+                  <div class="row">
+                     <h4 style="color:#e74c3c;">Nguyễn Hoàng Duy</h4>
+                     <small><cite>Ho Chi Minh City, Vietnam<i class="glyphicon glyphicon-map-marker"></i></cite></small>
+                     <hr/>
+                  </div>
+                  <div class="row">
+                     <div class="col-sm-6 col-md-6 show">
+                        <a href="#"><i class="glyphicon glyphicon-envelope"></i>hoangduy.mmt07@gmail.com</a>
                         <hr/>
+                        <i class="glyphicon glyphicon-phone"></i><a href="#" id="username" data-type="text" data-pk="1" data-url="/post" data-title="Nhập số điện thoại">01673867976</a>
+                        <hr/>
+                        <i class="glyphicon glyphicon-gift"></i><a href="#">3 Tháng 7 1994</a>
+                        <hr/>
+                        </p>
                      </div>
-                     <div class="row">
-                        <div class="col-sm-6 col-md-6 show">
-                           <a><i class="glyphicon glyphicon-envelope"></i>#SESSION.email#</a>
-                           <hr/>
-                           <i class="glyphicon glyphicon-phone"></i><a id="username" data-type="text" data-pk="1" data-url="/post" data-title="Nhập số điện thoại">phone</a>
-                           <hr/>
-                           <i class="glyphicon glyphicon-gift"></i><a>dob</a>
-                           <hr/>
-                           </p>
-                        </div>
-                        <div class="col-sm-6 col-md-6 show">
-                           <i class="glyphicon glyphicon-question-sign"></i><a id="edit-password-form-div">Đổi mật khẩu?</a>
-                           <hr/>
-                           <i class="glyphicon glyphicon-info-sign"></i><a>Chuyển tài khoản/Xóa</a>
-                           <hr/>
-                           <i class="glyphicon glyphicon-pencil"></i><a id="edit-form-div">Chỉnh sửa thông tin</a>
-                        </div>
+                     <div class="col-sm-6 col-md-6 show">
+                        <i class="glyphicon glyphicon-question-sign"></i><a id="edit-password-form-div" href="#">Đổi mật khẩu?</a>
+                        <hr/>
+                        <i class="glyphicon glyphicon-info-sign"></i><a href="#">Chuyển tài khoản/Xóa</a>
+                        <hr/>
+                        <i class="glyphicon glyphicon-pencil"></i><a id="edit-form-div" href="#">Chỉnh sửa thông tin</a>
                      </div>
                   </div>
-               </cfoutput>
+               </div>
             </div>
             <div class="tab-pane" id="date">
                <div class="col-sm-6 col-md-4">
@@ -234,17 +231,17 @@
                   <div class="col-sm-3 action">
                      <select class="form-control">
                         <option>Ảnh cưới</option>
-      						<option>Flycam</option>
-      						<option>Gia đình</option>
-      						<option>Kỷ yếu</option>
-      						<option>Macro</option>
-      						<option>Ngoại cảnh</option>
-      						<option>Phong cảnh</option>
-      						<option>Street Life</option>
-      						<option>Sự kiện</option>
-      						<option>Thể thao</option>
-      						<option>Thời trang</option>
-      						<option>Nghệ thuật</option>
+						<option>Flycam</option>
+						<option>Gia đình</option>
+						<option>Kỷ yếu</option>
+						<option>Macro</option>
+						<option>Ngoại cảnh</option>
+						<option>Phong cảnh</option>
+						<option>Street Life</option>
+						<option>Sự kiện</option>
+						<option>Thể thao</option>
+						<option>Thời trang</option>
+						<option>Nghệ thuật</option>
                      </select>
                   </div>
                   <div class="col-sm-3">
@@ -374,11 +371,6 @@
       </div>
    </div>
 </div>
-
-
-
-
-
 
 <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
 <script type="text/javascript" src="/assets/js/jquery.uploadPreview.js"></script>
