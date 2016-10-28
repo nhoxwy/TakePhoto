@@ -1,4 +1,4 @@
-﻿<link rel="stylesheet" type="text/css" href="/assets/css/register.css">
+﻿<link rel="stylesheet" type="text/css" href="/assets/css/reg.css">
 
 
 <div id="reg-log">
