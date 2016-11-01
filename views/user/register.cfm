@@ -1,6 +1,5 @@
 ﻿<link rel="stylesheet" type="text/css" href="/assets/css/reg.css">
 
-
 <div id="reg-log">
   <div class="container">
     <div class="col-md-7 col-xs-12">
@@ -8,26 +7,6 @@
      <img src="/assets/ico/map_login.png" class="img-responsive" style="width: 90%; height:90%; ">
    </div>
    <div class="col-md-5 col-xs-12">
-
-
-     <div id="login">
-       <form method="post" enctype="application/x-www-form-urlencoded" onsubmit="return (login() || register())"> 
-         <div class="form-group col-sm-6 col-xs-12">
-            <label for="email">Email hoặc tên đăng nhập</label>
-            <input type="email" class="form-control" id="email-login" name="email-login">
-         </div>
-         <div class="form-group col-sm-6 col-xs-12">
-            <label for="password">Mật khẩu</label>
-            <input type="password" class="form-control" id="password-login" name="password-login">
-         </div>
-        <div class="col-xs-12">
-          <input type="submit" class="btn btn-success col-xs-12 col-sm-6" style="margin-right: 15px;" value="Đăng nhập" />
-          <a href="">Quên mật khẩu?</a>
-        </div>
-       </form>
-     </div>
-
-
      <div id="register">
        <form method="post" onsubmit="return checkRegister()" enctype="application/x-www-form-urlencoded">
          <div class="col-xs-12">

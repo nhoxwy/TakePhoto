@@ -1,5 +1,5 @@
 .edit{
-	margin-top: 65px;
+	margin-top: 60px;
 }
 .tabs-left{
 	  border-right: 1px solid #ddd;
@@ -19,7 +19,7 @@
 	margin-bottom: 2px;
 }
 .tabs-left>li {
-		margin-right: -1px;
+	margin-right: -1px;
 }
 .tabs-left>li.active>a,
 .tabs-left>li.active>a:hover,
@@ -33,11 +33,11 @@
 .nav>li>a:hover{
 	text-decoration: none;
 	background-color: #fff;
-	color: #e74c3c;
+	color: rgb(231,76,60);
 }
 .about>a{
 	text-decoration: none;
-	color: #e74c3c;
+	color: rgb(231,76,60);
 }
 .about>a:hover{
 	color: #2c3e50;
@@ -46,7 +46,7 @@
 	margin-bottom: 10px;
 	margin-right: 10px;
 	margin-left: 10px;
-	color: #e74c3c;
+	color: rgb(231,76,60);
 }
 small {
 	display: block;
@@ -61,13 +61,13 @@ small {
 	color:#ccc;
 }
 .show>a:focus{
-	color:#e74c3c;
+	color:rgb(231,76,60);
 }
 .progress .progress-bar{
 	background-color: #2c3e50;
 }
 .skill h5{
-	color: #e74c3c;
+	color: rgb(231,76,60);
 }
 [contenteditable="true"]:focus{
 	padding: 5px 5px 5px 5px;
@@ -77,7 +77,7 @@ small {
 }
 .album>a{
 	text-decoration: none;
-	color: #e74c3c;
+	color: rgb(231,76,60);
 }
 .album>a:hover{
 	color: #2c3e50;
@@ -129,7 +129,7 @@ small {
     z-index: 5;
     opacity: 0.8;
     cursor: pointer;
-    background-color: #e74c3c;
+    background-color: rgb(231,76,60);
     width: 200px;
     height: 50px;
     font-size: 20px;
@@ -161,17 +161,17 @@ small {
   	cursor: pointer;
 }
 .btn, .btn-default{
-	background-color: #e74c3c;
+	background-color: rgb(231,76,60);
 	color: #fff;
 	opacity: 0.8;
 }
 .btn:hover, 
 .btn-default:hover{
 	background-color: #fff;
-	color: #e74c3c;
+	color: rgb(231,76,60);
 }
 select option{
-	color: #e74c3c;
+	color: rgb(231,76,60);
 }
 .form{
 	border-radius:2px;
@@ -203,7 +203,7 @@ select option{
 }
 #editdiv h3{
 	text-align:center;
-	color: #e74c3c;
+	color: rgb(231,76,60);
 }
 #editdiv input{
 	width:100%;
@@ -214,7 +214,7 @@ select option{
 	padding:5px;
 }
 #editdiv input[type=button]{
-	background-color:#e74c3c;
+	background-color:rgb(231,76,60);
 	border:1px solid white;
 	font-size:14px;
 	color:white;
@@ -227,7 +227,7 @@ select option{
 	margin:0px;
 	background-color:white;
 	position: relative;
-	border: 5px solid #e74c3c;
+	border: 5px solid rgb(231,76,60);
 	left: 50%;
 	top: 50%;
 	margin-left:-210px;
@@ -250,7 +250,7 @@ select option{
 }
 #edit-password-div h3{
 	text-align:center;
-	color: #e74c3c;
+	color: rgb(231,76,60);
 }
 #edit-password-div input{
 	width:100%;
@@ -261,7 +261,7 @@ select option{
 	padding:5px;
 }
 #edit-password-div input[type=button]{
-	background-color:#e74c3c;
+	background-color:rgb(231,76,60);
 	border:1px solid white;
 	font-size:14px;
 	color:white;
@@ -274,9 +274,39 @@ select option{
 	margin:0px;
 	background-color:white;
 	position: relative;
-	border: 5px solid #e74c3c;
+	border: 5px solid rgb(231,76,60);
 	left: 50%;
 	top: 50%;
 	margin-left:-210px;
 	margin-top:-158px;
+}
+.navbar-btn{
+  border: 0px;
+  background: transparent;
+}
+.navbar-btn:hover,
+.navbar-btn:focus{
+  color: #e74c3c;
+  background: transparent;
+}
+.inline{
+  display: inline;
+}
+#header .navbar-nav .dropdown-menu {
+  background-color: #333;
+  max-width: 300px;
+  min-width: 100px;
+}
+
+#header .navbar-nav .dropdown-menu a{
+  padding: 8px 20px;
+  color:#fff;
+}
+#header .navbar-nav .dropdown-menu a:hover{
+  color:#e74c3c;
+  background: #fff;
+}
+#header .navbar-nav .dropdown-menu a:focus{
+  background: #e74c3c;
+  color: #fff;
 }
