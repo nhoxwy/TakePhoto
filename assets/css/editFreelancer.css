@@ -1,5 +1,5 @@
 .edit{
-	margin-top: 65px;
+	margin-top: 60px;
 }
 .tabs-left{
 	  border-right: 1px solid #ddd;
@@ -19,7 +19,7 @@
 	margin-bottom: 2px;
 }
 .tabs-left>li {
-		margin-right: -1px;
+	margin-right: -1px;
 }
 .tabs-left>li.active>a,
 .tabs-left>li.active>a:hover,
@@ -182,57 +182,7 @@ select option{
 	margin:20px 250px 0 35px;
 	float:left;
 }
-#editdiv{
-	opacity: 1;
-	position: absolute;
-	top: 0px;
-	left: 0px;
-	height: 100%;
-	width: 100%;
-	background: #000;
-	display: none;
-	z-index: 501;
-}
-#editdiv .col-xs-4, .col-xs-6, .col-xs-12{
-	padding-left: 5px;
-	padding-right: 5px;
-}
-#editdiv select{
-	border-radius: 0px;
-	margin-top: 5px;
-}
-#editdiv h3{
-	text-align:center;
-	color: #e74c3c;
-}
-#editdiv input{
-	width:100%;
-	height:35px;
-	margin-top:5px;
-	border:1px solid #999;
-	border-radius:0px;
-	padding:5px;
-}
-#editdiv input[type=button]{
-	background-color:#e74c3c;
-	border:1px solid white;
-	font-size:14px;
-	color:white;
-	width:49%;
-}
-#edit-form{
-	position: relative;
-	background: #000;
-	width:350px;
-	margin:0px;
-	background-color:white;
-	position: relative;
-	border: 5px solid #e74c3c;
-	left: 50%;
-	top: 50%;
-	margin-left:-210px;
-	margin-top:-158px;
-}
+
 #edit-password-div{
 	opacity: 1;
 	position: absolute;
@@ -279,4 +229,34 @@ select option{
 	top: 50%;
 	margin-left:-210px;
 	margin-top:-158px;
+}
+.navbar-btn{
+  border: 0px;
+  background: transparent;
+}
+.navbar-btn:hover,
+.navbar-btn:focus{
+  color: #e74c3c;
+  background: transparent;
+}
+.inline{
+  display: inline;
+}
+#header .navbar-nav .dropdown-menu {
+  background-color: #333;
+  max-width: 300px;
+  min-width: 100px;
+}
+
+#header .navbar-nav .dropdown-menu a{
+  padding: 8px 20px;
+  color:#fff;
+}
+#header .navbar-nav .dropdown-menu a:hover{
+  color:#e74c3c;
+  background: #fff;
+}
+#header .navbar-nav .dropdown-menu a:focus{
+  background: #e74c3c;
+  color: #fff;
 }

@@ -9,9 +9,9 @@
             <cfelse>
                 <b>Action:</b> unknown<br/>
             </cfif>
-            <b>Error:</b> #request.exception.cause.message#<br/>
-            <b>Type:</b> #request.exception.cause.type#<br/>
-            <b>Details:</b> #request.exception.cause.detail#<br/>
+            <b>Error:</b> #request.exception.message#<br/>
+            <b>Type:</b> #request.exception.type#<br/>
+            <b>Details:</b> #request.exception.detail#<br/>
             <cfdump eval = request.exception>
         </cfoutput>
     </div>

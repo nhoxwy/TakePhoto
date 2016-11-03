@@ -64,29 +64,42 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a href="/index.cfm/main" class="navbar-brand text-danger" href="#"><b style="color: white">Take</b><b style="color: #e74c3c">Photo</b></a>
+            <a href="/index.cfm" class="navbar-brand text-danger"><b style="color: white">Take</b><b style="color: #e74c3c">Photo</b></a>
           </div>
           <div class="navbar-collapse collapse" id="navbar-collapsible">
             <ul class="nav navbar-nav navbar-left" id="main-navbar">
-              <!--- <li><a href="#section1">Slogan</a></li> --->
               <li><a href="#section2">Giúp bạn</a></li>
               <li><a href="#section3">Bạn muốn</a></li>
               <li><a href="#section6">Bạn nói</a></li>
               <li><a href="#section4">Thành viên</a></li>
               <li><a href="#section5">Liên hệ</a></li>
-              <!--- <li><a href="#section8">Liên hệ</a></li> --->
-              <!--- <li>&nbsp;</li> --->
             </ul>
-            <ul class="nav navbar-nav navbar-left" id="category-navbar">
-              <!--- <li><a href="#section1">Slogan</a></li> --->
-              <li><a href="/index.cfm/photographer">Photographer</a></li>
-              <li><a href="/index.cfm/model">Người mẫu</a></li>
-              <li><a href="/index.cfm/work">Công việc</a></li>
-              <li><a href="/index.cfm/product">Tác phẩm</a></li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-              <li><a href="/index.cfm/user/register"><i class="fa fa-heart-o fa-lg"></i></a></li>
-            </ul>
+            <cfoutput>
+              <ul class="nav navbar-nav navbar-left" id="category-navbar">
+                <li><a href="#buildURL('photographer')#">Photographer</a></li>
+                <li><a href="#buildURL('model')#">Người mẫu</a></li>
+                <li><a href="#buildURL('work')#">Công việc</a></li>
+                <li><a href="#buildURL('product')#">Tác phẩm</a></li>
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+                <li>
+                  <cfif SESSION.isUserLoggedIn EQ true>
+                    <p class="inline">#SESSION.firstName#</p>
+                    <button type="button" class="btn navbar-btn dropdown-toggle inline" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-heart"></span>
+                    </button>
+                    <ul id="hello-drd" class="dropdown-menu">
+                      <li><a href="/index.cfm/user/editFreelancer" data-type="profile">Thông tin</a></li>
+                      <!-- <li role="separator" class="divider"></li> -->
+                      <li><a href="/index.cfm/user/test">Test</a></li>
+                      <!-- <li role="separator" class="divider"></li> -->
+                      <li><a href="index.cfm?action=user.exit">Thoát</a></li>
+                    </ul>
+                  <cfelse>
+                    <a href="/index.cfm/user/register"><i class="fa fa-heart-o fa-lg"></i></a>
+                  </cfif>
+                </li>
+              </ul>
+            </cfoutput>   
           </div>
         </div>
       </nav>

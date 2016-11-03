@@ -32,7 +32,7 @@
 			</div>
 		<div class="col-sm-3">
 			<div class="back_link">
-				<a href="/index.cfm/user/edit-freelancer" class="back"><i class="glyphicon glyphicon-arrow-left"></i>Quay lại trang trước</a>
+				<a href="/index.cfm/user/editFreelancer" class="back"><i class="glyphicon glyphicon-arrow-left"></i>Quay lại trang trước</a>
 			</div>
 			<div class="input-group"> 
 	            <input class="form-control" placeholder="Thêm bình luận" type="text">
