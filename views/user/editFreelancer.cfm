@@ -317,7 +317,9 @@
       </div>
    </div>
 <cfelse>
-   <a href="/index.cfm/user/login"></a>
+   <cfscript>
+      location("/index.cfm/user/register",false);
+   </cfscript>
 </cfif>
 
 

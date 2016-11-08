@@ -18,8 +18,14 @@
         </div>
       </div>
     </div>
+  <cfelse>
+   <cfscript>
+      location("/index.cfm/user/register",false);
+   </cfscript>
   </cfif>
 </cfoutput>
+
+
 <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
 <script>
 function checkRegister(){

@@ -18,5 +18,9 @@
         </div>
       </div>
     </div>
+  <cfelse>
+   <cfscript>
+      location("/index.cfm/user/register",false);
+   </cfscript>
   </cfif>
 </cfoutput>
