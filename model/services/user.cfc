@@ -18,14 +18,15 @@
 			VALUES (?,?,?,?,?,?,?)",[lastname,firstname,email,encrypt(password,"taKepHoTO","CFMX_COMPAT","Base64"),dateOfBirth,sex,classify],{datasource="takephoto"});
 	}
 
-	function updateInfo (string lastname,string firstname,string phone) {
+	function updateInfo (string lastname,string firstname,string phone,Date dateOfBirth) {
 		queryExecute("
 			UPDATE user 
-			SET lastName=?, firstName=?, phoneNumber=?
+			SET lastName=?, firstName=?, phoneNumber=?, dateOfBirth=?
 			WHERE userID=?",
 			[{value=lastname,cfsqltype="cf_sql_varchar"},
 			{value=firstname,cfsqltype="cf_sql_varchar"},
 			{value=phone,cfsqltype="cf_sql_varchar"},
+			{value=dateOfBirth,cfsqltype="cf_sql_date"},
 			SESSION.userID], {datasource="takephoto"});
 	}
 

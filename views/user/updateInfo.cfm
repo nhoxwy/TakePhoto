@@ -3,7 +3,7 @@
 <cfoutput>
   <cfif SESSION.isUserLoggedIn EQ true>
     <div id="updateInfo">
-      <h1 class="text-center updateInfo-title">Cập nhật thông tin</h1>
+      <h1 class="text-center updateInfo-title">Xin chào, #SESSION.firstname#</h1>
       <h3 class="text-center">Thay đổi thông tin cá nhân của bạn</h3>
       <div class="col-sm-6 col-md-4 col-md-offset-4">
         <div class="account-wall">
@@ -12,15 +12,41 @@
               <input type="text" class="form-control" name="lastnameUpdate" placeholder="Họ" value="#SESSION.lastName#" required>
               <input type="text" class="form-control" name="firstnameUpdate" placeholder="Tên" value="#SESSION.firstName#" required>
               <input type="text" class="form-control" name="phoneUpdate" value="#SESSION.phone#" minlength="10" maxlength="11" placeholder="Số điện thoại của bạn" required>
+              <div class="form=group">
+                <div class="col-xs-4" style="padding-left:0px;">
+                  <select class="form-control" id="dayOfBirth" name="dayOfBirth">
+                    <option selected value="#SESSION.dayOfBirth#">#SESSION.dayOfBirth#</option>
+                    <cfloop index="i" from="1" to="31">
+                        <option value="#i#">#i#</option>
+                    </cfloop>
+                  </select>
+                </div>
+                <div class="col-xs-4" style="padding-right:0px; padding-left:0px">
+                  <select class="form-control" id="monthOfBirth" name="monthOfBirth">
+                    <option selected value="#SESSION.monthOfBirth#">#SESSION.monthOfBirth#</option>
+                    <cfloop index="j" from="1" to="12">
+                        <option value="#j#">#j#</option>
+                    </cfloop>
+                  </select>
+                  </div>
+                <div class="col-xs-4" style="padding-right:0px;">
+                  <select class="form-control" id="yearOfBirth" name="yearOfBirth">
+                    <option selected value="#SESSION.yearOfBirth#">#SESSION.yearOfBirth#</option>
+                    <cfloop index="k" from="1900" to="#dateFormat(now(),"yyyy")#">
+                        <option value="#k#">#k#</option>
+                    </cfloop>
+                  </select>
+                </div>
+              </div>
               <input type="submit" class="btn btn-lg btn-primary btn-block" name="btnSubmit" value="Cập nhật thông tin">
               <a href="/index.cfm/user/editFreelancer" class="pull-right inline">Hủy bỏ?</a>  
           </form>
         </div>
       </div>
     </div>
-  <cfelse>
-   <cfscript>
-      location("/index.cfm/user/register",false);
-   </cfscript>
+    <cfelse>
+      <cfscript>
+        location("/index.cfm/user/register",false);
+      </cfscript>
   </cfif>
 </cfoutput>
