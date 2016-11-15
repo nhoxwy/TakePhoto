@@ -1,4 +1,4 @@
-	component  {
+component  {
 
 	function login(string email,string password) {
 		qr=new Query();
