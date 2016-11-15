@@ -1,0 +1,64 @@
+body {
+	margin-top: 80px;
+	color: #000000;
+}
+hr {
+	border: 2px solid #e74c3c;	
+}
+a {
+	color: #000000;
+}
+a:hover {
+	text-decoration: none;
+}
+#photographer-menu select{
+	border-radius: 0px;
+}
+#photographer-menu select option{
+	color: #e74c3c;
+}
+#photographer-menu select option:hover
+{
+	box-shadow: inset 20px 20px #e74c3c;
+}
+#photographer-menu .btn {
+	display: block;
+	border-radius: 0;
+}
+
+#photographer-menu .form_datetime {
+}
+
+#photographer-menu .form_datetime .form-control,
+#photographer-menu .form_datetime .input-group-addon {
+	background-color: #ffffff;
+	border-radius: 0px;
+}
+
+#list-photographer li {
+	list-style: none;
+	padding: 20px 35px;
+	margin: 0 0 30px 0;
+	text-align: center;
+}
+#list-photographer img {
+	width: 150px;
+	height: 150px;
+	display: block;
+	margin: 0 auto;
+}
+#list-photographer h4 {
+	text-align: center;
+}
+#list-photographer hr {
+	border: 0.5px solid #2b2b2b;
+}
+#list-photographer .fa-heart {
+	color: #e74c3c;
+}
+#list-photographer .btn {
+	display: block;
+	width: 75%;
+	margin: 0 auto;
+	text-align: center;
+}

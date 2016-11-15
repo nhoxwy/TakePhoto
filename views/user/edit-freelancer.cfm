@@ -1,10 +1,47 @@
 ﻿<link rel="stylesheet" type="text/css" href="/assets/css/edit-freelancer.css">
 <link href="http://fontawesome.io/assets/font-awesome/css/font-awesome.css" rel="stylesheet" media="screen">
 
+
+<style type="text/css">
+   body {
+      color: #000000;
+   }
+}
+</style>
+
+<div id="edit-password-div">
+   <form class="form" onsubmit="return" id="edit-password-form" method="post">
+      <h3>THAY ĐỔI MẬT KHẨU</h3>
+      <hr/>
+      <div class="form-group col-sm-12 col-xs-12">
+         <input type="password" class="form-control" id="password" name="password" placeholder="Mật khẩu cũ">
+      </div>
+      <div class="form-group col-sm-12 col-xs-12">
+         <input type="password" class="form-control" id="new-password" name="new-password" minlength="6" placeholder="Mật khẩu mới">
+      </div>
+      <div class="form-group col-sm-12 col-xs-12">
+         <input type="password" class="form-control" id="re-new-password" name="re-new-password" placeholder="Nhập lại mật khẩu mới">
+      </div>
+      <div class="form-group col-sm-12 col-xs-12">
+         <hr/>
+         <input type="submit" id="edit-password-formbtn" value="Cập nhật"/>
+         <input type="button" id="password-cancel" value="Hủy bỏ"/>
+      </div>
+   </form>
+</div>
+
 <div class="container edit">
    <h3 class="about">
       <img class="img-user" src="https://www.facebook.com/images/profile/timeline/app_icons/info_24.png"/>
       <a href="#">Thông tin</a>
+     <cfquery name="abc" datasource="takephoto">
+        SELECT * FROM user
+        WHERE (email = <cfqueryparam value="#SESSION.email#" cfsqltype="cf_sql_varchar"/>)
+
+     </cfquery>
+     <cfoutput>#abc.dateOfBirth#</cfoutput>
+     <cfoutput>#abc.sex#</cfoutput>
+     <cfoutput>#abc.classify#</cfoutput>
    </h3>
    <hr/>
    <div class="row">
@@ -19,40 +56,40 @@
       <div class="col-sm-10">
          <div class="tab-content">
             <div class="tab-pane active" id="overview">
-               <div class="col-sm-6 col-md-4 no-pad">
+               <div class="col-sm-12 col-md-4 no-pad">
                   <div class="user-image">
                      <img src="http://3.bp.blogspot.com/-IbEOTNtCMyU/TfCAdHaAxEI/AAAAAAAAA8U/EATib38SSAM/s320/joe-mcelderry.jpg" class="img-responsive img-rounded"/>
                   </div>
                   <div class="user-i-image">
-                     <i class="fa fa-camera fa-5x"></i>
+                     <i class="fa fa-camera fa-3x"></i>
                   </div>
                </div>
-               <div class="col-sm-6 col-md-8">
-                  <div class="row">
-                     <h4 style="color:#e74c3c;">Nguyễn Hoàng Duy</h4>
-                     <small><cite>Ho Chi Minh City, Vietnam<i class="glyphicon glyphicon-map-marker"></i></cite></small>
-                     <hr/>
-                  </div>
-                  <div class="row">
-                     <div class="col-sm-6 col-md-6 show">
-                        <a href="#"><i class="glyphicon glyphicon-envelope"></i>hoangduy.mmt07@gmail.com</a>
+               <div class="col-sm-12 col-md-8">
+                  <cfoutput>
+                     <div class="row">
+                        <h4 style="color: rgb(231,76,60);">#SESSION.lastname# #SESSION.firstname#</h4>
+                        <small><cite>Ho Chi Minh City, Vietnam<i class="glyphicon glyphicon-map-marker"></i></cite></small>
                         <hr/>
-                        <i class="glyphicon glyphicon-phone"></i><a href="#" id="username" data-type="text" data-pk="1" data-url="/post" data-title="Nhập số điện thoại">01673867976</a>
-                        <hr/>
-                        <i class="glyphicon glyphicon-gift"></i><a href="#">3 Tháng 7 1994</a>
-                        <hr/>
-                        </p>
                      </div>
-                     <div class="col-sm-6 col-md-6 show">
-                        <i class="glyphicon glyphicon-question-sign"></i><a href="#">Đổi mật khẩu?</a>
-                        <hr/>
-                        <i class="glyphicon glyphicon-info-sign"></i><a href="#">Chuyển tài khoản/Xóa</a>
-                        <hr/>
-                        <div class="alert alert-info alert-dismissable" id="divinfo">
-                           Bạn muốn <a href="#"><strong>Chỉnh sửa thông tin</strong></a> này?
+                     <div class="row">
+                        <div class="col-sm-6 col-md-6 show">
+                           <i class="glyphicon glyphicon-envelope"></i>#SESSION.email#
+                           <hr/>
+                           <i class="glyphicon glyphicon-phone"></i>#SESSION.phone#
+                           <hr/>
+                           <i class="glyphicon glyphicon-gift"></i>
+                           <hr/>
+                           </p>
+                        </div>
+                        <div class="col-sm-6 col-md-6 show">
+                           <i class="glyphicon glyphicon-question-sign"></i><a id="edit-password-form-div">Đổi mật khẩu?</a>
+                           <hr/>
+                           <i class="glyphicon glyphicon-info-sign"></i><a>Chuyển tài khoản/Xóa</a>
+                           <hr/>
+                           <i class="glyphicon glyphicon-pencil"></i><a href="/index.cfm/user/updateInfo">Chỉnh sửa thông tin</a>
                         </div>
                      </div>
-                  </div>
+                  </cfoutput>
                </div>
             </div>
             <div class="tab-pane" id="date">
@@ -328,21 +365,25 @@
             e.preventDefault()
             $(this).tab('show');
         });
-		$(".show>a:gt(0)").hover(function(){
-			$("#divinfo").fadeToggle();
-		});
 		$(".cycler>img").hover(function(){
 			setTimeout('cycleImages()', 2000);
 		},function(){
 			return false;
 		});
-	    $(".no-pad").mouseover(function(){
-	    	$(".user-i-image").fadeIn(250);
+	    $(".user-i-image i").mouseover(function(){
 	    	$(".user-image").css("opacity","0.5");
+         $(".user-i-image i").css("color","#e74c3c");
 	    });
-	    $(".no-pad").mouseleave(function(){
-	    	$(".user-i-image").fadeOut(250);
+	    $(".user-i-image i").mouseleave(function(){
 	    	$(".user-image").css("opacity","1");
+         $(".user-i-image i").css("color","#fff");
 	    });
+      });
+       $("#edit-password-form-div").click(function(){
+         $("#edit-password-div").css("display", "block");
+       });
+       $("#edit-password-form #password-cancel").click(function() {
+         $("#edit-password-div").hide();
+      })
 	});
 </script>

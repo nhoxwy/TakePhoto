@@ -1,6 +1,7 @@
-﻿<link rel="stylesheet" type="text/css" href="/assets/css/show-image.css">
+﻿<link rel="stylesheet" type="text/css" media="all" href="/assets/css/show-image.css">
+<link rel="stylesheet" type="text/css" media="all" href="/assets/css/magnific-popup.css">
 <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
-<script src="/assets/js/show-image.js" type="text/javascript"></script>
+<script src="/assets/js/jquery.magnific-popup.js" type="text/javascript"></script>
 
 
 <div id="show-image">
@@ -11,66 +12,23 @@
 		</h3>
 		<hr/>
 		<div class="col-sm-9">
-				<div class="col-lg-3 col-md-4 col-xs-6 thumb">
-	                <a class="thumbnail preview" href="http://placehold.it/400x300">
-	                    <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-	                </a>
-	            </div>
-	            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-	                <a class="thumbnail preview" href="http://placehold.it/400x300">
-	                    <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-	                </a>
-	            </div>
-	            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-	                <a class="thumbnail preview" href="http://placehold.it/400x300">
-	                    <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-	                </a>
-	            </div>
-	            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-	                <a class="thumbnail preview" href="http://placehold.it/400x300">
-	                    <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-	                </a>
-	            </div>
-	            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-	                <a class="thumbnail preview" href="http://placehold.it/400x300">
-	                    <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-	                </a>
-	            </div>
-	            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-	                <a class="thumbnail preview" href="http://placehold.it/400x300">
-	                    <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-	                </a>
-	            </div>
-	            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-	                <a class="thumbnail preview" href="http://placehold.it/400x300">
-	                    <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-	                </a>
-	            </div>
-	            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-	                <a class="thumbnail preview" href="http://placehold.it/400x300">
-	                    <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-	                </a>
-	            </div>
-	            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-	                <a class="thumbnail preview" href="http://placehold.it/400x300">
-	                    <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-	                </a>
-	            </div>
-	            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-	                <a class="thumbnail preview" href="http://placehold.it/400x300">
-	                    <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-	                </a>
-	            </div>
-	            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-	                <a class="thumbnail preview" href="http://placehold.it/400x300">
-	                    <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-	                </a>
-	            </div>
-	            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-	                <a class="thumbnail preview" href="http://placehold.it/400x300">
-	                    <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-	                </a>
-	            </div>
+				<ul id="portfolio" class="clearfix">
+			      <li><a href="/assets/image/item01@2x.jpg" title="Tên Album"><img src="/assets/image/item01@2x.jpg" alt="brick and by windows"></a></li>
+			      
+			      <li><a href="/assets/image/item02@2x.jpg" title="Tên Album"><img src="/assets/image/item02.jpg" alt="old-style ipad icons"></a></li>
+			      
+			      <li><a href="/assets/image/item03@2x.jpg" title="Tên Album"><img src="/assets/image/item03.jpg" alt="mobile iphone app profile ui"></a></li>
+			      
+			      <li><a href="/assets/image/item04@2x.jpg" title="Tên Album"><img src="/assets/image/item04.jpg" alt="new balance shoes"></a></li>
+			      
+			      <li><a href="/assets/image/item05@2x.jpg" title="Tên Album"><img src="/assets/image/item05.jpg" alt="rive radio icon"></a></li>
+			      
+			      <li><a href="/assets/image/item06@2x.jpg" title="Tên Album"><img src="/assets/image/item06.jpg" alt="blood pressure app ui"></a></li>
+			      
+			      <li><a href="/assets/image/item07@2x.jpg" title="Tên Album"><img src="/assets/image/item07.jpg" alt="memories feed ui iphone"></a></li>
+			      
+			      <li><a href="/assets/image/item08@2x.jpg" title="Tên Album"><img src="/assets/image/item08.jpg" alt="apple device vector icons"></a></li>
+			    </ul>
 			</div>
 		<div class="col-sm-3">
 			<div class="back_link">
@@ -127,5 +85,17 @@
 </div>
 
 <script>
-
+$('#portfolio').magnificPopup({
+    delegate: 'a',
+    type: 'image',
+    image: {
+      cursor: null,
+      titleSrc: 'title'
+    },
+    gallery: {
+      enabled: true,
+      preload: [0,1],
+      navigateByImgClick: true
+		}
+  });
 </script>

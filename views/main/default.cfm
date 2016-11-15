@@ -1,4 +1,7 @@
-﻿<!--- Section 1 / Slogan --->
+﻿<link rel="stylesheet" type="text/css" href="/assets/css/main.css">
+<link rel="stylesheet" type="text/css" href="/assets/css/normalize.css">
+
+<!--- Section 1 / Slogan --->
 <section class="container-fluid" id="section1">
   <div class="v-center_2">
     <!--- <h1 class="text-center">TakePhoto</h1> --->
@@ -21,70 +24,100 @@
 
 <!--- Section 2 / Giúp bạn? --->
 <section class="container-fluid" id="section2">
-  <div class="container">
-    <h1 class="text-center"><b class="text-danger">Take Photo</b> giúp bạn...</h1>
-    <br>
-    <br>
-    <div class="row">
-      <div class="col-sm-4">
-        <div class="row">
-          <div class="col-sm-12 text-center">
-            <div class="panel panel-default slideInLeft animate">
-              <div class="panel-heading">
-                <h3>Thỏa mãn</h3>
-              </div>
-              <div class="panel-body">
-                <p>Thõa mãn nhu cầu chụp hình của khách hàng và phát huy khả năng nhiếp ảnh của Freelancer/p>
-                <hr>GO
-                <hr>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-4 text-center">
-        <div class="row">
-          <div class="col-sm-12 text-center">
-            <div class="panel panel-default slideInUp animate">
-              <div class="panel-heading">
-                <h3>Tiết kiệm</h3>
-              </div>
-              <div class="panel-body">
-                <p>Tiết kiệm chi phí PR cho Freelancer, chi phí thuê thợ chụp cho khách hàng.../p>
-                <hr>GO
-                <hr>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-4 text-center">
-        <div class="row">
-          <div class="col-sm-12 text-center">
-            <div class="panel panel-default slideInRight animate">
-              <div class="panel-heading">
-                <h3>Kết nối</h3></div>
-              <div class="panel-body">
-                <p>Giúp các khách hàng và Freelancer từ mọi nơi trên đất nước Việt Nam có thể kết nối, giao lưu với nhau.</p>
-                <hr>GO
-                <hr>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--/row-->
-    <div class="row">
-        <br>
-    </div>
+<div class="container">
+  <div class="hwd-title">
+    <h1>
+      <span class="we">Chúng tôi</span>
+      <span class="do">Giúp Bạn</span>
+    </h1>
   </div>
+  <div class="content">
+    <img class="hwd-1 img-responsive" src="/assets/image/card.png" width="661" height="483">
+    <img class="hwd-3 img-responsive" src="/assets/image/clipboard.png" width="578" height="628">
+    <img class="hwd-5 img-responsive" src="/assets/image/ipad.png" width="594" height="639">
+    <img class="hwd-7 img-responsive" src="/assets/image/picture.png" width="505" height="493">
+  </div>
+</div>
 <!--/container-->
 </section>
 
 <!--- Section 3 / Cho bạn? --->
 <section class="container-fluid" id="section3">
-  <div class="container v-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6 col-sm-offset-6 col-xs-12">
+        <h1>Bạn muốn...</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-5 col-sm-offset-7 col-xs-12">
+        <div class="cardWrapper">
+          <a href="/index.cfm/photographer">
+            <div class="card">
+              <div class="cardFace front card1">
+                <h3><i class="fa fa-search"></i> Tìm</h3>
+                <div class="moreInfo">
+                  <i class="fa fa-camera fa-3x"></i>
+                  <h4>Photographer</h4>
+                </div>
+              </div>
+              <div class="cardFace back card1"><img class="img-responsive" src="https://hd.unsplash.com/photo-1457446783150-34ee89337533"></div>
+            </div>
+          </a>
+        </div>
+        
+        <div class="cardWrapper">
+          <a href="/index.cfm/model">
+            <div class="card">
+              <div class="cardFace front card2">
+                <h3><i class="fa fa-search"></i> Tìm</h3>
+                <div class="moreInfo">
+                  <i class="fa fa-female fa-3x"></i>
+                  <h4>Người mẫu</h4>
+                </div>
+              </div>
+              <div class="cardFace back card2"><img class="img-responsive" src="/assets/image/team04.jpg"></div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-sm-6 col-sm-offset-7 col-xs-12">
+        <div class="cardWrapper">
+          <a href="/index.cfm/work">
+            <div class="card">
+              <div class="cardFace front card3">
+                <h3><i class="fa fa-share-alt"></i> Chia sẻ</h3>
+                <div class="moreInfo">
+                  <i class="fa fa-briefcase fa-3x"></i>
+                  <h4>Công việc</h4>
+                </div>
+              </div>
+              <div class="cardFace back card3"><img  class="img-responsive" src="http://www.capitaeducation.co.uk/File.ashx?path=ROOT/Images/shutterstock_123873739-LARGE.jpg"></div>
+            </div>
+          </a>
+        </div>
+        
+        <div class="cardWrapper">
+          <a href="/index.cfm/product">
+            <div class="card">
+              <div class="cardFace front card4">
+                <h3><i class="fa fa-share-alt"></i> Chia sẻ</h3>
+                <div class="moreInfo">
+                  <i class="fa fa-thumbs-o-up fa-3x"></i>
+                  <h4>Tác phẩm</h4>
+                </div>
+              </div>
+              <div class="cardFace back card4"><img class="img-responsive" src="https://hd.unsplash.com/photo-1454123253751-1fe2b9e0c10d"></div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- <div class="container v-center">
     <div class="row">
       <div class="col-sm-2 col-sm-offset-2 col-xs-6">
         <div class="text-center">
@@ -187,110 +220,212 @@
         </div>
       </div>
     </div>
-    <!--/row-->
-  </div>
+    /row
+  </div> -->
 </section>
 
 <!--- Section 6 / Bạn nói? --->
 <section class="container-fluid" id="section6">
   <div class="row">
     <div class="col-sm-6 col-sm-offset-3 col-md-10 col-md-offset-1">
-      <h2 class="text-center">Khách hàng nói gì về <b class="text-danger">Take Photo</b>?</h2>
+      <h1 class="text-center">Khách hàng nói gì về <a href="#" class="text-danger">Take Photo</a> ?</h1>
       <hr>
-      <div class="media">
-        <h3>Ái Vy</h3>
-        <div class="media-left">
-          <img src="http://1.bp.blogspot.com/-U3WxUTM-GFw/VpO6hGLGdpI/AAAAAAAAPt0/K5kikgmlrJg/w100-h100-c/Anh-girl-xinh-facebook-cute-%252812%2529.jpg">
-        </div>
-        <div class="media-body media-middle">
-          <p>Some brand-tacular designs even have home page content that is taller that 12,000 xels. That's a lotta content Lorem ipsum dolor sit amet, adipiscing elit.</p>
-        </div>
-      </div>
-      <hr>
-      <div class="media">
-        <h3>Mỹ Na</h3>
-        <div class="media-body media-middle">
-          <p>Offset right home page content that is taller that 12,000 pixels. That's a lotta content Lorem ipsum dolor sit amet, adipiscing elit.</p>
-        </div>
-        <div class="media-right">
-          <img src="http://2.bp.blogspot.com/-jiaHLJYOqrs/VqyDzZ-kyHI/AAAAAAAATJk/wi1Xf2TOlts/w100-h100-c/Girl-xinh-da-trang-ohaylam.com-%25281%2529.jpg">
-        </div>
-      </div>
-      <hr>
-      <div class="media">
-        <h3>Trân</h3>
-        <div class="media-left">
-          <img src="https://1.bp.blogspot.com/-8pPMOLNA7G0/VwUe-vN22CI/AAAAAAAATQ0/o9448n9rZMUpknXkhqur-FCv0UMgI_LmQ/w100-h100-c/Girl-xinh-ohaylam.com-%25281%2529.jpg">
-        </div>
-        <div class="media-body media-middle">
-          <p>Some brand-tacular designs even have home page content that is taller that 12,000 xels. That's a lotta content Lorem ipsum dolor sit amet, adipiscing elit.</p>
-        </div>
-      </div>
-      <hr>
-      <div class="media">
-        <h3>Boom</h3>
-        <div class="media-body media-middle">
-          <p>Offset right home page content that is taller that 12,000 pixels. That's a lotta content Lorem ipsum dolor sit amet, adipiscing elit.</p>
-        </div>
-        <div class="media-right">
-          <img src="//placehold.it/100">
-        </div>
-      </div>
-      <hr>
-      <div class="media">
-        <h3>Boom</h3>
-        <div class="media-left">
-          <img src="//placehold.it/100">
-        </div>
-        <div class="media-body media-middle">
-          <p>Some brand-tacular designs even have home page content that is taller that 12,000 xels. That's a lotta content Lorem ipsum dolor sit amet, adipiscing elit.</p>
-        </div>
-      </div>
-      <hr>
-      <div class="media">
-        <h3>Boom</h3>
-        <div class="media-body media-middle">
-          <p>Offset right home page content that is taller that 12,000 pixels. That's a lotta content Lorem ipsum dolor sit amet, adipiscing elit.</p>
-        </div>
-        <div class="media-right">
-          <img src="//placehold.it/100">
-        </div>
+      <ul id="comments-list" class="comments-list">
+        <li>
+          <div class="comment-main-level">
+            <!-- Avatar -->
+            <div class="comment-avatar"><img src="http://i9.photobucket.com/albums/a88/creaticode/avatar_1_zps8e1c80cd.jpg" alt=""></div>
+            <!-- Contenedor del Comentario -->
+            <div class="comment-box">
+              <div class="comment-head">
+                <h6 class="comment-name"><a href="http://creaticode.com/blog">Nguyễn Hoàng Duy</a></h6>
+                <span>04 tháng 10 2016</span>
+                <i class="fa fa-heart"></i>
+              </div>
+              <div class="comment-content">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit omnis animi et iure laudantium vitae, praesentium optio, sapiente distinctio illo?
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="comment-main-level">
+            <!-- Avatar -->
+            <div class="comment-avatar"><img src="http://i9.photobucket.com/albums/a88/creaticode/avatar_2_zps7de12f8b.jpg" alt=""></div>
+            <!-- Contenedor del Comentario -->
+            <div class="comment-box">
+              <div class="comment-head">
+                <h6 class="comment-name"><a href="http://creaticode.com/blog">Nguyễn Chí Linh</a></h6>
+                <span>04 tháng 10 2016</span>
+                <i class="fa fa-heart"></i>
+              </div>
+              <div class="comment-content">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit omnis animi et iure laudantium vitae, praesentium optio, sapiente distinctio illo?
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="comment-main-level">
+            <!-- Avatar -->
+            <div class="comment-avatar"><img src="http://i9.photobucket.com/albums/a88/creaticode/avatar_2_zps7de12f8b.jpg" alt=""></div>
+            <!-- Contenedor del Comentario -->
+            <div class="comment-box">
+              <div class="comment-head">
+                <h6 class="comment-name"><a href="http://creaticode.com/blog">Nguyễn Chí Linh</a></h6>
+                <span>04 tháng 10 2016</span>
+                <i class="fa fa-heart"></i>
+              </div>
+              <div class="comment-content">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit omnis animi et iure laudantium vitae, praesentium optio, sapiente distinctio illo?
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="comment-main-level">
+            <!-- Avatar -->
+            <div class="comment-avatar"><img src="http://i9.photobucket.com/albums/a88/creaticode/avatar_2_zps7de12f8b.jpg" alt=""></div>
+            <!-- Contenedor del Comentario -->
+            <div class="comment-box">
+              <div class="comment-head">
+                <h6 class="comment-name"><a href="http://creaticode.com/blog">Nguyễn Chí Linh</a></h6>
+                <span>04 tháng 10 2016</span>
+                <i class="fa fa-heart"></i>
+              </div>
+              <div class="comment-content">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit omnis animi et iure laudantium vitae, praesentium optio, sapiente distinctio illo?
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="comment-main-level">
+            <!-- Avatar -->
+            <div class="comment-avatar"><img src="http://i9.photobucket.com/albums/a88/creaticode/avatar_2_zps7de12f8b.jpg" alt=""></div>
+            <!-- Contenedor del Comentario -->
+            <div class="comment-box">
+              <div class="comment-head">
+                <h6 class="comment-name"><a href="http://creaticode.com/blog">Nguyễn Chí Linh</a></h6>
+                <span>04 tháng 10 2016</span>
+                <i class="fa fa-heart"></i>
+              </div>
+              <div class="comment-content">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit omnis animi et iure laudantium vitae, praesentium optio, sapiente distinctio illo?
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="comment-main-level">
+            <!-- Avatar -->
+            <div class="comment-avatar"><img src="http://i9.photobucket.com/albums/a88/creaticode/avatar_2_zps7de12f8b.jpg" alt=""></div>
+            <!-- Contenedor del Comentario -->
+            <div class="comment-box">
+              <div class="comment-head">
+                <h6 class="comment-name"><a href="http://creaticode.com/blog">Nguyễn Chí Linh</a></h6>
+                <span>04 tháng 10 2016</span>
+                <i class="fa fa-heart"></i>
+              </div>
+              <div class="comment-content">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit omnis animi et iure laudantium vitae, praesentium optio, sapiente distinctio illo?
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <div style="text-align: center;">
+        <button class="btn btn-default loadMore" id="loadMore">Xem thêm</button>
+        <button class="btn btn-default showLess" id="showLess">Rút gọn</button>
       </div>
     </div>
   </div>
 </section>
 
 <!--- Section 4 / Thành viên --->
-<section class="container-fluid" id="section4">
-  <h1 class="text-center">TakePhoto Team</h1>
-  <div class="row">
-    <div class="col-sm-10 col-sm-offset-1">
-      <h3 class="text-center slideInUp animate"><strong>Đam Mê</strong> cùng <strong style="color: #f44d3c;">Sáng Tạo</strong></h3>
-      <br>
-      <div class="row">
-        <div class="col-xs-3 text-right">
-          <h5>Nguyễn Chí Linh - UIT</h5><br>
-          <h5>Phạm Minh An - UIT</h5><br>
-          <h5>Nguyễn Hoàng Phúc - UIT</h5><br>
-          <h5>Nhật Lâm - UIT</h5><br>
-          <h5>Võ Quốc Việt - UIT</h5><br>
+<section id="section4">
+  <div class="container demo-1">
+    <div id="slider" class="sl-slider-wrapper">
+      <div class="sl-slider">
+        <div class="sl-slide bg-1" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
+          <div class="sl-slide-inner">
+            <div class="deco img-responsive" style="background-image: url('/assets/image/ncl.jpg');"></div>
+            <div>
+            </div>
+            <h2>Nguyễn Chí Linh</h2>
+            <blockquote>
+              <p>Chỉ có đam mê mới phát huy hết sức mạnh tiềm ẩn</p>
+              <cite>Hãy làm những điều mình thích</cite><br><br>
+              <a href="https://www.facebook.com/ncl251" target="_blank"><i class="fa fa-facebook-f fa-2x"></i></a>
+              <a href="https://twitter.com/chilinhnguyen13" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>
+              <a href="https://www.instagram.com/ncl251" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
+              <a href="https://plus.google.com/u/0/115612784843442016810" target="_blank"><i class="fa fa-google-plus fa-2x"></i></a>
+            </blockquote>
+          </div>
         </div>
-        <div class="col-xs-6">
-          <p class="text-center">
-            <img src="/assets/image/TakePhotoTeam.jpg" class="img-responsive thumbnail center-block ">
-            <!--- img-size: 444 x 222 --->
-          </p>
+
+        <div class="sl-slide bg-2" data-orientation="vertical" data-slice1-rotation="10" data-slice2-rotation="-15" data-slice1-scale="1.5" data-slice2-scale="1.5">
+          <div class="sl-slide-inner">
+            <div class="deco img-responsive" style="background-image: url('/assets/image/nhd.jpg');"></div>
+            <h2>Nguyễn Hoàng Duy</h2>
+            <blockquote>
+              <p>Tuổi trẻ là tuổi không ngại ngùng và nghi ngờ gì cả</p>
+              <cite>Cố gắng đổi thay để mạnh mẽ hơn</cite><br><br>
+              <a href="https://www.facebook.com/nhd.cua" target="_blank"><i class="fa fa-facebook-f fa-2x"></i></a>
+              <a href="https://www.instagram.com/d.nguyenhoang/" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
+              <!--- <a href="https://plus.google.com/u/0/115612784843442016810" target="_blank"><i class="fa fa-google-plus fa-2x"></i></a> --->
+            </blockquote>
+          </div>
         </div>
-        <div class="col-xs-3">
-          <h5>UIT - Phạm Thanh Hùng</h5><br>
-          <h5>UIT - Nguyễn Hoàng Duy</h5><br>
-          <h5>IU - Lê Hoàng Niên</h5><br>
-          <h5>UEL - Bùi Lục Kim Chi</h5><br>
-          <h5>IU - Dương Phương Quyên</h5><br>
+
+        <div class="sl-slide bg-3" data-orientation="horizontal" data-slice1-rotation="3" data-slice2-rotation="3" data-slice1-scale="2" data-slice2-scale="1">
+          <div class="sl-slide-inner">
+            <div class="deco img-responsive" style="background-image: url('/assets/image/nnmt.jpg');"></div>
+            <h2>Nguyễn Ngọc Minh Thư</h2>
+            <blockquote>
+              <p>Chỉ có đam mê mới phát huy hết sức mạnh tiềm ẩn</p>
+              <cite>Hãy làm những điều mình thích</cite><br><br>
+              <a href="https://www.facebook.com/ncl251" target="_blank"><i class="fa fa-facebook-f fa-2x"></i></a>
+              <a href="https://www.instagram.com/sandy.nguyen.7121" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
+              <a href="https://plus.google.com/u/0/115612784843442016810" target="_blank"><i class="fa fa-google-plus fa-2x"></i></a>
+            </blockquote>
+          </div>
         </div>
-      </div>
-      <br>
-    </div>
+
+        <div class="sl-slide bg-4" data-orientation="vertical" data-slice1-rotation="-5" data-slice2-rotation="25" data-slice1-scale="2" data-slice2-scale="1">
+          <div class="sl-slide-inner">
+            <div class="deco img-responsive" style="background-image: url('/assets/image/lqv.jpg');"></div>
+            <h2>Lương Quốc Vĩ</h2>
+            <blockquote>
+              <p>Tuổi trẻ là tuổi không ngại ngùng và nghi ngờ gì cả</p>
+              <cite>Cố gắng đổi thay để mạnh mẽ hơn</cite><br><br>
+              <a href="https://www.facebook.com/ncl251" target="_blank"><i class="fa fa-facebook-f fa-2x"></i></a>
+              <a href="https://twitter.com/chilinhnguyen13" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
+              <a href="https://plus.google.com/u/0/115612784843442016810" target="_blank"><i class="fa fa-google-plus fa-2x"></i></a>
+            </blockquote>
+          </div>
+        </div>
+
+        <!--- <div class="sl-slide bg-5" data-orientation="horizontal" data-slice1-rotation="-5" data-slice2-rotation="10" data-slice1-scale="2" data-slice2-scale="1">
+          <div class="sl-slide-inner">
+            <div class="deco" data-icon="t"></div>
+            <h2>Acta Non Verba</h2>
+            <blockquote><p>I think if you want to eat more meat you should kill it yourself and eat it raw so that you are not blinded by the hypocrisy of having it processed for you.</p><cite>Margi Clarke</cite></blockquote>
+          </div>
+        </div> --->
+      </div><!-- /sl-slider -->
+      <nav id="nav-arrows" class="nav-arrows">
+        <span class="nav-arrow-prev">Previous</span>
+        <span class="nav-arrow-next">Next</span>
+      </nav>
+      <nav id="nav-dots" class="nav-dots">
+        <span class="nav-dot-current"></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <!--- <span></span> --->
+      </nav>
+    </div><!-- /slider-wrapper -->
   </div>
 </section>
 
@@ -345,22 +480,20 @@
 <section id="section5">
   <div class="container v-center">
     <div class="row">
-      <div class="col-md-12">
-        <h1 class="text-center">Góp Ý</h1>
-        <hr>
+      <div class="col-md-12 text-center">
+        <h1 class="text-center">Liên hệ</h1>
+        <p><b><i>Bạn muốn hỏi?</i></b></p>
+        <p class="col-sm-6 col-sm-offset-3">Hãy gửi cho chúng tôi những suy nghĩ của bạn. Chúng tôi sẽ rất biết ơn nếu bạn làm thế và chúng tôi sẽ nhanh chóng liên hệ với bạn trong vòng 24h</p>
+        <br>
+        <br>
+        <br>
       </div>
     </div>
     <div class="row">
-      <div class="col-md-8 col-md-offset-1">
+      <div class="col-md-8">
         <div class="row form-group">
-          <div class="col-sm-3">
-            <input type="text" class="form-control" id="firstName" name="firstName" placeholder="Họ" required="">
-          </div>
-          <div class="col-sm-3">
-            <input type="text" class="form-control" id="middleName" name="firstName" placeholder="Tên đệm" required="">
-          </div>
-          <div class="col-sm-4">
-            <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Tên" required="">
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="firstName" name="firstName" placeholder="Tên" required="">
           </div>
         </div>
         <div class="row form-group">
@@ -373,43 +506,31 @@
         </div>
         <div class="row form-group">
           <div class="col-sm-10">
-            <input type="homepage" class="form-control" placeholder="Nội dung góp ý..." required="">
+            <textarea type="textarea" class="form-control" placeholder="Nội dung..." required=""></textarea>
           </div>
         </div>
         <div class="row form-group">
-          <div class="col-sm-10">
-            <button class="btn btn-default btn-lg pull-right">Gửi!</button>
+          <div class="col-sm-3 col-xs-12">
+            <button class="btn btn-lg">Gửi</button>
           </div>
         </div>
       </div>
-      <div class="col-md-3 pull-right">
+      <div class="col-md-4 pull-right">
         <address>
-          <strong><i class="fa fa-map-marker"></i> Rasia Ltd</strong><br>
-          Tòa nhà Anna, Công Viên Phần Mềm Quang Trung, P.Tân Chánh Hiệp, Q.12, TP HCM, Việt Nam<br>
-          P:  +84 8.371 57911
+          <br>Chúng tôi ở đây là để giúp bạn giải quyết công việc của mình cũng như giúp khách hàng tìm được freelancer như mong muốn. Hãy cho chúng tôi biết nếu bạn cần giúp đỡ!<br>
+        </address>
+        <address>
+          (+84) 1674444116
         </address>
         <address>
           <!--- <strong> Email Us</strong><br> --->
-          <a href="mailto:#" style="color: #444;"><i class="fa fa-envelope"></i> takephoto@gmail.com</a>
+          <a href="mailto:#">chilinhnguyen101@gmail.com</a>
         </address>
       </div>
     </div>
   </div>
 </section>
 
-
-<!--- Section 7 / Liên hệ --->
-<!-- <section class="container-fluid" id="section7">
-  <ul class="row list-unstyled">
-    <li class="col-md-6 col-md-offset-1 col-xs-10 col-xs-offset-1">
-      <h3 class="text-center">Hãy đăng ký ngay để tận hưởng lợi ích TakePhoto đem lại</h3>
-    </li>
-    <li class="col-md-3 col-md-offset-0 col-xs-10 col-xs-offset-1 text-center">
-      <a href="/index.cfm/user/register" class="center-block btn btn-default btn-lg btn-huge animate slideInRight">Đăng ký</a>
-    </li>
-  </ul>
-</section>
- -->
 <!--- Section 8 / Liên hệ--->
 <section id="section8">
   <div class="diagonal row white-bg"></div>
@@ -428,5 +549,12 @@
         <a href="https://plus.google.com/u/0/115612784843442016810" target="_blank"><i class="fa fa-google-plus"></i></a>
       </div>
     </div>
+    <div class="col-lg-12" id="bubble">TakePhoto.Com</div>
   </div>
 </section>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript" src="/assets/js/jquery-bubble-text.js"></script>
+<script type="text/javascript" src="/assets/js/TweenMax.min.js"></script>
+<script type="text/javascript" src="/assets/js/scrollimage.js"></script>
+<script type="text/javascript" src="/assets/js/loadmore.js"></script>
