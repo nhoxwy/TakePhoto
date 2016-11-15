@@ -7,32 +7,7 @@
 }
 </style>
 
-
-
-
-<cfif SESSION.isUserLoggedIn EQ true>
-   
-   <div id="edit-password-div">
-      <form class="form" onsubmit="return checkRegister()" id="edit-password-form" method="post">
-         <h3>THAY ĐỔI MẬT KHẨU</h3>
-         <hr/>
-         <div class="form-group col-sm-12 col-xs-12">
-            <input type="password" class="form-control" id="password" name="oldPassword" placeholder="Mật khẩu cũ" required>
-         </div>
-         <div class="form-group col-sm-12 col-xs-12">
-            <input type="password" class="form-control" id="new-password" name="newPassword" minlength="6" placeholder="Mật khẩu mới" required>
-         </div>
-         <div class="form-group col-sm-12 col-xs-12">
-            <input type="password" class="form-control" id="re-new-password" name="reNewPassword" placeholder="Nhập lại mật khẩu mới" required>
-         </div>
-         <div class="form-group col-sm-12 col-xs-12">
-            <hr/>
-            <input type="submit" id="edit-password-formbtn" name="btnSubmit" value="Đổi mật khẩu"/>
-            <input type="button" id="password-cancel" value="Hủy bỏ"/>
-         </div>
-      </form>
-   </div>
-   
+<cfif SESSION.isUserLoggedIn EQ true> 
    <div class="container edit">
       <h3 class="about">
          <img class="img-user" src="https://www.facebook.com/images/profile/timeline/app_icons/info_24.png"/>
@@ -77,7 +52,7 @@
                               </p>
                            </div>
                            <div class="col-sm-6 col-md-6 show">
-                              <i class="glyphicon glyphicon-question-sign"></i><a id="edit-password-form-div">Đổi mật khẩu?</a>
+                              <i class="glyphicon glyphicon-question-sign"></i><a href="/index.cfm/user/changePassword">Đổi mật khẩu?</a>
                               <hr/>
                               <i class="glyphicon glyphicon-info-sign"></i><a>Chuyển tài khoản/Xóa</a>
                               <hr/>
@@ -164,33 +139,32 @@
                   </div>
                </div>
                <div class="tab-pane" id="detail">
-                  <div class="col-lg-6">
-                     <legend>Giới thiệu bản thân</legend>
-                     <ul>
-                        <li>Sample Name should be used to describe your sample appropriately. Please be as specific as possible, as this required field will be used to identify each sample. For example: normal human serum, anti-KLH serum, anti-Man9 serum, etc.</li>
-                        <li>Các tên khác:</li>
-                     </ul>
-                     <h4>Các địa điểm hoạt động: </h4>
-                  </div>
-                  <div class="col-lg-6 skill">
-                     <legend>Các chỉ số kỹ năng</legend>
-                     <h5>Kỹ năng chụp</h5>
-                     <div class="progress">
-                        <div class="progress-bar" id="photo-skill" aria-valuenow="70" style="width:70%">70%</div>
+                  <cfoutput>
+                     <div class="col-lg-6">
+                        <legend>Giới thiệu bản thân<a href="/index.cfm/user/updateDetail"><i class="glyphicon glyphicon-pencil"></i></a></legend>
+                        <p>#SESSION.about#</p>
+                        <h4>Các địa điểm hoạt động: #SESSION.location#</h4>
                      </div>
-                     <h5>Kỹ năng quay</h5>
-                     <div class="progress">
-                        <div class="progress-bar" id="film-skill" aria-valuenow="80" style="width:80%">80%</div>
+                     <div class="col-lg-6 skill">
+                        <legend>Các chỉ số kỹ năng</legend>
+                        <h5>Kỹ năng chụp</h5>
+                        <div class="progress">
+                           <div class="progress-bar" id="photo-skill" aria-valuenow="70" style="width:70%">70%</div>
+                        </div>
+                        <h5>Kỹ năng quay</h5>
+                        <div class="progress">
+                           <div class="progress-bar" id="film-skill" aria-valuenow="80" style="width:80%">80%</div>
+                        </div>
+                        <h5>Xử lý ảnh</h5>
+                        <div class="progress">
+                           <div class="progress-bar" id="pts-skill" aria-valuenow="40" style="width:40%">40%</div>
+                        </div>
+                        <h5>Xử lý video</h5>
+                        <div class="progress">
+                           <div class="progress-bar" id="video-skill" aria-valuenow="75" style="width:75%">75%</div>
+                        </div>
                      </div>
-                     <h5>Xử lý ảnh</h5>
-                     <div class="progress">
-                        <div class="progress-bar" id="pts-skill" aria-valuenow="40" style="width:40%">40%</div>
-                     </div>
-                     <h5>Xử lý video</h5>
-                     <div class="progress">
-                        <div class="progress-bar" id="video-skill" aria-valuenow="75" style="width:75%">75%</div>
-                     </div>
-                  </div>
+                  </cfoutput>
                   <!-- End Skill -->
                </div>
                <div class="tab-pane" id="activity">
@@ -342,7 +316,9 @@
       </div>
    </div>
 <cfelse>
-   <a href="/index.cfm/user/login"></a>
+   <cfscript>
+      location("/index.cfm/user/register",false);
+   </cfscript>
 </cfif>
 
 
