@@ -22,6 +22,7 @@ component output="false" displayname=""  extends="framework.one" {
 
 	function onSessionStart(){
 		SESSION.isUserLoggedIn = false;
+		SESSION.location = "";
 		// SESSION.userID = 0;
 	}
 

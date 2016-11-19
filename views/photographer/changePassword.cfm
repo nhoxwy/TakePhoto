@@ -1,4 +1,4 @@
-﻿<!--- <link rel="stylesheet" type="text/css" href="/assets/css/photographer.css">
+<link rel="stylesheet" type="text/css" href="/assets/css/photographer.css">
 
 
 
@@ -82,13 +82,13 @@
 	<div id="list-photographer">
 		<div class="row">
 		<cfloop>
-			<cfscript>
+			<!--- <cfscript>
 			for (row in startFilter) {
 				    			SESSION.firstName = row.firstName;
 				    			SESSION.lastName = row.lastName;
 				    			SESSION.voteHeart = row.voteHeart;
 				    			SESSION.comment = row.comment;
-				    		}</cfscript>
+				    		}</cfscript> --->
 		</cfloop>
 			<ul>
 				<cfoutput>
@@ -137,4 +137,4 @@ const shape = new mojs.Shape({
 }).then({
   scale: 1
 }).play();
-</script> --->
+</script>
