@@ -1,21 +1,15 @@
-component output="false" accessors="true" persistent="true" {
-    property userService; 
+﻿component output="false" accessors="true" persistent="true" {
+    property photographerService; 
+    property firstName;
 
     public function init(required any fw){
-        variables.fw =fw;
+        variables.fw = fw;
         return this;
     }
     
-    
-    function default(struct rc) {
-    }
-
-    
-    function changePassword() {
-        if (SESSSION.location eq "") {
-            SESSION.location = "*"
-            var startFilter = variables.photoService.startFilter(SESSION.location);
-            return startFilter;
-        }
+    public function default() {
+		if(structKeyExists(form,"btnSubmit")){
+			SESSION.Filter = variables.photographerService.startFilter(form.location);
+    	}
     }
 }

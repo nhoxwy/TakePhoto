@@ -1,5 +1,4 @@
-﻿<!--- <link rel="stylesheet" type="text/css" href="/assets/css/photographer.css">
-
+﻿<link rel="stylesheet" type="text/css" href="/assets/css/photographer.css">
 
 
 <div class="container">
@@ -53,26 +52,14 @@
 				</div>
 				<div class="col-md-2 col-xs-7">
 					<select class="form-control" id="place" name="location">
-						<option disabled selected>Địa điểm</option>
-			      <option value="HCM">TP.Hồ Chí Minh</option>
-			      <option value="2">Tiền Giang</option>
-			      <option value="3">Nha Trang - Khánh Hòa</option>
-			      <option value="4">Đà Nẵng</option>
-			      <option value="5">Huế</option>
-			      <option value="6">Cần Thơ</option>
-			      <option value="7">Lạng Sơn</option>
-			      <option value="8">Quảng Nam</option>
-			      <option value="9">Phú Yên</option>
-			      <option value="10">Bình Thuận</option>
-			      <option value="11">Ninh Thuận</option>
-			      <option value="12">Phú Quốc - Kiên Giang</option>
-			      <option value="13">Bến Tre</option>
-			      <option value="14">Hà Giang</option>
-			      <option value="15">Hải Phòng</option>
-			  	</select>
+						<option value="" selected>Địa điểm</option>
+					    <option value="Hồ Chí Minh">TP.Hồ Chí Minh</option>
+					    <option value="Cần Thơ">Cần Thơ</option>
+					    <option value="Tiền Giang">Tiền Giang</option>
+			  		</select>
 				</div>
 				<div class="col-md-2 col-xs-12">
-					<input id="review-button" class="btn btn-success" name="btnSubmit" type="submit" value="Tìm kiếm">
+					<button href="index.cfm?action=photographer.default" id="review-button" class="btn btn-success" name="btnSubmit" type="submit" value="Tìm kiếm">Tìm kiếm</button>
 				</div>
 			</form>
 		</div>
@@ -81,34 +68,30 @@
 
 	<div id="list-photographer">
 		<div class="row">
-		<cfloop>
-			<cfscript>
-			for (row in startFilter) {
-				    			SESSION.firstName = row.firstName;
-				    			SESSION.lastName = row.lastName;
-				    			SESSION.voteHeart = row.voteHeart;
-				    			SESSION.comment = row.comment;
-				    		}</cfscript>
-		</cfloop>
-			<ul>
+			<cfdump var = #SESSION.Filter#>
+			<cfloop query= "#SESSION.Filter#">
 				<cfoutput>
-					<li class="col-md-3">
-						<a href="/index.cfm/photographer/photographer-detail">
-							<img src="/assets/image/team01.jpg" class="img-responsive img-circle">
-							<h4></h4>
-							<p class="fa fa-map-marker text-left"> </p>
-							&nbsp;&nbsp;
-							<br>
-							<span class="fa fa-heart text-right"> </span>&nbsp;&nbsp;&nbsp;<span class="fa fa-pencil-square-o">  đánh giá</span>
-							<hr>
-							<button id="book-btn" class="btn btn-success" type="button">Hãy hẹn tôi</button>
-						</a>
-					</li>
+					<ul>
+						<li class="col-md-3">
+							<a href="/index.cfm/photographer/photographer-detail">
+								<img src="/assets/image/team01.jpg" class="img-responsive img-circle">
+								<h4>#SESSION.Filter.lastName# #firstName#</h4>
+								<p class="fa fa-map-marker text-left"> #SESSION.Filter.location#</p>
+								&nbsp;&nbsp;
+								<br>
+								<span class="fa fa-heart text-right"> #SESSION.Filter.voteHeart#</span>&nbsp;&nbsp;&nbsp;<span class="fa fa-pencil-square-o"> #SESSION.Filter.comment# đánh giá</span>
+								<hr>
+								<button id="book-btn" class="btn btn-success" type="button">Hãy hẹn tôi</button>
+							</a>
+						</li>
+					</ul>
 				</cfoutput>
-			</ul>
+			</cfloop>
 		</div>
 	</div> <!--- End list-photographer --->
 </div>
+
+
 
 
 
@@ -137,4 +120,4 @@ const shape = new mojs.Shape({
 }).then({
   scale: 1
 }).play();
-</script> --->
+</script>
