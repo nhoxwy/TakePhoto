@@ -4,9 +4,13 @@ component output="false" displayname=""  extends="framework.one" {
 
 	this.name = hash( getCurrentTemplatePath() );
 	this.sessionManagement = true;
-	this.sessionTimeout = createTimeSpan(0,0,0,30);
+	this.sessionTimeout = createTimeSpan(0,0,0,1);
 	this.setClientCookies = true;
 	// This.clientManagement= true;
+
+	this.mapping = {};
+    this.mappings["/controllers"] = GetDirectoryFromPath( GetCurrentTemplatePath() ) & "controllers";
+    this.mappings["/model/services"] = GetDirectoryFromPath( GetCurrentTemplatePath() ) & "services";
 
 	//orm settings
 	this.ormEnabled = true;
@@ -20,9 +24,10 @@ component output="false" displayname=""  extends="framework.one" {
 		return true;
 	}
 
-	function onSessionStart(){
+	public void function onSessionStart(){
 		SESSION.isUserLoggedIn = false;
-		// SESSION.userID = 0;
+		SESSION.location = queryNew("");
+		SESSION.Filter = queryNew("");
 	}
 
 
