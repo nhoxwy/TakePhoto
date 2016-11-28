@@ -1,5 +1,4 @@
 ﻿component  {
-
 	query function startFilter(string location) {
 		qr=new Query();
 		if (location != "") {

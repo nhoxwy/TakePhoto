@@ -26,8 +26,8 @@ component output="false" displayname=""  extends="framework.one" {
 
 	public void function onSessionStart(){
 		SESSION.isUserLoggedIn = false;
-		SESSION.location = "";
-		SESSION.Filter=queryNew("");
+		SESSION.location = queryNew("");
+		SESSION.Filter = queryNew("");
 	}
 
 
