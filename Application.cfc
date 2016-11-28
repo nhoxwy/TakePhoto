@@ -4,7 +4,7 @@ component output="false" displayname=""  extends="framework.one" {
 
 	this.name = hash( getCurrentTemplatePath() );
 	this.sessionManagement = true;
-	this.sessionTimeout = createTimeSpan(0,0,0,1);
+	this.sessionTimeout = createTimeSpan(0,0,0,20);
 	this.setClientCookies = true;
 	// This.clientManagement= true;
 

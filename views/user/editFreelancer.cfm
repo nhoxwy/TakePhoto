@@ -38,7 +38,7 @@
                      <cfoutput>
                         <div class="row">
                            <h4 style="color: rgb(231,76,60);">#SESSION.lastName# #SESSION.firstName#</h4>
-                           <i class="glyphicon glyphicon-map-marker"></i>#SESSION.location#
+                           <i class="glyphicon glyphicon-map-marker"></i>#SESSION.userLocation#
                            <hr/>
                         </div>
                         <div class="row">
@@ -143,7 +143,6 @@
                      <div class="col-lg-6">
                         <legend>Giới thiệu bản thân<a href="/index.cfm/user/updateDetail"><i class="glyphicon glyphicon-pencil"></i></a></legend>
                         <p>#SESSION.about#</p>
-                        <h4>Các địa điểm hoạt động: #SESSION.location#</h4>
                      </div>
                      <div class="col-lg-6 skill">
                         <legend>Các chỉ số kỹ năng</legend>
