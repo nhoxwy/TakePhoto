@@ -3,8 +3,12 @@ component {
     //     qr=queryExecute("SELECT * from location",{},{datasource="takephoto"});
     //     return qr;
     // } 
-    query function myLocation() {
-        qr=queryExecute("SELECT * from location",{},{datasource="takephoto"});
+    query function location() {
+        qr=queryExecute("SELECT name from location",{},{datasource="takephoto"});
+        return qr;
+    }
+    query function kind() {
+        qr=queryExecute("SELECT name from kind",{},{datasource="takephoto"});
         return qr;
     } 
 }

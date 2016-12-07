@@ -9,14 +9,17 @@
 					<div class="col-md-3 col-md-offset-1 col-xs-5">
 						<select class="form-control" id="kind" name="kind">
 							<option value="" selected>Thể loại</option>
+							<cfloop query="#SESSION.kind#">
+								<option value="#SESSION.kind.name#">#SESSION.kind.name#</option>
+							</cfloop>
 	        	</select>
 					</div>
-					<div class="col-md-3 col-xs-7">
+					<!--- <div class="col-md-3 col-xs-7">
 						<select class="form-control" id="style" name="style">
 							<option value="" selected>Phong cách</option>
 	            <option value="">Tất cả</option>
 	        	</select>
-					</div>
+					</div> --->
 					<div class="col-md-3 col-xs-7">
 						<select class="form-control" id="place" name="location">
 							<option value="" selected>Địa điểm</option>
@@ -26,7 +29,7 @@
 				  	</select>
 					</div>
 					<div class="col-md-2 col-xs-12">
-						<button href="index.cfm?action=photographer.default" id="review-button" class="btn btn-success" name="btnSubmit" type="submit" value="Tìm kiếm">Tìm kiếm</button>
+						<input id="review-button" class="btn btn-success" name="btnSubmit" type="submit" value="Tìm kiếm">
 					</div>
 				</form>
 			</div>
@@ -39,7 +42,7 @@
 				<cfloop query= "#SESSION.Filter#">
 					<ul>
 						<li class="col-md-3">
-							<a href="/index.cfm/photographer/photographer-detail">
+							<a href="/index.cfm/photographer/detail?id=#SESSION.Filter.userID#">
 								<img src="/assets/image/team01.jpg" class="img-responsive img-circle">
 								<h4>#SESSION.Filter.lastName# #SESSION.Filter.firstName#</h4>
 								<p class="fa fa-map-marker text-left"> #SESSION.Filter.location#</p>
