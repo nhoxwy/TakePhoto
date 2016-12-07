@@ -18,36 +18,36 @@
          <div class="col-sm-2">
             <ul class="nav nav-tabs tabs-left" id="mytab" data-tabs="tabs">
                <li class="active"><a href="#overview" data-toggle="tab">Tổng quan</a></li>
-               <li><a href="#date" data-toggle="tab">Lịch hẹn</a></li>
+               <li><a href="#book" data-toggle="tab">Lịch hẹn</a></li>
                <li><a href="#detail" data-toggle="tab">Chi tiết về bạn</a></li>
                <li><a href="#activity" data-toggle="tab">Tạo album</a></li>
             </ul>
          </div>
-         <div class="col-sm-10">
-            <div class="tab-content">
-               <div class="tab-pane active" id="overview">
-                  <div class="col-sm-12 col-md-4 no-pad">
-                     <div class="user-image">
-                        <img src="http://3.bp.blogspot.com/-IbEOTNtCMyU/TfCAdHaAxEI/AAAAAAAAA8U/EATib38SSAM/s320/joe-mcelderry.jpg" class="img-responsive img-rounded"/>
+         <cfoutput>
+            <div class="col-sm-10">
+               <div class="tab-content">
+                  <div class="tab-pane active" id="overview">
+                     <div class="col-sm-12 col-md-4 no-pad">
+                        <div class="user-image">
+                           <img src="http://3.bp.blogspot.com/-IbEOTNtCMyU/TfCAdHaAxEI/AAAAAAAAA8U/EATib38SSAM/s320/joe-mcelderry.jpg" class="img-responsive img-rounded"/>
+                        </div>
+                        <div class="user-i-image">
+                           <i class="fa fa-camera fa-3x"></i>
+                        </div>
                      </div>
-                     <div class="user-i-image">
-                        <i class="fa fa-camera fa-3x"></i>
-                     </div>
-                  </div>
-                  <div class="col-sm-12 col-md-8">
-                     <cfoutput>
+                     <div class="col-sm-12 col-md-8">
                         <div class="row">
-                           <h4 style="color: rgb(231,76,60);">#SESSION.lastName# #SESSION.firstName#</h4>
-                           <i class="glyphicon glyphicon-map-marker"></i>#SESSION.location#
+                           <h4 style="color: rgb(231,76,60);">#SESSION.userLoggedIn.lastName# #SESSION.userLoggedIn.firstName#</h4>
+                           <i class="glyphicon glyphicon-map-marker"></i>#SESSION.userLoggedIn.location#
                            <hr/>
                         </div>
                         <div class="row">
                            <div class="col-sm-6 col-md-6 show">
-                              <i class="glyphicon glyphicon-envelope"></i>#SESSION.email#
+                              <i class="glyphicon glyphicon-envelope"></i>#SESSION.userLoggedIn.email#
                               <hr/>
-                              <i class="glyphicon glyphicon-phone"></i>#SESSION.phone#
+                              <i class="glyphicon glyphicon-phone"></i>#SESSION.userLoggedIn.phonenumber#
                               <hr/>
-                              <i class="glyphicon glyphicon-gift"></i>#SESSION.dateOfBirth#
+                              <i class="glyphicon glyphicon-gift"></i>#dateFormat(#SESSION.userLoggedIn.dateOfBirth#,"dd-mm-yyyy")#
                               <hr/>
                               </p>
                            </div>
@@ -59,261 +59,157 @@
                               <i class="glyphicon glyphicon-pencil"></i><a href="/index.cfm/user/updateInfo">Chỉnh sửa thông tin</a>
                            </div>
                         </div>
-                     </cfoutput>
-                  </div>
-               </div>
-               <div class="tab-pane" id="date">
-                  <div class="col-sm-6 col-md-4">
-                     <img src="http://3.bp.blogspot.com/-IbEOTNtCMyU/TfCAdHaAxEI/AAAAAAAAA8U/EATib38SSAM/s320/joe-mcelderry.jpg" class="img-responsive img-rounded"/>
-                  </div>
-                  <div class="col-sm-6 col-md-8">
-                     <div class="row">
-                        <h4 style="color:rgb(231,76,60);">Nguyễn Chí Linh</h4>
-                        <small><cite>Ho Chi Minh City, Vietnam<i class="glyphicon glyphicon-map-marker"></i></cite></small>
-                        <hr/>
                      </div>
-                     <div class="row">
-                        <div class="col-sm-6 col-md-6 show">
-                           <a><i class="glyphicon glyphicon-envelope"></i>chilinh101@gmail.com</a>
-                           <hr/>
-                           <a><i class="glyphicon glyphicon-phone"></i>01673867976</a>
-                           <hr/>
-                           <a><i class="glyphicon glyphicon-time"></i>20 Tháng 9 2016</a>
-                           <hr/>
-                           </p>
+                  </div>
+                  <div class="tab-pane" id="book">
+                     <cfloop query="#SESSION.userLoggedInBook#">
+                        <div class="col-sm-6 col-md-4">
+                           <img src="http://3.bp.blogspot.com/-IbEOTNtCMyU/TfCAdHaAxEI/AAAAAAAAA8U/EATib38SSAM/s320/joe-mcelderry.jpg" class="img-responsive img-rounded"/>
                         </div>
-                        <div class="col-sm-6 col-md-6 show">
-                           <a><i class="glyphicon glyphicon-camera"></i>Chụp ảnh cưới</a>
-                           <hr/>
-                           <a><i class="glyphicon glyphicon-tree-deciduous"></i>Chụp tại Đà Lạt</a>
-                           <hr/>
-                           <div class="dropdown">
-                              <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Trạng thái
-                              <span class="caret"></span></button>
-                              <ul class="dropdown-menu">
-                                 <li><a>Chấp nhận</a></li>
-                                 <li><a>Đang chờ</a></li>
-                              </ul>
-                              <a><i class="glyphicon glyphicon-trash"></i>Xóa bỏ người này?</a>
+                        <div class="col-sm-6 col-md-8">
+                           <div class="row">
+                              <h4 style="color:rgb(231,76,60);">#SESSION.userLoggedInBook.nameBook#</h4>
+                              <small><cite>#SESSION.userLoggedInBook.fromBook#<i class="glyphicon glyphicon-map-marker"></i></cite></small>
+                              <hr/>
                            </div>
-                        </div>
-                     </div>
-                     <hr/>
-                  </div>
-                  <div class="col-sm-6 col-md-4">
-                     <img src="http://3.bp.blogspot.com/-IbEOTNtCMyU/TfCAdHaAxEI/AAAAAAAAA8U/EATib38SSAM/s320/joe-mcelderry.jpg" class="img-responsive img-rounded"/>
-                  </div>
-                  <div class="col-sm-6 col-md-8">
-                     <div class="row">
-                        <h4 style="color:rgb(231,76,60);">Nguyễn Chí Linh</h4>
-                        <small><cite>Ho Chi Minh City, Vietnam<i class="glyphicon glyphicon-map-marker"></i></cite></small>
-                        <hr/>
-                     </div>
-                     <div class="row">
-                        <div class="col-sm-6 col-md-6 show">
-                           <a><i class="glyphicon glyphicon-envelope"></i>chilinh101@gmail.com</a>
-                           <hr/>
-                           <i class="glyphicon glyphicon-phone"></i><a class="editable">01673867976</a>
-                           <hr/>
-                           <a><i class="glyphicon glyphicon-time"></i>20 Tháng 9 2016</a>
-                           <hr/>
-                           </p>
-                        </div>
-                        <div class="col-sm-6 col-md-6 show">
-                           <a><i class="glyphicon glyphicon-camera"></i>Chụp ảnh cưới</a>
-                           <hr/>
-                           <a><i class="glyphicon glyphicon-tree-deciduous"></i>Chụp tại Đà Lạt</a>
-                           <hr/>
-                           <div class="dropdown">
-                              <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Trạng thái
-                              <span class="caret"></span></button>
-                              <ul class="dropdown-menu">
-                                 <li><a>Chấp nhận</a></li>
-                                 <li><a>Đang chờ</a></li>
-                              </ul>
-                              <a><i class="glyphicon glyphicon-trash"></i>Xóa bỏ người này?</a>
+                           <div class="row">
+                              <div class="col-sm-6 col-md-6 show">
+                                 <a><i class="glyphicon glyphicon-envelope"></i>#SESSION.userLoggedInBook.mailBook#</a>
+                                 <hr/>
+                                 <a><i class="glyphicon glyphicon-phone"></i>#SESSION.userLoggedInBook.phoneBook#</a>
+                                 <hr/>
+                                 <a><i class="glyphicon glyphicon-time"></i>#dateFormat(#SESSION.userLoggedInBook.dateBook#,"dd-mm-yyyy")#</a>
+                                 <hr/>
+                                 </p>
+                              </div>
+                              <div class="col-sm-6 col-md-6 show">
+                                 <a><i class="glyphicon glyphicon-camera"></i>Chụp ảnh #SESSION.userLoggedInBook.kindBook#</a>
+                                 <hr/>
+                                 <a><i class="glyphicon glyphicon-tree-deciduous"></i>Chụp tại #SESSION.userLoggedInBook.locationBook#</a>
+                                 <hr/>
+                                 <div class="dropdown">
+                                    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Trạng thái
+                                    <span class="caret"></span></button>
+                                    <ul class="dropdown-menu">
+                                       <li><a>Chấp nhận</a></li>
+                                       <li><a>Đang chờ</a></li>
+                                    </ul>
+                                    <a><i class="glyphicon glyphicon-trash"></i>Xóa bỏ người này?</a>
+                                 </div>
+                              </div>
                            </div>
+                           <hr/>
                         </div>
-                     </div>
-                     <hr/>
+                     </cfloop>
                   </div>
-               </div>
-               <div class="tab-pane" id="detail">
-                  <cfoutput>
+                  <div class="tab-pane" id="detail">
                      <div class="col-lg-6">
                         <legend>Giới thiệu bản thân<a href="/index.cfm/user/updateDetail"><i class="glyphicon glyphicon-pencil"></i></a></legend>
-                        <p>#SESSION.about#</p>
-                        <h4>Các địa điểm hoạt động: #SESSION.location#</h4>
+                        <p>#SESSION.userLoggedIn.about#</p>
                      </div>
                      <div class="col-lg-6 skill">
                         <legend>Các chỉ số kỹ năng</legend>
                         <h5>Kỹ năng chụp</h5>
                         <div class="progress">
-                           <div class="progress-bar" id="photo-skill" aria-valuenow="70" style="width:70%">70%</div>
+                           <div class="progress-bar" id="photo-skill" style="width:#SESSION.userLoggedIn.photoSkill#%">#SESSION.userLoggedIn.photoSkill#%</div>
                         </div>
                         <h5>Kỹ năng quay</h5>
                         <div class="progress">
-                           <div class="progress-bar" id="film-skill" aria-valuenow="80" style="width:80%">80%</div>
+                           <div class="progress-bar" id="film-skill" style="width:#SESSION.userLoggedIn.videoSkill#%">#SESSION.userLoggedIn.videoSkill#%</div>
                         </div>
                         <h5>Xử lý ảnh</h5>
                         <div class="progress">
-                           <div class="progress-bar" id="pts-skill" aria-valuenow="40" style="width:40%">40%</div>
+                           <div class="progress-bar" id="pts-skill" style="width:#SESSION.userLoggedIn.psdSkill#%">#SESSION.userLoggedIn.psdSkill#%</div>
                         </div>
                         <h5>Xử lý video</h5>
                         <div class="progress">
-                           <div class="progress-bar" id="video-skill" aria-valuenow="75" style="width:75%">75%</div>
+                           <div class="progress-bar" id="video-skill" style="width:#SESSION.userLoggedIn.filmSkill#%">#SESSION.userLoggedIn.filmSkill#%</div>
                         </div>
                      </div>
-                  </cfoutput>
-                  <!-- End Skill -->
-               </div>
-               <div class="tab-pane" id="activity">
-                  <div class="row">
-                     <div class="col-sm-3">
-                        <input type="text" name="" class="form-control" placeholder="Tên Album">
-                     </div>
-                     <div class="col-sm-3 action">
-                        <select class="form-control">
-                           <option>Ảnh cưới</option>
-                           <option>Flycam</option>
-                           <option>Gia đình</option>
-                           <option>Kỷ yếu</option>
-                           <option>Macro</option>
-                           <option>Ngoại cảnh</option>
-                           <option>Phong cảnh</option>
-                           <option>Street Life</option>
-                           <option>Sự kiện</option>
-                           <option>Thể thao</option>
-                           <option>Thời trang</option>
-                           <option>Nghệ thuật</option>
-                        </select>
-                     </div>
-                     <div class="col-sm-3">
-                        <button class="btn btn-default">Đăng tải</button>
-                        <button class="btn btn-default">Hủy bỏ</button>
-                     </div>
+                     <!-- End Skill -->
                   </div>
-                  <div class="col-sm-4">
-                     <div class="image-preview">
-                        <label for="image-upload" class="ssimage-label">Chọn Ảnh</label>
-                        <input type="file" name="image" class="image-upload" />
+                  <div class="tab-pane" id="activity">
+                     <div class="row">
+                        <div class="col-sm-3">
+                           <input type="text" name="" class="form-control" placeholder="Tên Album">
+                        </div>
+                        <div class="col-sm-3 action">
+                           <select class="form-control">
+                              <cfloop query="#SESSION.kind#">
+                                 <option value="#SESSION.kind.name#">#SESSION.kind.name#</option>
+                              </cfloop>
+                           </select>
+                        </div>
+                        <div class="col-sm-3">
+                           <button class="btn btn-default">Đăng tải</button>
+                           <button class="btn btn-default">Hủy bỏ</button>
+                        </div>
                      </div>
-                  </div>
-                  <div class="col-sm-4">
-                     <div class="image-preview">
-                        <label for="image-upload" class="ssimage-label">Chọn Ảnh</label>
-                        <input type="file" name="image" class="image-upload" />
+                     <div class="col-sm-4">
+                        <div class="image-preview">
+                           <label for="image-upload" class="ssimage-label">Chọn Ảnh</label>
+                           <input type="file" name="image" class="image-upload" />
+                        </div>
                      </div>
-                  </div>
-                  <div class="col-sm-4">
-                     <div class="image-preview">
-                        <label for="image-upload" class="ssimage-label">Chọn Ảnh</label>
-                        <input type="file" name="image" class="image-upload" />
+                     <div class="col-sm-4">
+                        <div class="image-preview">
+                           <label for="image-upload" class="ssimage-label">Chọn Ảnh</label>
+                           <input type="file" name="image" class="image-upload" />
+                        </div>
                      </div>
-                  </div>
-                  <div class="col-sm-4">
-                     <div class="image-preview">
-                        <label for="image-upload" class="ssimage-label">Chọn Ảnh</label>
-                        <input type="file" name="image" class="image-upload" />
+                     <div class="col-sm-4">
+                        <div class="image-preview">
+                           <label for="image-upload" class="ssimage-label">Chọn Ảnh</label>
+                           <input type="file" name="image" class="image-upload" />
+                        </div>
                      </div>
-                  </div>
-                  <div class="col-sm-4">
-                     <div class="image-preview">
-                        <label for="image-upload" class="ssimage-label">Chọn Ảnh</label>
-                        <input type="file" name="image" class="image-upload" />
+                     <div class="col-sm-4">
+                        <div class="image-preview">
+                           <label for="image-upload" class="ssimage-label">Chọn Ảnh</label>
+                           <input type="file" name="image" class="image-upload" />
+                        </div>
+                     </div>
+                     <div class="col-sm-4">
+                        <div class="image-preview">
+                           <label for="image-upload" class="ssimage-label">Chọn Ảnh</label>
+                           <input type="file" name="image" class="image-upload" />
+                        </div>
                      </div>
                   </div>
                </div>
             </div>
-         </div>
+         </cfoutput>
       </div>
-      <h3 class="album">
-         <img class="img-user" src="https://www.facebook.com/images/profile/timeline/app_icons/photos_24.png"/>
-         <a>Ảnh chụp</a>
-      </h3>
-      <hr/>
-      <div class="row">
-         <div class="item col-xs-12 col-sm-6 col-md-4 col-lg-4">
-            <div class="thumbnail">
-               <div class="caption">
-                  <a href="/index.cfm/user/show-image">
-                     <h4 class="group inner list-group-item-heading">Tên Album</h4>
-                  </a>
+
+
+      <!--- Phần album ảnh --->
+      <cfoutput>
+         <h3 class="album">
+            <img class="img-user" src="https://www.facebook.com/images/profile/timeline/app_icons/photos_24.png"/>
+            <a>Ảnh chụp</a>
+         </h3>
+         <hr/>
+         <div class="row">
+            <cfloop query="#SESSION.userLoggedInAlbum#">
+               <div class="item col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                  <div class="thumbnail">
+                     <div class="caption">
+                        <a href="/index.cfm/user/show-image">
+                           <h4 class="group inner list-group-item-heading">#SESSION.userLoggedInAlbum.albumName#</h4>
+                        </a>
+                     </div>
+                     <div class="cycler">
+                        <img class="group list-group-image img-responsive active" src="/assets/image/catelory_gallery_cuoi_hoi.jpg" alt="" />
+                        <img class="group list-group-image img-responsive" src="/assets/image/catelory_gallery_ky_yeu.jpg" alt="" />
+                        <img class="group list-group-image img-responsive" src="/assets/image/catelory_gallery_cuoi_hoi.jpg" alt="" />
+                        <img class="group list-group-image img-responsive" src="/assets/image/catelory_gallery_flycam.jpg" alt="" />
+                        <img class="group list-group-image img-responsive" src="/assets/image/catelory_gallery_gia_dinh.jpg" alt="" />
+                     </div>
+                  </div>
                </div>
-               <div class="cycler">
-                  <img class="group list-group-image img-responsive active" src="/assets/image/catelory_gallery_cuoi_hoi.jpg" alt="" />
-                  <img class="group list-group-image img-responsive" src="/assets/image/catelory_gallery_ky_yeu.jpg" alt="" />
-                  <img class="group list-group-image img-responsive" src="/assets/image/catelory_gallery_cuoi_hoi.jpg" alt="" />
-                  <img class="group list-group-image img-responsive" src="/assets/image/catelory_gallery_flycam.jpg" alt="" />
-                  <img class="group list-group-image img-responsive" src="/assets/image/catelory_gallery_gia_dinh.jpg" alt="" />
-               </div>
-            </div>
+            </cfloop>
          </div>
-         <div class="item col-xs-12 col-sm-6 col-md-4 col-lg-4">
-            <div class="thumbnail">
-               <div class="caption">
-                  <a href="/index.cfm/user/show-image">
-                     <h4 class="group inner list-group-item-heading">Tên Album</h4>
-                  </a>
-               </div>
-               <div class="cycler">
-                  <img class="group list-group-image img-responsive active" src="/assets/image/catelory_gallery_cuoi_hoi.jpg" alt="" />
-                  <img class="group list-group-image img-responsive" src="/assets/image/catelory_gallery_ky_yeu.jpg" alt="" />
-                  <img class="group list-group-image img-responsive" src="/assets/image/catelory_gallery_cuoi_hoi.jpg" alt="" />
-                  <img class="group list-group-image img-responsive" src="/assets/image/catelory_gallery_flycam.jpg" alt="" />
-                  <img class="group list-group-image img-responsive" src="/assets/image/catelory_gallery_gia_dinh.jpg" alt="" />
-               </div>
-            </div>
-         </div>
-         <div class="item col-xs-12 col-sm-6 col-md-4 col-lg-4">
-            <div class="thumbnail">
-               <div class="caption">
-                  <a href="/index.cfm/user/show-image">
-                     <h4 class="group inner list-group-item-heading">Tên Album</h4>
-                  </a>
-               </div>
-               <div class="cycler">
-                  <img class="group list-group-image img-responsive active" src="/assets/image/catelory_gallery_cuoi_hoi.jpg" alt="" />
-                  <img class="group list-group-image img-responsive" src="/assets/image/catelory_gallery_ky_yeu.jpg" alt="" />
-                  <img class="group list-group-image img-responsive" src="/assets/image/catelory_gallery_cuoi_hoi.jpg" alt="" />
-                  <img class="group list-group-image img-responsive" src="/assets/image/catelory_gallery_flycam.jpg" alt="" />
-                  <img class="group list-group-image img-responsive" src="/assets/image/catelory_gallery_gia_dinh.jpg" alt="" />
-               </div>
-            </div>
-         </div>
-         <div class="item col-xs-12 col-sm-6 col-md-4 col-lg-4">
-            <div class="thumbnail">
-               <div class="caption">
-                  <a href="/index.cfm/user/show-image">
-                     <h4 class="group inner list-group-item-heading">Tên Album</h4>
-                  </a>
-               </div>
-               <div class="cycler">
-                  <img class="group list-group-image img-responsive active" src="/assets/image/catelory_gallery_cuoi_hoi.jpg" alt="" />
-                  <img class="group list-group-image img-responsive" src="/assets/image/catelory_gallery_ky_yeu.jpg" alt="" />
-                  <img class="group list-group-image img-responsive" src="/assets/image/catelory_gallery_cuoi_hoi.jpg" alt="" />
-                  <img class="group list-group-image img-responsive" src="/assets/image/catelory_gallery_flycam.jpg" alt="" />
-                  <img class="group list-group-image img-responsive" src="/assets/image/catelory_gallery_gia_dinh.jpg" alt="" />
-               </div>
-            </div>
-         </div>
-         <div class="item col-xs-12 col-sm-6 col-md-4 col-lg-4">
-            <div class="thumbnail">
-               <div class="caption">
-                  <a href="/index.cfm/user/show-image">
-                     <h4 class="group inner list-group-item-heading">Tên Album</h4>
-                  </a>
-               </div>
-               <div class="cycler">
-                  <img class="group list-group-image img-responsive active" src="/assets/image/catelory_gallery_cuoi_hoi.jpg" alt="" />
-                  <img class="group list-group-image img-responsive" src="/assets/image/catelory_gallery_ky_yeu.jpg" alt="" />
-                  <img class="group list-group-image img-responsive" src="/assets/image/catelory_gallery_cuoi_hoi.jpg" alt="" />
-                  <img class="group list-group-image img-responsive" src="/assets/image/catelory_gallery_flycam.jpg" alt="" />
-                  <img class="group list-group-image img-responsive" src="/assets/image/catelory_gallery_gia_dinh.jpg" alt="" />
-               </div>
-            </div>
-         </div>
-      </div>
+      </cfoutput>
    </div>
 <cfelse>
    <cfscript>

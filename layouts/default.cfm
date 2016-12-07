@@ -84,7 +84,7 @@
               <ul class="nav navbar-nav navbar-right">
                 <li>
                   <cfif SESSION.isUserLoggedIn EQ true>
-                    <p class="inline">#SESSION.firstName#</p>
+                    <p class="inline">#SESSION.userLoggedIn.firstName#</p>
                     <button type="button" class="btn navbar-btn dropdown-toggle inline" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-heart"></span>
                     </button>
                     <ul id="hello-drd" class="dropdown-menu">
