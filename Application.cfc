@@ -4,7 +4,7 @@ component output="false" displayname=""  extends="framework.one" {
 
 	this.name = hash( getCurrentTemplatePath() );
 	this.sessionManagement = true;
-	this.sessionTimeout = createTimeSpan(0,0,0,20);
+	this.sessionTimeout = createTimeSpan(0,0,0,50);
 	this.setClientCookies = true;
 	// This.clientManagement= true;
 
@@ -27,7 +27,12 @@ component output="false" displayname=""  extends="framework.one" {
 	public void function onSessionStart(){
 		SESSION.isUserLoggedIn = false;
 		SESSION.location = queryNew("");
+		SESSION.kind = queryNew("");
 		SESSION.Filter = queryNew("");
+		SESSION.userLoggedIn = queryNew("");
+		SESSION.userLoggedInAlbum = queryNew("");
+		SESSION.userLoggedInBook = queryNew("");
+		SESSSION.detailUserID = queryNew("");
 	}
 
 

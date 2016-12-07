@@ -20,7 +20,7 @@
             <input type="password" class="form-control" id="password-login" name="passwordlogin">
           </div>
           <div class="col-xs-12">
-          <input type="submit" name="btnSubmit" class="btn btn-success col-xs-12 col-sm-6" style="margin-right: 15px;" value="Đăng nhập" />
+          <input type="submit" name="btnSubmit" class="btn btn-success col-xs-12 col-sm-6" style="margin-right: 15px;" value="Đăng nhập"/>
           <a href="">Quên mật khẩu?</a>
           </div>
         </form>
@@ -75,13 +75,13 @@
           <div class="form-group col-sm-12 col-xs-12">
             <br>
             <label>Tôi là:</label>
-            <input type="radio" name="sex" value="0" checked="checked"> Nữ &emsp;
-            <input type="radio" name="sex" value="1"> Nam
+            <input type="radio" name="sex" value="Nữ" checked="checked"> Nữ &emsp;
+            <input type="radio" name="sex" value="Nam"> Nam
           </div>
           <div class="form-group col-sm-12 col-xs-12">
             <label>Tôi muốn làm:</label>
-            <input type="radio" name="classify" value="0" checked="checked"> Khách hàng &emsp;
-            <input type="radio" name="classify" value="1"> Nhiếp ảnh gia
+            <input type="radio" name="classify" value="Khách hàng" checked="checked"> Khách hàng &emsp;
+            <input type="radio" name="classify" value="Nhiếp ảnh gia"> Nhiếp ảnh gia
           </div>
           <div class="col-xs-12">
             <input class="btn col-xs-12 col-sm-4" type="submit" name="btnSubmit" value="Đăng ký" style="background: #f44d3c; color: white; text-align: center;" />
@@ -89,7 +89,6 @@
           </div>
         </form>
       </div> <!--- End register form --->
-
     </div>
   </div>
 </div>
