@@ -116,4 +116,15 @@
 		return qr;
 	}
 
+	// function delAlbum(numeric albumID) {
+	// 	qr = new Query();
+	// 	qr = queryExecute("
+	// 		DELETE *
+	// 		FROM album
+	// 		INNER JOIN photo
+	// 			ON photo.albumID = album.albumID
+	// 		WHERE album.albumID=?"
+	// 		,[{value=albumID}]
+	// 		,{datasource="takephoto"});
+	// }
 }
