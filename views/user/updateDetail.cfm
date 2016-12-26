@@ -53,7 +53,7 @@
                     </cfloop>
                 </select>
               <input type="submit" class="btn btn-lg btn-primary btn-block" name="btnSubmit" value="Cập nhật chi tiết">
-              <a href="/index.cfm/user/editFreelancer" class="pull-right inline">Hủy bỏ?</a>  
+              <a href="/index.cfm/user/info" class="pull-right inline">Hủy bỏ?</a>  
           </form>
         </div>
       </div>

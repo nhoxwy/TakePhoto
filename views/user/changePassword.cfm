@@ -13,7 +13,7 @@
               <input type="password" class="form-control" id="new-password" name="newPassword" minlength="6" placeholder="Mật khẩu mới" required>
               <input type="password" class="form-control" id="re-new-password" name="reNewPassword" placeholder="Nhập lại mật khẩu mới" required>
               <input type="submit" class="btn btn-lg btn-primary btn-block" name="btnSubmit" value="Đổi mật khẩu">
-              <a href="/index.cfm/user/editFreelancer" class="pull-right inline">Hủy bỏ?</a>  
+              <a href="/index.cfm/user/info" class="pull-right inline">Hủy bỏ?</a>  
           </form>
         </div>
       </div>

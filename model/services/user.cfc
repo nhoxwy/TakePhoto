@@ -1,4 +1,4 @@
-component  {
+﻿component  {
 
 	function login(string email,string password) {
 		qr = new Query();
@@ -72,10 +72,48 @@ component  {
 		qr = new Query();
 		qr = queryExecute("
 			SELECT *
+			FROM album a
+			INNER JOIN 
+				(
+					SELECT MAX(photoID), albumID, photoName
+					FROM photo
+					GROUP BY albumID
+				) b
+				ON b.albumID = a.albumID
+			WHERE a.userID=?"
+			,[{value=userID}]
+			,{datasource="takephoto"});
+		return qr;
+	}
+
+
+	function autoCreAlbum(numeric userID) {
+		qr = new Query();
+		qr = queryExecute("
+			INSERT INTO album (userID)
+			VALUES (?)"
+			,[{value=userID}]
+			,{datasource="takephoto"});
+		qr = queryExecute("
+			SELECT LAST_INSERT_ID() as albumID
 			FROM album
 			WHERE userID=?"
 			,[{value=userID}]
 			,{datasource="takephoto"});
 		return qr;
 	}
+
+	function detailAlbum(numeric albumID) {
+		qr = new Query();
+		qr = queryExecute("
+			SELECT *
+			FROM photo
+			INNER JOIN album
+				ON album.albumID = photo.albumID
+			WHERE album.albumID=?"
+			,[{value=albumID}]
+			,{datasource="takephoto"});
+		return qr;
+	}
+
 }

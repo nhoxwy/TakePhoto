@@ -4,7 +4,7 @@ component output="false" displayname=""  extends="framework.one" {
 
 	this.name = hash( getCurrentTemplatePath() );
 	this.sessionManagement = true;
-	this.sessionTimeout = createTimeSpan(0,0,0,50);
+	this.sessionTimeout = createTimeSpan(0,0,30,0);
 	this.setClientCookies = true;
 	// This.clientManagement= true;
 
@@ -32,7 +32,9 @@ component output="false" displayname=""  extends="framework.one" {
 		SESSION.userLoggedIn = queryNew("");
 		SESSION.userLoggedInAlbum = queryNew("");
 		SESSION.userLoggedInBook = queryNew("");
-		SESSSION.detailUserID = queryNew("");
+		SESSION.detailUserID = queryNew("");
+		SESSION.maxAlbumID = queryNew(""); //album có ID cao nhất của user
+		SESSION.detailAlbum = queryNew("");
 	}
 
 
